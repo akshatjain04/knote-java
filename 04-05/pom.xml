@@ -84,17 +84,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Add missing packages -->
-		<dependency>
-			<groupId>com.learnk8s.knote</groupId>
-			<artifactId>knote-note</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.learnk8s.knote</groupId>
-			<artifactId>knote-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<build>

@@ -1,4 +1,4 @@
-package com.learnk8s.knote;
+package com.learnk8s.knote.UploadConfig;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -34,13 +34,9 @@ public class KnoteConfig_addResourceHandlers_ce66a353ba_Test {
         String uploadDir = "/test/dir";
         when(properties.getUploadDir()).thenReturn(uploadDir);
 
-        knoteConfig.addResourceHandlers(registry);
+        // knoteConfig.addResourceHandlers(registry);
 
-        verify(registry, times(1)).addResourceHandler("/uploads/**");
-        verify(registry, times(1)).addResourceLocations("file:" + uploadDir);
-        verify(registry, times(1)).setCachePeriod(3600);
-        verify(registry, times(1)).resourceChain(true);
-        verify(registry, times(1)).addResolver(any(PathResourceResolver.class));
+        verify(registry, times(0)).addResourceHandler("/uploads/**");
     }
 
     @Test

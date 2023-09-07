@@ -1,36 +1,51 @@
-package com.learnk8s.knote.controller;
+package com.learnk8s.knote.Controller;
 
+import com.learnk8s.knote.Note.Note;
+import com.learnk8s.knote.Repository.NotesRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Collections;
-
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 
-import com.learnk8s.knote.note.Note;
-import com.learnk8s.knote.service.NoteService;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
 public class KnoteController_index_97608f2907_Test {
 
+    @InjectMocks
+    KnoteController knoteController;
+
+    @Mock
+    NotesRepository notesRepository;
+
+    @Mock
+    Model model;
+
+    @BeforeEach
+    public void init() {
+        MockitoAnnotations.initMocks(this);
+    }
+
     @Test
     public void testIndexMethodWithValidModel() {
-        // Mock the NoteService and Note objects
-        NoteService noteService = mock(NoteService.class);
         Note note1 = new Note();
         Note note2 = new Note();
+
         List<Note> mockNotes = Arrays.asList(note1, note2);
 
-        // Mock the getAllNotes method to return our mockNotes
-        when(noteService.getAllNotes()).thenReturn(mockNotes);
+        when(notesRepository.findAll()).thenReturn(mockNotes);
 
-        KnoteController controller = new KnoteController(noteService);
-        ResponseEntity<List<Note>> response = controller.index();
+        ResponseEntity<List<Note>> response = knoteController.index(model);
 
+        Collections.reverse(mockNotes);
         // Assert the response status and body
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(mockNotes, response.getBody());
@@ -38,14 +53,11 @@ public class KnoteController_index_97608f2907_Test {
 
     @Test
     public void testIndexMethodWithEmptyModel() {
-        // Mock the NoteService object
-        NoteService noteService = mock(NoteService.class);
 
-        // Mock the getAllNotes method to return an empty list
-        when(noteService.getAllNotes()).thenReturn(Collections.emptyList());
 
-        KnoteController controller = new KnoteController(noteService);
-        ResponseEntity<List<Note>> response = controller.index();
+        when(notesRepository.findAll()).thenReturn(Collections.emptyList());
+
+        ResponseEntity<List<Note>>  response = knoteController.index(model);
 
         // Assert the response status and body
         assertEquals(HttpStatus.OK, response.getStatusCode());

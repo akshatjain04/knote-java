@@ -1,4 +1,4 @@
-package com.learnk8s.knote;
+package com.learnk8s.knote.Note;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,8 @@ public class Note_toString_ceffa8036e_Test {
 
         String actualDescription = note.toString();
 
-        assertEquals(expectedDescription, actualDescription, "The actual description should match the expected description");
+        assertEquals(expectedDescription, actualDescription,
+                "The actual description should match the expected description");
     }
 
     @Test
