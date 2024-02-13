@@ -41,7 +41,7 @@ public class KnoteController {
 
 
     @GetMapping("/")
-   public ResponseEntity<List<Note>> index(Model model) {
+   public ResponseEntity<List<Note>> index(Model model, Integer a) {
         // System.out.println("+++++++++++++++++++++++++++"+model.toString());
         System.out.println("+++++++++++++++++++++++++++"+model.toString());
         List<Note> notes = getAllNotes(model);
