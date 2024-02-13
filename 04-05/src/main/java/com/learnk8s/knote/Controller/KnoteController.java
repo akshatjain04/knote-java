@@ -41,11 +41,12 @@ public class KnoteController {
 
 
     @GetMapping("/")
-    public ResponseEntity<List<Note>> index(Model model) {
-		//System.out.println("+++++++++++++++++++++++++++"+model.toString());
-        List<Note> notes=getAllNotes(model);
-        return ResponseEntity.ok(notes);
-		// return "index";
+   public ResponseEntity<List<Note>> index(Model model) {
+        // System.out.println("+++++++++++++++++++++++++++"+model.toString());
+        List<Note> notes = getAllNotes(model);
+        ResponseEntity<List<Note>> reponseEntity = ResponseEntity.ok(notes);
+        return reponseEntity;
+        // return "index";
     }
 
     @PostMapping("/note")
