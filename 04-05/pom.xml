@@ -80,6 +80,33 @@
       <scope>compile</scope>
       <!--Dependency added by RoostGPT-->
     </dependency>
+    <dependency>
+      <groupId>missingGroupId1</groupId>
+      <artifactId>missingArtifactId1</artifactId>
+      <version>missingVersion1</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>missingGroupId2</groupId>
+      <artifactId>missingArtifactId2</artifactId>
+      <version>missingVersion2</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>missingGroupId3</groupId>
+      <artifactId>missingArtifactId3</artifactId>
+      <version>missingVersion3</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <version>5.2.0</version>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
     <!-- MongoDB Java Driver -->
     <dependency>
       <groupId>org.mongodb</groupId>
