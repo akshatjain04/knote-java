@@ -62,6 +62,7 @@ These test scenarios are designed to comprehensively assess the functionality of
 */
 
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.Before;
@@ -71,6 +72,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.resource.PathResourceResolver;
+import org.springframework.web.servlet.resource.ResourceHandlerRegistration;
 
 import static org.mockito.Mockito.*;
 
@@ -85,28 +87,33 @@ public class KnoteConfig_addResourceHandlers_ce66a353ba_Test {
     @Mock
     private ResourceHandlerRegistry registry;
 
+    @Mock
+    private ResourceHandlerRegistration resourceHandlerRegistration;
+
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         when(properties.getUploadDir()).thenReturn("/path/to/uploads/");
+        // Mock the behavior of registry.addResourceHandler to return a ResourceHandlerRegistration
+        when(registry.addResourceHandler("/uploads/**")).thenReturn(resourceHandlerRegistration);
+        // Mock the chain of method calls on the ResourceHandlerRegistration
+        when(resourceHandlerRegistration.addResourceLocations("file:/path/to/uploads/")).thenReturn(resourceHandlerRegistration);
+        when(resourceHandlerRegistration.setCachePeriod(3600)).thenReturn(resourceHandlerRegistration);
     }
 
     @Test
     public void testResourceHandlerRegistration() {
-        // Comment: The methods setCachePeriod, resourceChain, and addResolver are not
-        // available in the ResourceHandlerRegistry. The following code should be updated
-        // to properly chain the resource handler configuration.
+        // Test that the resource handler for the path pattern "/uploads/**" is correctly registered within the `ResourceHandlerRegistry`.
         knoteConfig.addResourceHandlers(registry);
         
         verify(registry, times(1)).addResourceHandler("/uploads/**");
-        // The following verify statements are incorrect due to the non-existent methods.
-        // They should be replaced with the correct method chaining after the issue is resolved.
-        // verify(registry, times(1)).addResourceLocations("file:/path/to/uploads/");
-        // verify(registry, times(1)).setCachePeriod(3600);
-        // verify(registry, times(1)).resourceChain(true);
-        // verify(registry).addResolver(any(PathResourceResolver.class));
-        
-        // Suggested correction: Verify the correct method calls after the business logic
-        // in addResourceHandlers is updated to use the existing ResourceHandlerRegistry methods.
+        // Verify that the resource locations are set correctly using the value from `properties.getUploadDir()`, and that it prepends the "file:" protocol as expected.
+        verify(resourceHandlerRegistration, times(1)).addResourceLocations("file:/path/to/uploads/");
+        // Verify that the cache period for the resources served by this handler is set to 3600 seconds.
+        verify(resourceHandlerRegistration, times(1)).setCachePeriod(3600);
+        // Verify that the resource chain is enabled for the resource handler.
+        verify(resourceHandlerRegistration, times(1)).resourceChain(true);
+        // Confirm that a `PathResourceResolver` is added to the resource chain.
+        verify(resourceHandlerRegistration).addResolver(any(PathResourceResolver.class));
     }
 }
