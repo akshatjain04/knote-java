@@ -62,6 +62,7 @@ These test scenarios cover a range of functional and non-functional aspects of t
 */
 
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.Before;
@@ -98,7 +99,14 @@ public class KnoteConfig_addResourceHandlers_ce66a353ba_Test {
         propertiesField.setAccessible(true);
         propertiesField.set(knoteConfig, properties);
 
-        when(registry.addResourceHandler("/uploads/**")).thenReturn(null);
+        // Mocking the chain after adding the resource handler to allow for chain calls in tests
+        // Assuming ResourceHandlerRegistration is a placeholder for the actual return type of addResourceHandler
+        ResourceHandlerRegistration resourceHandlerRegistration = mock(ResourceHandlerRegistration.class);
+        when(registry.addResourceHandler("/uploads/**")).thenReturn(resourceHandlerRegistration);
+        
+        // Mocking for chain calls after setting cache period and resource chain
+        when(resourceHandlerRegistration.setCachePeriod(3600)).thenReturn(resourceHandlerRegistration);
+        when(resourceHandlerRegistration.resourceChain(true)).thenReturn(resourceHandlerRegistration);
     }
 
     @Test
