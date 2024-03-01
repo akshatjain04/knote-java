@@ -1,0 +1,11 @@
+existingAccountId,newAccountName,newAccountEmail,newAccountPassword
+1,JohnDoe,johndoe@example.com,hunter2
+2,JaneDoe,janedoe@example.com,secret123
+3,MikeSmith,mikesmith@example.com,passw0rd
+4,SarahBrown,sarahbrown@example.com,qwerty
+5,AlexJohnson,alexjohnson@example.com,123456
+6,EmilyDavis,emilydavis@example.com,password1
+7,DavidWilson,davidwilson@example.com,abc123
+8,LauraMartinez,lauramartinez@example.com,trustno1
+9,JamesGarcia,jamesgarcia@example.com,iloveyou
+10,JessicaWhite,jessicawhite@example.com,letmein
