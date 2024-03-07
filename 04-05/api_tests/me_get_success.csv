@@ -1,0 +1,11 @@
+id,did,name,image,email,settings,createdAt,updatedAt
+550e8400-e29b-41d4-a716-446655440000,,John Doe,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440000.png,john.doe@example.com,{"notifications":true,"theme":"dark"},"2023-01-01T00:00:00Z","2023-01-10T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440001,,Jane Smith,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440001.png,jane.smith@example.com,{"language":"en","privacy":"private"},"2023-01-02T00:00:00Z","2023-01-11T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440002,,Alex Johnson,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440002.png,alex.johnson@example.com,{"timezone":"GMT","layout":"compact"},"2023-01-03T00:00:00Z","2023-01-12T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440003,,Emily Davis,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440003.png,emily.davis@example.com,{"fontsize":"medium","ads":"enabled"},"2023-01-04T00:00:00Z","2023-01-13T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440004,,Michael Brown,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440004.png,michael.brown@example.com,{"currency":"USD","notifications":"false"},"2023-01-05T00:00:00Z","2023-01-14T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440005,,Emma Wilson,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440005.png,emma.wilson@example.com,{"sounds":"on","search":"enabled"},"2023-01-06T00:00:00Z","2023-01-15T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440006,,William Taylor,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440006.png,william.taylor@example.com,{"ads":"disabled","theme":"light"},"2023-01-07T00:00:00Z","2023-01-16T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440007,,Olivia Lee,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440007.png,olivia.lee@example.com,{"language":"fr","privacy":"public"},"2023-01-08T00:00:00Z","2023-01-17T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440008,,James Harris,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440008.png,james.harris@example.com,{"privacy":"public","layout":"expanded"},"2023-01-09T00:00:00Z","2023-01-18T00:00:00Z"
+550e8400-e29b-41d4-a716-446655440009,,Sophia Martinez,https://cdn.example.com/550e8400-e29b-41d4-a716-446655440009.png,sophia.martinez@example.com,{"notifications":"true","currency":"EUR"},"2023-01-10T00:00:00Z","2023-01-19T00:00:00Z"
