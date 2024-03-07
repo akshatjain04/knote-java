@@ -1,0 +1,4 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://localhost:8080/accounts^|^{"commit-hash":"928d28d","api-version":"1.0.0"}^|^{"email":"user@example.com"}^|^201^|^{"api-version":"1.0.0","commit-hash":"928d28d"}
+POST^|^http://localhost:8080/authorizations^|^{"Token":"your_api_key","api-version":"1.0.0"}^|^{"email":"user@example.com"}^|^201^|^{"id":"uuid_example","name":"John Doe","email":"user@example.com","createdAt":"2020-01-01T00:00:00Z","updatedAt":"2020-01-01T00:00:00Z","api-version":"1.0.0","location":"/authorizations/uuid_example"}
+GET^|^http://localhost:8080/authorizations^|^{"Token":"your_api_key","api-version":"1.0.0"}^|^^|^200^|^{"total":1,"authorizations":[{"id":"uuid_example","name":"John Doe","email":"user@example.com","createdAt":"2020-01-01T00:00:00Z","updatedAt":"2020-01-01T00:00:00Z"}],"api-version":"1.0.0"}
