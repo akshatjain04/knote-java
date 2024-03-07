@@ -1,0 +1,11 @@
+username,password
+user123,pass123
+john.doe,12345
+jane_doe,abcde
+admin1,admin123
+test_user,Test1234
+guest_user,
+invalid_user,pass/word
+!@#user,123456
+username,pa$$word
+end_user,finalpass
