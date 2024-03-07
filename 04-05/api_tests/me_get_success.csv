@@ -1,0 +1,11 @@
+id,did,name,image,email,createdAt,updatedAt
+b3e7a8f5-ebd1-4a4b-85ce-c08a5a2d1f2b,,John Doe,https://cdn.credentialregister.com/2571c54e-2cde-4434-83f2-c329f74adc27.png,john.doe@example.com,2023-01-01T00:00:00Z,2023-01-02T00:00:00Z
+4f21ca1e-f0d0-4d3f-938e-6a9c7a7b4f3f,,Jane Smith,https://cdn.credentialregister.com/4f21ca1e-f0d0-4d3f-938e-6a9c7a7b4f3f.png,jane.smith@example.com,2023-01-03T00:00:00Z,2023-01-04T00:00:00Z
+7c2a16f2-a6b6-4da4-9b52-2e5a7bfcb9f7,,Alice Johnson,https://cdn.credentialregister.com/7c2a16f2-a6b6-4da4-9b52-2e5a7bfcb9f7.png,alice.johnson@example.com,2023-01-05T00:00:00Z,2023-01-06T00:00:00Z
+d1f8f9c1-4a7d-4f57-8e30-eb1a5ab7b5f4,,Bob Brown,https://cdn.credentialregister.com/d1f8f9c1-4a7d-4f57-8e30-eb1a5ab7b5f4.png,bob.brown@example.com,2023-01-07T00:00:00Z,2023-01-08T00:00:00Z
+e5a1d998-975b-4d8b-9b0e-8d1a5e8e9e6d,,Nancy Davis,https://cdn.credentialregister.com/e5a1d998-975b-4d8b-9b0e-8d1a5e8e9e6d.png,nancy.davis@example.com,2023-01-09T00:00:00Z,2023-01-10T00:00:00Z
+9b2d7e4f-2f5e-4c1b-ae23-12f6e6a8c4e5,,Michael Wilson,https://cdn.credentialregister.com/9b2d7e4f-2f5e-4c1b-ae23-12f6e6a8c4e5.png,michael.wilson@example.com,2023-01-11T00:00:00Z,2023-01-12T00:00:00Z
+f3b8e5c3-e4ae-4b19-a0e6-3f8faf3d4b25,,Lisa Martinez,https://cdn.credentialregister.com/f3b8e5c3-e4ae-4b19-a0e6-3f8faf3d4b25.png,lisa.martinez@example.com,2023-01-13T00:00:00Z,2023-01-14T00:00:00Z
+a7d3fbc8-9a4e-4a87-8e5a-1a4e5ab8c8f6,,Charles Garcia,https://cdn.credentialregister.com/a7d3fbc8-9a4e-4a87-8e5a-1a4e5ab8c8f6.png,charles.garcia@example.com,2023-01-15T00:00:00Z,2023-01-16T00:00:00Z
+b9f1c1c9-ae64-4f1b-8e72-5f8fa7d9f1b8,,Emily Rodriguez,https://cdn.credentialregister.com/b9f1c1c9-ae64-4f1b-8e72-5f8fa7d9f1b8.png,emily.rodriguez@example.com,2023-01-17T00:00:00Z,2023-01-18T00:00:00Z
+c2d4f4b5-768b-4f86-8abb-9b6a5a9d8ab5,,David Lee,https://cdn.credentialregister.com/c2d4f4b5-768b-4f86-8abb-9b6a5a9d8ab5.png,david.lee@example.com,2023-01-19T00:00:00Z,2023-01-20T00:00:00Z
