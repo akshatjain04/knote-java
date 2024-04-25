@@ -45,7 +45,8 @@ public class directdebitconsentsConsentIdGetTest {
 		TestdataLoader dataloader = new TestdataLoader();
 		String[] envVarsList = { "consentId", "version" };
 		envList = dataloader
-			.load("src\\test\\java\\com\\learnk8s\\RoostTest\\direct-debit-consents_consentIdGetTest.csv", envVarsList);
+				.load("src\\test\\java\\com\\learnk8s\\RoostTest\\direct-debit-consents_consentIdGetTest.csv",
+						envVarsList);
 	}
 
 	@Test
@@ -58,130 +59,60 @@ public class directdebitconsentsConsentIdGetTest {
 					: "https://hsbcdeveloperportalpreprod.digitalapicraft.com:8085/https://sandbox.ob.business.hsbc.com.hk/mock/open-banking/v1.0/direct-debit";
 
 			Response responseObj = given()
-				.header("Authorization", testData.get("Authorization") != null ? testData.get("Authorization") : "")
-				.header("x-fapi-auth-date",
-						testData.get("x-fapi-auth-date") != null ? testData.get("x-fapi-auth-date") : "")
-				.header("x-fapi-customer-ip-address",
-						testData.get("x-fapi-customer-ip-address") != null ? testData.get("x-fapi-customer-ip-address")
-								: "")
-				.header("x-fapi-interaction-id",
-						testData.get("x-fapi-interaction-id") != null ? testData.get("x-fapi-interaction-id") : "")
-				.header("Accept-Language",
-						testData.get("Accept-Language") != null ? testData.get("Accept-Language") : "")
-				.pathParam("consentId", testData.get("consentId") != null ? testData.get("consentId") : "")
-				.when()
-				.get("/direct-debit-consents/{consentId}")
-				.then()
-				.extract()
-				.response();
+					.header("Authorization", testData.get("Authorization") != null ? testData.get("Authorization") : "")
+					.header("x-fapi-auth-date",
+							testData.get("x-fapi-auth-date") != null ? testData.get("x-fapi-auth-date") : "")
+					.header("x-fapi-customer-ip-address",
+							testData.get("x-fapi-customer-ip-address") != null
+									? testData.get("x-fapi-customer-ip-address")
+									: "")
+					.header("x-fapi-interaction-id",
+							testData.get("x-fapi-interaction-id") != null ? testData.get("x-fapi-interaction-id") : "")
+					.header("Accept-Language",
+							testData.get("Accept-Language") != null ? testData.get("Accept-Language") : "")
+					.pathParam("consentId", testData.get("consentId") != null ? testData.get("consentId") : "")
+					.when()
+					.get("/direct-debit-consents/{consentId}")
+					.then()
+					.extract()
+					.response();
 			JsonPath response;
 			String contentType = responseObj.getContentType();
 
 			System.out.printf("Test Case %d: directdebitconsentsConsentIdGet_Test \n", testNumber++);
 			System.out.println("Request: GET /direct-debit-consents/{consentId}");
 			System.out.println("Status Code: " + responseObj.statusCode());
-			List<Integer> expectedStatusCodes = Arrays.asList(200, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409,
-					410, 411, 412, 413, 414, 415, 416, 417, 421, 422, 423, 424, 425, 426, 428, 429, 431, 451, 500, 501,
-					502, 503, 504, 507, 508, 511);
+
 			if (testData.get("statusCode") != null) {
 				String statusCodeFromCSV = testData.get("statusCode");
-				if (statusCodeFromCSV.contains("1XX")) {
-					expectedStatusCodes = Arrays.asList(100, 101, 102, 103);
+				if (statusCodeFromCSV.contains("X")) {
+					MatcherAssert.assertThat(
+							"Expected a status code of category " + statusCodeFromCSV + ", but got "
+									+ Integer.toString(responseObj.statusCode()) + " instead",
+							Integer.toString(responseObj.statusCode()).charAt(0), equalTo(statusCodeFromCSV.charAt(0)));
+				} else {
+					MatcherAssert.assertThat(
+							Integer.toString(responseObj.statusCode()), equalTo(statusCodeFromCSV));
 				}
-				else if (statusCodeFromCSV.contains("2XX")) {
-					expectedStatusCodes = Arrays.asList(200, 201, 202, 203, 204, 205, 206, 207, 208, 226);
-				}
-				else if (statusCodeFromCSV.contains("3XX")) {
-					expectedStatusCodes = Arrays.asList(300, 301, 302, 303, 304, 307, 308);
-				}
-				else if (statusCodeFromCSV.contains("4XX")) {
-					expectedStatusCodes = Arrays.asList(400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412,
-							413, 414, 415, 416, 417, 421, 422, 423, 424, 425, 426, 428, 429, 431, 451);
-				}
-				else if (statusCodeFromCSV.contains("5XX")) {
-					expectedStatusCodes = Arrays.asList(500, 501, 502, 503, 504, 507, 508, 511);
-				}
-				else {
-					expectedStatusCodes = Arrays.asList(Integer.parseInt(statusCodeFromCSV));
-				}
+			} else if(Integer.toString(responseObj.statusCode()).charAt(0) != '4'&&Integer.toString(responseObj.statusCode()).charAt(0) != '5'){
+					List<Integer> expectedStatusCodes = Arrays.asList(200);
+					MatcherAssert.assertThat(responseObj.statusCode(), is(in(expectedStatusCodes)));
 			}
-			MatcherAssert.assertThat(responseObj.statusCode(), is(in(expectedStatusCodes)));
 
 			switch (responseObj.statusCode()) {
 
 				case 200:
 
-				case 400:
+					MatcherAssert.assertThat(contentType, equalTo("application/json"));
+					break;
 
-				case 401:
+			}
 
-				case 402:
+			switch (Integer.toString(responseObj.statusCode()).charAt(0)) {
 
-				case 403:
+				case '4':
 
-				case 404:
-
-				case 405:
-
-				case 406:
-
-				case 407:
-
-				case 408:
-
-				case 409:
-
-				case 410:
-
-				case 411:
-
-				case 412:
-
-				case 413:
-
-				case 414:
-
-				case 415:
-
-				case 416:
-
-				case 417:
-
-				case 421:
-
-				case 422:
-
-				case 423:
-
-				case 424:
-
-				case 425:
-
-				case 426:
-
-				case 428:
-
-				case 429:
-
-				case 431:
-
-				case 451:
-
-				case 500:
-
-				case 501:
-
-				case 502:
-
-				case 503:
-
-				case 504:
-
-				case 507:
-
-				case 508:
-
-				case 511:
+				case '5':
 
 					MatcherAssert.assertThat(contentType, equalTo("application/json"));
 					break;
@@ -195,11 +126,9 @@ public class directdebitconsentsConsentIdGetTest {
 				String jsonString = jsonData.toString();
 				response = new JsonPath(jsonString);
 
-			}
-			else if (contentType.contains("application/json")) {
+			} else if (contentType.contains("application/json")) {
 				response = responseObj.jsonPath();
-			}
-			else {
+			} else {
 				System.out.println("Response content type found: " + contentType
 						+ ", but RoostGPT currently only supports the following response content types: application/json,text/xml,application/xml");
 				continue;
@@ -261,10 +190,7 @@ public class directdebitconsentsConsentIdGetTest {
 
 				}
 			}
-			if (Arrays
-				.asList(400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 421,
-						422, 423, 424, 425, 426, 428, 429, 431, 451)
-				.contains(responseObj.statusCode())) {
+			if (Integer.toString(responseObj.statusCode()).charAt(0) == '4') {
 				System.out.println("Description: Bad Request");
 
 				if (response.get("id") != null) {
@@ -313,7 +239,7 @@ public class directdebitconsentsConsentIdGetTest {
 
 				}
 			}
-			if (Arrays.asList(500, 501, 502, 503, 504, 507, 508, 511).contains(responseObj.statusCode())) {
+			if (Integer.toString(responseObj.statusCode()).charAt(0) == '5') {
 				System.out.println("Description: Internal Server Error");
 
 				if (response.get("id") != null) {
