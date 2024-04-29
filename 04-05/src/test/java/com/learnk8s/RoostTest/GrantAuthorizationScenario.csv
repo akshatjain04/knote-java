@@ -1,0 +1,3 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://localhost:8080/authorizations^|^{"Token":"<your_api_key>"}^|^{"email":"user@example.com"}^|^201^|^{"id":"uuid-example-1234","name":null,"email":"user@example.com","createdAt":"2021-01-01T12:00:00Z","updatedAt":"2021-01-01T12:00:00Z","headers":{"api-version":"1.0.0","location":"/authorizations/uuid-example-1234"}}
+GET^|^http://localhost:8080/authorizations^|^{"Token":"<your_api_key>"}^|^^|^200^|^{"total":1,"authorizations":[{"id":"uuid-example-1234","name":null,"email":"user@example.com","createdAt":"2021-01-01T12:00:00Z","updatedAt":"2021-01-01T12:00:00Z"}],"headers":{"api-version":"1.0.0"}}
