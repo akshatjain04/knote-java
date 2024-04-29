@@ -1,0 +1,3 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://localhost:8080/accounts^|^{"commit-hash":"string"}^|^{"email":"string"}^|^201^|^{"api-version":"1.0.0","commit-hash":"928d28d"}
+GET^|^http://localhost:8080/me^|^{"Token":"string"}^|^^|^200^|^{"id":"string","did":"string","name":"string","image":"string","email":"string","settings":{},"createdAt":"string","updatedAt":"string","api-version":"1.0.0"}
