@@ -1,0 +1,2 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+get^|^http://localhost:8080/recipients/persons/27364922937/registrations?size=13&offset=42^|^{ "Token": "authentication_token", "api-version": "1.0.0", "page-size": 13, "page-offset": 42 }^|^{}^|^200^|^{ "total": 0, "registrations": [ { "id": "", "reference": null, "startDate": "", "endDate": null, "status": "", "credentialUrl": "", "suspendedUntil": null, "issuedAt": null, "createdAt": "", "updatedAt": "" } ] }
