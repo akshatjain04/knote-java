@@ -1,0 +1,2 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+GET^|^http://localhost:8080/recipients/persons/27364922937/registrations?size=13&offset=42^|^{ "Token": "YOUR_API_KEY", "api-version": "1.0.0" }^|^{}^|^200^|^{ "total": 0, "registrations": [ { "id": "uuid", "reference": null, "startDate": "date", "endDate": null, "status": "status_value", "credentialUrl": "url_value", "suspendedUntil": null, "issuedAt": null, "createdAt": "date-time", "updatedAt": "date-time" } ] }
