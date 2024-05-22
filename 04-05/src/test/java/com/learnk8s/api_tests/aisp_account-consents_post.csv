@@ -1,0 +1,11 @@
+statusCode,expectedResponse
+200,"{\"message\":\"Success\"}"
+404,"{\"error\":\"Not Found\"}"
+500,"{\"error\":\"Internal Server Error\"}"
+403,"{\"error\":\"Forbidden\"}"
+400,"{\"error\":\"Bad Request\"}"
+401,"{\"error\":\"Unauthorized\"}"
+408,"{\"error\":\"Request Timeout\"}"
+429,"{\"error\":\"Too Many Requests\"}"
+503,"{\"error\":\"Service Unavailable\"}"
+504,"{\"error\":\"Gateway Timeout\"}"
