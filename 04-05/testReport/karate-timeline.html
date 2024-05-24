@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.1:39]","start":1716529236603,"end":1716529239051,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.1:39] 11:10:36.603-11:10:39.051 Create account consent with valid data","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.2:39]","start":1716529239061,"end":1716529240241,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.2:39] 11:10:39.061-11:10:40.241 Create account consent with valid data","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.3:39]","start":1716529240254,"end":1716529241419,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.3:39] 11:10:40.254-11:10:41.419 Create account consent with valid data","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.4:39]","start":1716529241425,"end":1716529242651,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.4:39] 11:10:41.425-11:10:42.651 Create account consent with valid data","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.5:39]","start":1716529242663,"end":1716529243862,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.5:39] 11:10:42.663-11:10:43.862 Create account consent with valid data","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.6:39]","start":1716529243867,"end":1716529245059,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.6:39] 11:10:43.867-11:10:45.059 Create account consent with valid data","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.7:39]","start":1716529245068,"end":1716529246293,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.7:39] 11:10:45.068-11:10:46.293 Create account consent with valid data","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.8:39]","start":1716529246300,"end":1716529247470,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.8:39] 11:10:46.300-11:10:47.470 Create account consent with valid data","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.9:39]","start":1716529247477,"end":1716529248657,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.9:39] 11:10:47.477-11:10:48.657 Create account consent with valid data","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.10:39]","start":1716529248662,"end":1716529249873,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[1.10:39] 11:10:48.662-11:10:49.873 Create account consent with valid data","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[2:41]","start":1716529249881,"end":1716529251170,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[2:41] 11:10:49.881-11:10:51.170 Create account consent with missing required headers","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[3:53]","start":1716529251173,"end":1716529252346,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[3:53] 11:10:51.173-11:10:52.346 Unauthorized access to create account consent","className":"failed"},{"id":13,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[4:64]","start":1716529252353,"end":1716529253563,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[4:64] 11:10:52.353-11:10:53.563 Create account consent with unsupported media type","className":"failed"},{"id":14,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[5:72]","start":1716529253568,"end":1716529254784,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[5:72] 11:10:53.568-11:10:54.784 Create account consent with method not allowed","className":"failed"},{"id":15,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[6:83]","start":1716529254788,"end":1716529256015,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/aisp_account-consents_post[6:83] 11:10:54.788-11:10:56.015 Create account consent with too many requests","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
