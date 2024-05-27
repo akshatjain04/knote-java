@@ -1,0 +1,12 @@
+version,permissions,expirationDate,transactionFromDate,transactionToDate,statusCode,scenario
+1.0,"[\"<string>\"]","1944-11-19T11:01:06.581Z","1989-10-04T23:43:59.323Z","1966-09-25T04:01:05.585Z",201,Created
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",400,Bad Request
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",401,Unauthorised
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",403,Forbidden
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",405,Method Not Allowed
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",406,Not Acceptable
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",415,Unsupported Media Type
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",429,Too Many Requests
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",500,Internal Server Error
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",503,Service Unavailable
+1.0,"[\"invalid_permission\"]","invalid_date","invalid_date","invalid_date",504,Gateway Timeout
