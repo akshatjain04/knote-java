@@ -1,0 +1,12 @@
+version,permissions,expirationDate,transactionFromDate,transactionToDate,statusCode,scenario
+"1.0","[\"<string>\"]","1989-05-01T13:17:03.763Z","1958-11-18T01:06:11.979Z","1986-10-22T08:41:54.151Z",201,Created
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",400,Bad Request
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",401,Unauthorised
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",403,Forbidden
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",405,Method Not Allowed
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",406,Not Acceptable
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",415,Unsupported Media Type
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",429,Too Many Requests
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",500,Internal Server Error
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",503,Service Unavailable
+"1.0","[\"invalid\"]","invalid-date","invalid-date","invalid-date",504,Gateway Timeout
