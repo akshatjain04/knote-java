@@ -1,0 +1,12 @@
+version,permissions,expirationDate,transactionFromDate,transactionToDate,statusCode,scenario
+1.0,"[\"<string>\"]","1989-10-06T23:36:26.489Z","1989-03-17T12:15:47.485Z","2020-05-29T02:40:43.460Z",201,Created
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",400,Bad Request
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",401,Unauthorised
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",403,Forbidden
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",405,Method Not Allowed
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",406,Not Acceptable
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",415,Unsupported Media Type
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",429,Too Many Requests
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",500,Internal Server Error
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",503,Service Unavailable
+1.0,"[\"invalid_permission\"]","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z","1990-01-01T00:00:00.000Z",504,Gateway Timeout
