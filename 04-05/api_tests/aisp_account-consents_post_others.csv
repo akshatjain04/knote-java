@@ -1,0 +1,11 @@
+permissions^|^expirationDate^|^transactionFromDate^|^transactionToDate
+ReadAccountBalance^|^2023-07-15T14:30:00Z^|^2023-01-01T00:00:00Z^|^2023-07-01T00:00:00Z
+ReadAccountTransaction^|^2024-05-20T11:00:00Z^|^2023-02-10T05:30:00Z^|^2023-08-10T05:30:00Z
+ReadAccountAvailability^|^2023-10-10T02:45:00Z^|^2023-03-15T09:45:00Z^|^2023-09-15T09:45:00Z
+ReadAccountStatus^|^2023-12-31T23:59:59Z^|^2022-12-25T00:00:00Z^|^2023-12-31T23:59:59Z
+ReadAccountBalance,ReadAccountTransaction^|^2022-01-01T00:00:00Z^|^2023-04-01T00:00:00Z^|^2023-10-01T00:00:00Z
+ReadAccountStatus,ReadAccountAvailability^|^2023-08-30T17:00:00Z^|^2023-05-20T08:00:00Z^|^2023-11-20T08:00:00Z
+ReadAccountBalance,ReadAccountStatus^|^2023-09-15T06:30:00Z^|^2023-06-07T13:15:00Z^|^2023-12-07T13:15:00Z
+ReadAccountTransaction,ReadAccountAvailability^|^2022-12-25T18:30:00Z^|^2023-07-04T00:00:00Z^|^2023-12-31T23:59:59Z
+ReadAccountBalance,ReadAccountTransaction,ReadAccountStatus^|^2025-02-28T22:00:00Z^|^2023-08-15T10:00:00Z^|^2024-02-15T10:00:00Z
+ReadAccountTransaction,ReadAccountStatus,ReadAccountAvailability^|^2023-11-11T11:11:11Z^|^2023-09-10T00:00:00Z^|^2023-09-30T00:00:00Z
