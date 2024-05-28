@@ -1,0 +1,11 @@
+consentId,version,statusCode,scenario
+"169.254.169.254",1.0,200,OK
+"169.254.169.254",1.0,400,Bad Request
+"169.254.169.254",1.0,401,Unauthorised
+"169.254.169.254",1.0,403,Forbidden
+"169.254.169.254",1.0,405,Method Not Allowed
+"169.254.169.254",1.0,406,Not Acceptable
+"169.254.169.254",1.0,429,Too Many Requests
+"169.254.169.254",1.0,500,Internal Server Error
+"169.254.169.254",1.0,503,Service Unavailable
+"169.254.169.254",1.0,504,Gateway Timeout
