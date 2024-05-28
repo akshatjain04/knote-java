@@ -1,0 +1,11 @@
+consentId^|^Authorization^|^x-fapi-auth-date^|^x-fapi-customer-ip-address^|^x-fapi-interaction-id^|^Accept-Language
+123e4567-e89b-12d3-a456-426614174000^|^Bearer a1b2c3d4^|^Sun, 10 Sep 2017 19:43:31 UTC^|^192.168.1.1^|^uuid-1234-en-001^|^en-HK
+987e6543-e21b-12d3-a456-426614174999^|^Bearer z9x8c7v6^|^Mon, 11 Sep 2017 20:43:31 UTC^|^10.0.0.1^|^uuid-1234-en-002^|^zh-HK
+acbdef12-3456-78d9-a456-426614174888^|^Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==^|^Tue, 12 Sep 2017 21:43:31 UTC^|^172.16.0.1^|^uuid-1234-en-003^|^zh-CN
+fedcba98-7654-32d1-a456-426614174777^|^Bearer m5n6o7p8^|^Wed, 13 Sep 2017 22:43:31 UTC^|^169.254.169.254^|^uuid-1234-en-004^|^en-HK
+001e4567-e89b-12d3-a456-426614174666^|^Bearer q1w2e3r4^|^Thu, 14 Sep 2017 23:43:31 UTC^|^127.0.0.1^|^uuid-1234-en-005^|^zh-HK
+002e4567-e89b-12d3-a456-426614174555^|^Bearer t5y6u7i8^|^Fri, 15 Sep 2017 24:43:31 UTC^|^192.168.0.100^|^uuid-1234-en-006^|^zh-CN
+003e4567-e89b-12d3-a456-426614174444^|^Bearer o9p0a1s2^|^Sat, 16 Sep 2017 25:43:31 UTC^|^10.10.10.10^|^uuid-1234-en-007^|^en-HK
+004e4567-e89b-12d3-a456-426614174333^|^Bearer d3f4g5h6^|^Sun, 17 Sep 2017 26:43:31 UTC^|^2001:0db8:85a3:0000:0000:8a2e:0370:7334^|^uuid-1234-en-008^|^zh-HK
+005e4567-e89b-12d3-a456-426614174222^|^Bearer j7k8l9m0^|^Mon, 18 Sep 2017 27:43:31 UTC^|^198.51.100.0^|^uuid-1234-en-009^|^zh-CN
+006e4567-e89b-12d3-a456-426614174111^|^Bearer z7x8c9v0^|^Tue, 19 Sep 2017 28:43:31 UTC^|^203.0.113.0^|^uuid-1234-en-010^|^en-HK
