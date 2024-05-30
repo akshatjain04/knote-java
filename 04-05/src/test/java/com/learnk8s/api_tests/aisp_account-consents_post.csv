@@ -1,0 +1,2 @@
+x_fapi_auth_date,x_fapi_customer_ip_address,x_fapi_interaction_id,accept_language,request_body,expiration_date,transaction_from_date,transaction_to_date
+"'Sun, 10 Sep 2017 19:43:31 UTC'","'169.254.169.254'","'uniq-id-123'","'en-HK'","{"data":{"permissions":["ReadAccountBalance"],"expirationDate":"2023-12-31T23:59:59Z","transactionFromDate":"2023-01-01T00:00:00Z","transactionToDate":"2023-12-31T23:59:59Z"}}","'2023-12-31T23:59:59Z'","'2023-01-01T00:00:00Z'","'2023-12-31T23:59:59Z'"
