@@ -1,0 +1,3 @@
+requestBody
+{"data":{"permissions":["ReadAccountBalance"],"expirationDate":"2023-12-31T00:00:00Z","transactionFromDate":"2021-01-01T00:00:00Z","transactionToDate":"2023-01-01T00:00:00Z"}}
+{"data":{"permissions":["ReadAccountTransaction"],"expirationDate":"2023-12-31T00:00:00Z"}}

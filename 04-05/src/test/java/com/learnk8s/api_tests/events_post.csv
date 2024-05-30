@@ -1,0 +1,7 @@
+requestBody,expectedResponse
+{"ack":[],"returnImmediately":true,"maxEvents":10},{"sets":"#object","moreAvailable":"#boolean"}
+{"ack":["4d3559ec67504aaba65d40b0363faad8"],"returnImmediately":false,"maxEvents":5},{"sets":"#object","moreAvailable":"#boolean"}
+{"ack":"invalid","returnImmediately":true,"maxEvents":10},{"sets":"#object","moreAvailable":"#boolean"}
+{"returnImmediately":true},
+{"ack":[],"returnImmediately":true,"maxEvents":10},
+{"ack":[],"returnImmediately":true,"maxEvents":10},
