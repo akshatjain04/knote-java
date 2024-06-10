@@ -1,0 +1,17 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://localhost:4010/aisp/account-consents^|^Authorization:Bearer AUTH_TOKEN^|^Content-Type:text/plain^|^x-fapi-auth-date:^|^x-fapi-customer-ip-address:^|^x-fapi-interaction-id:^|^Accept-Language:^|^'Invalid content type'^|^415^|^{
+  "id": "string",
+  "errors": [
+    {
+      "code": "string",
+      "causes": "string",
+      "extendedDetails": {
+        
+      }
+    }
+  ],
+  "headers": {
+    "Content-Type": "string",
+    "x-fapi-interaction-id": "string"
+  }
+}

@@ -1,0 +1,2 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://localhost:4010/aisp/account-consents^|^{"Authorization":"Bearer invalid-token","Content-Type":"application/json"}^|^{"data":{"permissions":["ReadAccountBalance"]}}^|^400^|^{"id":"string","errors":[{"code":"string","causes":"string","extendedDetails":{}}]}
