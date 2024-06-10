@@ -1,0 +1,2 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+GET^|^http://localhost:4010/aisp/account-consents^|^{Authorization:Bearer authToken,Content-Type:application/json}^|^{data:{permissions:[ReadAccountBalance]}}^|^^|^
