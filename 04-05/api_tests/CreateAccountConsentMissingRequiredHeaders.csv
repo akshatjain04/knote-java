@@ -1,0 +1,11 @@
+permissions
+ReadAccountAvailability^|^ReadAccountStatus^|^ReadAccountBalance^|^ReadAccountTransaction
+ReadAccountStatus^|^ReadAccountBalance^|^ReadAccountTransaction^|^ReadAccountAvailability
+ReadAccountBalance^|^ReadAccountTransaction^|^ReadAccountAvailability^|^ReadAccountStatus
+ReadAccountTransaction^|^ReadAccountAvailability^|^ReadAccountStatus^|^ReadAccountBalance
+ReadAccountAvailability^|^ReadAccountTransaction^|^ReadAccountBalance^|^ReadAccountStatus
+ReadAccountStatus^|^ReadAccountAvailability^|^ReadAccountTransaction^|^ReadAccountBalance
+ReadAccountBalance^|^ReadAccountStatus^|^ReadAccountAvailability^|^ReadAccountTransaction
+ReadAccountTransaction^|^ReadAccountBalance^|^ReadAccountStatus^|^ReadAccountAvailability
+ReadAccountAvailability^|^ReadAccountBalance^|^ReadAccountTransaction^|^ReadAccountStatus
+ReadAccountStatus^|^ReadAccountTransaction^|^ReadAccountAvailability^|^ReadAccountBalance
