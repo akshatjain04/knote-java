@@ -1,0 +1,11 @@
+consentId,version,statusCode,scenario
+sunt,1,200,OK
+sunt,2,400,Bad Request
+sunt,3,401,Unauthorised
+sunt,4,403,Forbidden
+sunt,5,405,Method Not Allowed
+sunt,6,406,Not Acceptable
+sunt,7,429,Too Many Requests
+sunt,8,500,Internal Server Error
+sunt,9,503,Service Unavailable
+sunt,10,504,Gateway Timeout
