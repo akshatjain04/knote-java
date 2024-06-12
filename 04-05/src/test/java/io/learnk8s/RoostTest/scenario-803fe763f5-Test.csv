@@ -1,0 +1,4 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+post^|^http://localhost:8080/accounts^|^commit-hash:string^|^email:string(format: email)^|^201^|^api-version:string,commit-hash:string
+post^|^http://localhost:8080/authorizations^|^Token^|^email:string(format: email)^|^201^|^id:string,name:string,email:string,createdAt:string,updatedAt:string,api-version:string,location:string
+get^|^http://localhost:8080/authorizations^|^Token^|^null^|^200^|^total:integer,authorizations:array,authorizations.0:object,authorizations.0.id:string,authorizations.0.name:string,authorizations.0.email:string,authorizations.0.createdAt:string,authorizations.0.updatedAt:string,api-version:string
