@@ -48,7 +48,7 @@ Validation:
 */
 // ********RoostGPT********
 
-package com.learnk8s.knote;
+package com.learnk8s.knote.UploadConfig;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

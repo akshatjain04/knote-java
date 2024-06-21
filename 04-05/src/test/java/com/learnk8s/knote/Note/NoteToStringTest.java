@@ -58,7 +58,7 @@ Validation:
 */
 // ********RoostGPT********
 
-package com.learnk8s.knote;
+package com.learnk8s.knote.Note;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

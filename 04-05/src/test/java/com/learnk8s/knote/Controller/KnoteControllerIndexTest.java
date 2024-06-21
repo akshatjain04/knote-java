@@ -59,6 +59,10 @@ Please note that the actual implementation of the test cases would require using
 
 package com.learnk8s.knote.Controller;
 
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+
 // ... (other imports)
 
 // Commented out the unused import that was causing the compilation error
