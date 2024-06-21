@@ -72,6 +72,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.Before;
@@ -103,6 +104,10 @@ public class KnoteConfigAddResourceHandlersTest {
 		MockitoAnnotations.initMocks(this);
 	}
 
+	/*
+	 * Ensure that KnoteConfig and KnoteProperties are available and correctly imported.
+	 * Also, make sure that the Maven compiler plugin is correctly configured in your pom.xml.
+	 */
 	@Test
     public void ensureResourceHandlerIsAddedCorrectly() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
@@ -114,6 +119,9 @@ public class KnoteConfigAddResourceHandlersTest {
         verify(resourceHandlerRegistry).addResolver(any(PathResourceResolver.class));
     }
 
+	/*
+	 * Verify that the logic in KnoteConfig handles null upload directories as expected.
+	 */
 	@Test
     public void handleMissingUploadDirectory() {
         when(properties.getUploadDir()).thenReturn(null);
@@ -121,6 +129,9 @@ public class KnoteConfigAddResourceHandlersTest {
         verify(resourceHandlerRegistry, never()).addResourceHandler("/uploads/**");
     }
 
+	/*
+	 * Check that the cache period is set correctly in KnoteConfig.
+	 */
 	@Test
     public void verifyCachePeriodConfiguration() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
@@ -128,6 +139,9 @@ public class KnoteConfigAddResourceHandlersTest {
         verify(resourceHandlerRegistry).setCachePeriod(3600);
     }
 
+	/*
+	 * Ensure that the resource chain is enabled correctly in KnoteConfig.
+	 */
 	@Test
     public void ensureResourceChainIsEnabled() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
@@ -135,6 +149,9 @@ public class KnoteConfigAddResourceHandlersTest {
         verify(resourceHandlerRegistry).resourceChain(true);
     }
 
+	/*
+	 * Confirm that the PathResourceResolver is added correctly in KnoteConfig.
+	 */
 	@Test
     public void validatePathResourceResolverAddition() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
