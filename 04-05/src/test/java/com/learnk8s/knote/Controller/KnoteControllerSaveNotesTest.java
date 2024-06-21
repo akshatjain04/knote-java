@@ -75,8 +75,10 @@ Validation:
   The assertion confirms that the method should return a bad request status when a null file object is provided for uploading, ensuring robustness against null inputs.
 */
 // ********RoostGPT********
+
 package com.learnk8s.knote.Controller;
 
+// Import statements
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -101,92 +103,103 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.HttpClientErrorException.BadRequest;
-import io.micrometer.core.ipc.http.HttpSender.Response;
 import java.io.File;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 import org.junit.jupiter.api.*;
 
-@Tag("com.learnk8s.knote.Controller")
-@Tag("com.learnk8s.knote.Controller.saveNotes")
-@Tag("com.learnk8s.knote.Controller.uploadImage")
-@Tag("com.learnk8s.knote.Controller.saveNote")
+// Error fix: Add missing imports for ExtendWith and MockitoExtension
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+// Error fix: Remove unused imports
+// import io.micrometer.core.ipc.http.HttpSender.Response; // Incorrect import
+
+// Error fix: Correct the tag annotations to use the appropriate import
+@ExtendWith(MockitoExtension.class)
+@Tag("Controller")
+@Tag("saveNotes")
+@Tag("uploadImage")
+@Tag("saveNote")
 class KnoteControllerSaveNotesTest {
 
-	@Mock
-	private NotesRepository notesRepository;
+    @Mock
+    private NotesRepository notesRepository;
 
-	@Mock
-	private KnoteProperties properties;
+    @Mock
+    private KnoteProperties properties;
 
-	@InjectMocks
-	private KnoteController controller;
+    @InjectMocks
+    private KnoteController controller;
 
-	private Parser parser = Parser.builder().build();
+    private Parser parser = Parser.builder().build();
 
-	private HtmlRenderer renderer = HtmlRenderer.builder().build();
+    private HtmlRenderer renderer = HtmlRenderer.builder().build();
 
-	private Model model;
+    private Model model;
 
-	@BeforeEach
-	void setUp() {
-		MockitoAnnotations.openMocks(this);
-		model = mock(Model.class);
-	}
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        model = mock(Model.class);
+    }
 
-	@Test
-	@DisplayName("Valid Upload Request with File and Description")
-	public void validUploadRequestWithFileAndDescription() throws Exception {
-		MultipartFile file = mock(MultipartFile.class);
-		when(file.getOriginalFilename()).thenReturn("image.jpg");
-		when(file.isEmpty()).thenReturn(false);
-		ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
-		assertEquals(HttpStatus.CREATED, response.getBody());
-	}
+    // Test cases are correct and do not need changes
+    // They are copied back as instructed
 
-	@Test
-	@DisplayName("Valid Publish Request with Description")
-	public void validPublishRequestWithDescription() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", "Publish", null, model);
-		assertEquals(HttpStatus.CREATED, response.getBody());
-	}
+    @Test
+    @DisplayName("Valid Upload Request with File and Description")
+    public void validUploadRequestWithFileAndDescription() throws Exception {
+        MultipartFile file = mock(MultipartFile.class);
+        when(file.getOriginalFilename()).thenReturn("image.jpg");
+        when(file.isEmpty()).thenReturn(false);
+        ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
+        assertEquals(HttpStatus.CREATED, response.getBody());
+    }
 
-	@Test
-	@DisplayName("Missing Upload and Publish Parameters")
-	public void missingUploadAndPublishParameters() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, null, model);
-		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
-	}
+    @Test
+    @DisplayName("Valid Publish Request with Description")
+    public void validPublishRequestWithDescription() throws Exception {
+        ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", "Publish", null, model);
+        assertEquals(HttpStatus.CREATED, response.getBody());
+    }
 
-	@Test
-	@DisplayName("Empty File on Upload")
-	public void emptyFileOnUpload() throws Exception {
-		MultipartFile file = mock(MultipartFile.class);
-		when(file.getOriginalFilename()).thenReturn("");
-		ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A description", null, "Upload", model);
-		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
-	}
+    @Test
+    @DisplayName("Missing Upload and Publish Parameters")
+    public void missingUploadAndPublishParameters() throws Exception {
+        ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, null, model);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
+    }
 
-	@Test
-	@DisplayName("Incorrect Action Parameter")
-	public void incorrectActionParameter() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, "InvalidAction", model);
-		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
-	}
+    @Test
+    @DisplayName("Empty File on Upload")
+    public void emptyFileOnUpload() throws Exception {
+        MultipartFile file = mock(MultipartFile.class);
+        when(file.getOriginalFilename()).thenReturn("");
+        ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A description", null, "Upload", model);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
+    }
 
-	@Test
-	@DisplayName("Publish with Empty Description")
-	public void publishWithEmptyDescription() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "", "Publish", null, model);
-		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
-	}
+    @Test
+    @DisplayName("Incorrect Action Parameter")
+    public void incorrectActionParameter() throws Exception {
+        ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, "InvalidAction", model);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
+    }
 
-	@Test
-	@DisplayName("Upload with Null File Object")
-	public void uploadWithNullFileObject() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, "Upload", model);
-		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
-	}
+    @Test
+    @DisplayName("Publish with Empty Description")
+    public void publishWithEmptyDescription() throws Exception {
+        ResponseEntity<HttpStatus> response = controller.saveNotes(null, "", "Publish", null, model);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
+    }
+
+    @Test
+    @DisplayName("Upload with Null File Object")
+    public void uploadWithNullFileObject() throws Exception {
+        ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A description", null, "Upload", model);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
+    }
 
 }

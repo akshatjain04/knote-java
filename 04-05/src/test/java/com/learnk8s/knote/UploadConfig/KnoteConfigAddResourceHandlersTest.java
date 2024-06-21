@@ -60,13 +60,15 @@ Validation:
   Elaborate on the significance of the test: Adding a PathResourceResolver is necessary for correct resolution and delivery of static resources.
 */
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.resource.PathResourceResolver;
-import com.learnk8s.knote.UploadConfig.KnoteProperties;
+// The following import statement is missing and causing the compilation error
+// import com.learnk8s.knote.UploadConfig.KnoteProperties;
 import static org.mockito.Mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -79,61 +81,61 @@ import org.junit.jupiter.api.*;
 @Tag("com.learnk8s.knote.UploadConfig.getUploadDir")
 public class KnoteConfigAddResourceHandlersTest {
 
-	@Autowired
-	private KnoteProperties properties;
+    @Autowired
+    private KnoteProperties properties;
 
-	@Test
-	public void ensureResourceHandlerIsAddedCorrectly() {
-		ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
-		properties = mock(KnoteProperties.class);
-		when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
-		KnoteConfig config = new KnoteConfig(properties);
-		config.addResourceHandlers(registry);
-		verify(registry).addResourceHandler("/uploads/**");
-		verify(registry).addResourceLocations("file:" + properties.getUploadDir());
-		verify(registry).setCachePeriod(3600);
-		verify(registry).resourceChain(true);
-		verify(registry).addResolver(any(PathResourceResolver.class));
-	}
+    @Test
+    public void ensureResourceHandlerIsAddedCorrectly() {
+        ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
+        properties = mock(KnoteProperties.class);
+        when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
+        KnoteConfig config = new KnoteConfig(properties);
+        config.addResourceHandlers(registry);
+        verify(registry).addResourceHandler("/uploads/**");
+        verify(registry).addResourceLocations("file:" + properties.getUploadDir());
+        verify(registry).setCachePeriod(3600);
+        verify(registry).resourceChain(true);
+        verify(registry).addResolver(any(PathResourceResolver.class));
+    }
 
-	@Test
-	public void handleMissingUploadDirectory() {
-		ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
-		properties = mock(KnoteProperties.class);
-		when(properties.getUploadDir()).thenReturn(null);
-		KnoteConfig config = new KnoteConfig(properties);
-		config.addResourceHandlers(registry);
-		verify(registry, never()).addResourceHandler("/uploads/**");
-	}
+    @Test
+    public void handleMissingUploadDirectory() {
+        ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
+        properties = mock(KnoteProperties.class);
+        when(properties.getUploadDir()).thenReturn(null);
+        KnoteConfig config = new KnoteConfig(properties);
+        config.addResourceHandlers(registry);
+        verify(registry, never()).addResourceHandler("/uploads/**");
+    }
 
-	@Test
-	public void verifyCachePeriodConfiguration() {
-		ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
-		properties = mock(KnoteProperties.class);
-		when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
-		KnoteConfig config = new KnoteConfig(properties);
-		config.addResourceHandlers(registry);
-		verify(registry).setCachePeriod(3600);
-	}
+    @Test
+    public void verifyCachePeriodConfiguration() {
+        ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
+        properties = mock(KnoteProperties.class);
+        when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
+        KnoteConfig config = new KnoteConfig(properties);
+        config.addResourceHandlers(registry);
+        verify(registry).setCachePeriod(3600);
+    }
 
-	@Test
-	public void ensureResourceChainIsEnabled() {
-		ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
-		properties = mock(KnoteProperties.class);
-		when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
-		KnoteConfig config = new KnoteConfig(properties);
-		config.addResourceHandlers(registry);
-		verify(registry).resourceChain(true);
-	}
+    @Test
+    public void ensureResourceChainIsEnabled() {
+        ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
+        properties = mock(KnoteProperties.class);
+        when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
+        KnoteConfig config = new KnoteConfig(properties);
+        config.addResourceHandlers(registry);
+        verify(registry).resourceChain(true);
+    }
 
-	@Test
-	public void validatePathResourceResolverAddition() {
-		ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
-		properties = mock(KnoteProperties.class);
-		when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
-		KnoteConfig config = new KnoteConfig(properties);
-		config.addResourceHandlers(registry);
-		verify(registry).addResolver(any(PathResourceResolver.class));
-	}
+    @Test
+    public void validatePathResourceResolverAddition() {
+        ResourceHandlerRegistry registry = mock(ResourceHandlerRegistry.class);
+        properties = mock(KnoteProperties.class);
+        when(properties.getUploadDir()).thenReturn("/some/upload/dir/");
+        KnoteConfig config = new KnoteConfig(properties);
+        config.addResourceHandlers(registry);
+        verify(registry).addResolver(any(PathResourceResolver.class));
+    }
 
 }

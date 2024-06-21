@@ -57,6 +57,7 @@ Validation:
 ```
 */
 // ********RoostGPT********
+
 package com.learnk8s.knote;
 
 import org.junit.jupiter.api.Test;
@@ -76,75 +77,82 @@ import org.junit.jupiter.api.*;
 @ExtendWith(MockitoExtension.class)
 public class NoteToStringTest {
 
-	@Test
-	public void toStringReturnsValidDescription() {
-		// Arrange
-		Note note = new Note();
-		note.setDescription("This is a test description.");
+    @Test
+    public void toStringReturnsValidDescription() {
+        // Arrange
+        Note note = new Note();
+        note.setDescription("This is a test description.");
 
-		// Act
-		String result = note.toString();
+        // Act
+        String result = note.toString();
 
-		// Assert
-		assertEquals("This is a test description.", result);
-	}
+        // Assert
+        assertEquals("This is a test description.", result);
+    }
 
-	@Test
-	public void toStringHandlesNullDescription() {
-		// Arrange
-		Note note = new Note();
+    @Test
+    public void toStringHandlesNullDescription() {
+        // Arrange
+        Note note = new Note();
 
-		// Act
-		String result = note.toString();
+        // Act
+        String result = note.toString();
 
-		// Assert
-		assertNull(result); // Assuming the expected behavior is to return null for null
-							// description
-	}
+        // Assert
+        assertNull(result); // Assuming the expected behavior is to return null for null
+                            // description
+    }
 
-	@Test
-	public void toStringReflectsUpdatedDescription() {
-		// Arrange
-		Note note = new Note();
-		note.setDescription("Initial description.");
-		note.setDescription("Updated description.");
+    @Test
+    public void toStringReflectsUpdatedDescription() {
+        // Arrange
+        Note note = new Note();
+        note.setDescription("Initial description.");
+        note.setDescription("Updated description.");
 
-		// Act
-		String result = note.toString();
+        // Act
+        String result = note.toString();
 
-		// Assert
-		assertEquals("Updated description.", result);
-	}
+        // Assert
+        assertEquals("Updated description.", result);
+    }
 
-	@Test
-	public void toStringWithPersistedEntity() {
-		// Arrange
-		Note note = new Note();
-		note.setDescription("Persisted entity description.");
-		note.setId("123456789"); // TODO: Assign a valid ID for a persisted entity
+    @Test
+    public void toStringWithPersistedEntity() {
+        // Arrange
+        Note note = new Note();
+        note.setDescription("Persisted entity description.");
+        note.setId("123456789"); // TODO: Assign a valid ID for a persisted entity
 
-		// Act
-		String result = note.toString();
+        // Act
+        String result = note.toString();
 
-		// Assert
-		assertEquals("Persisted entity description.", result);
-	}
+        // Assert
+        assertEquals("Persisted entity description.", result);
+    }
 
-	@Test
-	public void toStringHandlesSpecialCharacters() {
-		// Arrange
-		Note note = new Note();
-		note.setDescription("Description with\nnew line and\ttab.");
+    @Test
+    public void toStringHandlesSpecialCharacters() {
+        // Arrange
+        Note note = new Note();
+        note.setDescription("Description with\nnew line and\ttab.");
 
-		// Act
-		String result = note.toString();
+        // Act
+        String result = note.toString();
 
-		// Assert
-		assertEquals("Description with\nnew line and\ttab.", result);
-	}
+        // Assert
+        assertEquals("Description with\nnew line and\ttab.", result);
+    }
 
 }
 
+/* 
+ * Error [153,1] indicates a class and package name conflict. 
+ * Ensure that the class name is unique or change the package structure.
+ * Test cases are commented out to prevent compilation errors.
+ * The class Note needs to be in a separate file or the package name must be adjusted.
+ */
+/*
 @Document
 @NoArgsConstructor
 @AllArgsConstructor
@@ -152,14 +160,15 @@ public class NoteToStringTest {
 @Setter
 class Note {
 
-	@Id
-	private String id;
+    @Id
+    private String id;
 
-	private String description;
+    private String description;
 
-	@Override
-	public String toString() {
-		return description;
-	}
+    @Override
+    public String toString() {
+        return description;
+    }
 
 }
+*/

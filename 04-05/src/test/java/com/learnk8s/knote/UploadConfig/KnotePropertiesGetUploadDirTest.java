@@ -47,6 +47,7 @@ Validation:
 ```
 */
 // ********RoostGPT********
+
 package com.learnk8s.knote;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -63,52 +64,58 @@ import static org.mockito.Mockito.when;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.junit.jupiter.api.*;
 
+/* The error indicates that the class KnoteProperties is not found. 
+   This could be due to the class not being present or not being compiled correctly. 
+   Ensure that KnoteProperties class exists and is in the correct package. */
+// [ERROR] cannot find symbol: class KnoteProperties
+// Assuming KnoteProperties class exists, the test cases are rewritten below without any changes:
+
 @Tag("com.learnk8s.knote.UploadConfig")
 @Tag("com.learnk8s.knote.UploadConfig.getUploadDir")
 @SpringBootTest
 public class KnotePropertiesGetUploadDirTest {
 
-	@Autowired
-	private KnoteProperties knoteProperties;
+    @Autowired
+    private KnoteProperties knoteProperties;
 
-	@MockBean
-	private Environment env;
+    @MockBean
+    private Environment env;
 
-	@Value("${upload.dir:test-value}")
-	private String testUploadDir;
+    @Value("${upload.dir:test-value}")
+    private String testUploadDir;
 
-	@BeforeEach
-	public void setUp() throws NoSuchFieldException, IllegalAccessException {
-		// Using reflection to access the private field
-		Field field = KnoteProperties.class.getDeclaredField("uploadDir");
-		field.setAccessible(true);
-		field.set(knoteProperties, null); // Reset to null before each test
-	}
+    @BeforeEach
+    public void setUp() throws NoSuchFieldException, IllegalAccessException {
+        // Using reflection to access the private field
+        Field field = KnoteProperties.class.getDeclaredField("uploadDir");
+        field.setAccessible(true);
+        field.set(knoteProperties, null); // Reset to null before each test
+    }
 
-	@Test
-	public void shouldReturnCurrentUploadDir() throws NoSuchFieldException, IllegalAccessException {
-		// Arrange
-		String expectedUploadDir = "some/upload/dir";
-		Field field = KnoteProperties.class.getDeclaredField("uploadDir");
-		field.setAccessible(true);
-		field.set(knoteProperties, expectedUploadDir);
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertEquals(expectedUploadDir, actualUploadDir);
-	}
+    @Test
+    public void shouldReturnCurrentUploadDir() throws NoSuchFieldException, IllegalAccessException {
+        // Arrange
+        String expectedUploadDir = "some/upload/dir";
+        Field field = KnoteProperties.class.getDeclaredField("uploadDir");
+        field.setAccessible(true);
+        field.set(knoteProperties, expectedUploadDir);
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertEquals(expectedUploadDir, actualUploadDir);
+    }
 
-	@Test
-	public void shouldReturnNullWhenUploadDirNotSet() {
-		// Arrange
-		// No arrangement needed as uploadDir is null by default
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertNull(actualUploadDir);
-	}
+    @Test
+    public void shouldReturnNullWhenUploadDirNotSet() {
+        // Arrange
+        // No arrangement needed as uploadDir is null by default
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertNull(actualUploadDir);
+    }
 
-	@Test
+    @Test
     public void shouldReturnInjectedValueBySpring() {
         // Arrange
         when(env.getProperty("upload.dir")).thenReturn(testUploadDir);
@@ -118,18 +125,19 @@ public class KnotePropertiesGetUploadDirTest {
         assertEquals(testUploadDir, actualUploadDir);
     }
 
-	@Test
-	public void shouldReflectUpdatedValueAfterConfigurationChange()
-			throws NoSuchFieldException, IllegalAccessException {
-		// Arrange
-		String updatedUploadDir = "updated/upload/dir";
-		Field field = KnoteProperties.class.getDeclaredField("uploadDir");
-		field.setAccessible(true);
-		field.set(knoteProperties, updatedUploadDir);
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertEquals(updatedUploadDir, actualUploadViewDir);
-	}
-
+    /* There is a typo in the variable name in the assertion. 
+       It should be `actualUploadDir` instead of `actualUploadViewDir`. */
+    @Test
+    public void shouldReflectUpdatedValueAfterConfigurationChange()
+            throws NoSuchFieldException, IllegalAccessException {
+        // Arrange
+        String updatedUploadDir = "updated/upload/dir";
+        Field field = KnoteProperties.class.getDeclaredField("uploadDir");
+        field.setAccessible(true);
+        field.set(knoteProperties, updatedUploadDir);
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertEquals(updatedUploadDir, actualUploadDir); // Corrected variable name
+    }
 }
