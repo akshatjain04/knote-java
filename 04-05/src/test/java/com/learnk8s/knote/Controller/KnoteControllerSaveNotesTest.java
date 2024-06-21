@@ -115,7 +115,7 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind{...}.annotation.RequestParam;
+// import org.springframework.web.bind{...}.annotation.RequestParam;
 import org.springframework.web.client.HttpClientErrorException.BadRequest;
 import org.springframework.web.multipart.MultipartFile;
 import io.micrometer.core.ipc.http.HttpSender.Response;
@@ -150,32 +150,32 @@ public class KnoteControllerSaveNotesTest {
 	public void validUploadRequestWithFileAndDescription() throws Exception {
 		MockMultipartFile file = new MockMultipartFile("image", "test.png", "image/png",
 				"test image content".getBytes());
-		ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
 		assertEquals(HttpStatus.CREATED, response.getBody());
 	}
 
 	@Test
 	public void validPublishRequestWithDescription() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", "Publish", null, model);
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(null, "A valid description", "Publish", null, model);
 		assertEquals(HttpStatus.CREATED, response.getBody());
 	}
 
 	@Test
 	public void missingUploadAndPublishParameters() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", null, null, model);
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(null, "A valid description", null, null, model);
 		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
 	}
 
 	@Test
 	public void emptyFileOnUpload() throws Exception {
 		MockMultipartFile file = new MockMultipartFile("image", "", "image/png", new byte[0]);
-		ResponseEntity<HttpStatus> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(file, "A valid description", null, "Upload", model);
 		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
 	}
 
 	@Test
 	public void incorrectActionParameter() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", null, "InvalidAction",
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(null, "A valid description", null, "InvalidAction",
 				model);
 		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
 	}
@@ -192,7 +192,7 @@ public class KnoteControllerSaveNotesTest {
 
 	@Test
 	public void uploadWithNullFileObject() throws Exception {
-		ResponseEntity<HttpStatus> response = controller.saveNotes(null, "A valid description", null, "Upload", model);
+		ResponseEntity<HttpStatusCode> response = controller.saveNotes(null, "A valid description", null, "Upload", model);
 		assertEquals(HttpStatus.BAD_REQUEST, response.getBody());
 	}
 

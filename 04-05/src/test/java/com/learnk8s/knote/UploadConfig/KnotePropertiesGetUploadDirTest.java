@@ -129,7 +129,7 @@ public class KnotePropertiesGetUploadDirTest {
         String initialUploadDir = "initialValue";
         String updatedUploadDir = "updatedValue";
         ReflectionTestUtils.setField(knoteProperties, "uploadDir", initialUploadDir);
-        ReflectionTestUtils.setField(knoteProperties, "uploadDir", updatedUploadUrl);
+        ReflectionTestUtils.setField(knoteProperties, "uploadDir", updatedUploadDir);
         // Act
         String actualUploadDir = knoteProperties.getUploadDir();
         // Assert

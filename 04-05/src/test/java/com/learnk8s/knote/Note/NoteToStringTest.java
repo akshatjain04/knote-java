@@ -70,39 +70,46 @@ Validation:
 
 // ********RoostGPT********
 
-package com.learnk8s.knote;
+package com.learnk8s.knote.Note;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.data.annotation.Id;
 
 // Import statements and annotations remain unchanged
 
-class Note {
+// class Note {
 
-	@Id
-	private String id;
+// 	@Id
+// 	private String id;
 
-	private String description;
+// 	private String description;
 
-	@Override
-	public String toString() {
-		return description;
-	}
+// 	@Override
+// 	public String toString() {
+// 		return description;
+// 	}
 
-	// Getters and Setters for id and description
-	public String getId() {
-		return id;
-	}
+// 	// Getters and Setters for id and description
+// 	public String getId() {
+// 		return id;
+// 	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
+// 	public void setId(String id) {
+// 		this.id = id;
+// 	}
 
-	public String getDescription() {
-		return description;
-	}
+// 	public String getDescription() {
+// 		return description;
+// 	}
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
-}
+// 	public void setDescription(String description) {
+// 		this.description = description;
+// 	}
+// }
 
 public class NoteToStringTest {
 
@@ -152,7 +159,7 @@ public class NoteToStringTest {
 		note.setDescription(expectedDescription);
 		String actualDescription = note.toString();
 		assertEquals("The description should accurately represent special characters.", expectedDescription,
-				actualWhat is the difference between a class and an object in Java?Description);
+				actualDescription);
 	}
 
 }
