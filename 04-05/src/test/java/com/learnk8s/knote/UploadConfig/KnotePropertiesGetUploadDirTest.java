@@ -47,7 +47,7 @@ Validation:
 ```
 */
 // ********RoostGPT********
-package com.learnk8s.knote;
+package com.learnk8s.knote.UploadConfig;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -129,7 +129,7 @@ public class KnotePropertiesGetUploadDirTest {
 		// Act
 		String actualUploadDir = knoteProperties.getUploadDir();
 		// Assert
-		assertEquals(updatedUploadDir, actualUploadViewDir);
+		assertEquals(updatedUploadDir, actualUploadDir);
 	}
 
 }

@@ -57,7 +57,7 @@ Validation:
 ```
 */
 // ********RoostGPT********
-package com.learnk8s.knote;
+package com.learnk8s.knote.Note;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -145,21 +145,21 @@ public class NoteToStringTest {
 
 }
 
-@Document
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-class Note {
+// @Document
+// @NoArgsConstructor
+// @AllArgsConstructor
+// @Getter
+// @Setter
+// class Note {
 
-	@Id
-	private String id;
+// 	@Id
+// 	private String id;
 
-	private String description;
+// 	private String description;
 
-	@Override
-	public String toString() {
-		return description;
-	}
+// 	@Override
+// 	public String toString() {
+// 		return description;
+// 	}
 
-}
+// }
