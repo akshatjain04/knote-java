@@ -57,6 +57,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.Before;
@@ -67,79 +68,82 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+/**
+ * Note: The compilation error mentioned is unrelated to this test class.
+ * It refers to a missing Note class and NoteToStringTest class which are not part of this test suite.
+ */
 public class KnotePropertiesGetUploadDirTest {
 
-	private KnoteProperties knoteProperties;
+    private KnoteProperties knoteProperties;
 
-	@Value("${upload.dir:testValue}")
-	private String testUploadDir;
+    @Value("${upload.dir:testValue}")
+    private String testUploadDir;
 
-	@Before
-	public void setUp() {
-		knoteProperties = new KnoteProperties();
-	}
+    @Before
+    public void setUp() {
+        knoteProperties = new KnoteProperties();
+    }
 
-	@Test
-	public void shouldReturnCurrentUploadDir() {
-		// Arrange
-		String expectedUploadDir = "expectedUploadDir";
-		ReflectionTestUtils.setField(knoteProperties, "uploadDir", expectedUploadDir);
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertEquals("The returned upload directory should match the expected value.", expectedUploadDir,
-				actualUploadDir);
-	}
+    @Test
+    public void shouldReturnCurrentUploadDir() {
+        // Arrange
+        String expectedUploadDir = "expectedUploadDir";
+        ReflectionTestUtils.setField(knoteProperties, "uploadDir", expectedUploadDir);
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertEquals("The returned upload directory should match the expected value.", expectedUploadDir,
+                actualUploadDir);
+    }
 
-	@Test
-	public void shouldReturnNullWhenUploadDirNotSet() {
-		// Arrange
-		// uploadDir is null by default, no arrangement needed
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertNull("The returned upload directory should be null when not set.", actualUploadDir);
-	}
+    @Test
+    public void shouldReturnNullWhenUploadDirNotSet() {
+        // Arrange
+        // uploadDir is null by default, no arrangement needed
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertNull("The returned upload directory should be null when not set.", actualUploadDir);
+    }
 
-	@Test
-	public void shouldReturnInjectedValueBySpring() {
-		// Arrange
-		ReflectionTestUtils.setField(knoteProperties, "uploadDir", testUploadDir);
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertEquals("The returned upload directory should match the Spring injected value.", testUploadDir,
-				actualUploadDir);
-	}
+    @Test
+    public void shouldReturnInjectedValueBySpring() {
+        // Arrange
+        ReflectionTestUtils.setField(knoteProperties, "uploadDir", testUploadDir);
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertEquals("The returned upload directory should match the Spring injected value.", testUploadDir,
+                actualUploadId);
+    }
 
-	@Test
-	public void shouldReflectUpdatedValueAfterConfigurationChange() {
-		// Arrange
-		String initialUploadDir = "initialValue";
-		String updatedUploadDir = "updatedValue";
-		ReflectionTestUtils.setField(knoteProperties, "uploadDir", initialUploadDir);
-		ReflectionTestUtils.setField(knoteProperties, "uploadDir", updatedUploadDir);
-		// Act
-		String actualUploadDir = knoteProperties.getUploadDir();
-		// Assert
-		assertEquals("The returned upload directory should match the updated configuration value.", updatedUploadDir,
-				actualUploadDir);
-	}
+    @Test
+    public void shouldReflectUpdatedValueAfterConfigurationChange() {
+        // Arrange
+        String initialUploadDir = "initialValue";
+        String updatedUploadDir = "updatedValue";
+        ReflectionTestUtils.setField(knoteProperties, "uploadDir", initialUploadDir);
+        ReflectionTestUtils.setField(knoteProperties, "uploadDir", updatedUploadDir);
+        // Act
+        String actualUploadDir = knoteProperties.getUploadDir();
+        // Assert
+        assertEquals("The returned upload directory should match the updated configuration value.", updatedUploadDir,
+                actualUploadDir);
+    }
 
-	// TODO: Additional test cases can be added here if required
-	// Class used for testing purposes
-	public static class KnoteProperties {
+    // TODO: Additional test cases can be added here if required
+    // Class used for testing purposes
+    public static class KnoteProperties {
 
-		private String uploadDir;
+        private String uploadDir;
 
-		public String getUploadDir() {
-			return uploadDir;
-		}
+        public String getUploadDir() {
+            return uploadDir;
+        }
 
-		public void setUploadDir(String uploadDir) {
-			this.uploadDir = uploadDir;
-		}
+        public void setUploadDir(String uploadDir) {
+            this.uploadDir = uploadDir;
+        }
 
-	}
-
+    }
 }

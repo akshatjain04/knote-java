@@ -72,6 +72,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.learnk8s.knote.UploadConfig;
 
 import org.junit.Before;
@@ -87,23 +88,29 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * Note: The compilation error mentioned is related to the class Note which
+ * is not part of this test class. It seems to be an issue with another test class
+ * 'NoteToStringTest' which is not included here. Therefore, no changes have been
+ * made to the following test cases as they are not related to the mentioned error.
+ */
 public class KnoteConfigAddResourceHandlersTest {
 
-	@InjectMocks
-	private KnoteConfig knoteConfig;
+    @InjectMocks
+    private KnoteConfig knoteConfig;
 
-	@Mock
-	private ResourceHandlerRegistry resourceHandlerRegistry;
+    @Mock
+    private ResourceHandlerRegistry resourceHandlerRegistry;
 
-	@Mock
-	private KnoteProperties properties;
+    @Mock
+    private KnoteProperties properties;
 
-	@Before
-	public void setUp() {
-		MockitoAnnotations.initMocks(this);
-	}
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+    }
 
-	@Test
+    @Test
     public void ensureResourceHandlerIsAddedCorrectly() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
         knoteConfig.addResourceHandlers(resourceHandlerRegistry);
@@ -114,28 +121,28 @@ public class KnoteConfigAddResourceHandlersTest {
         verify(resourceHandlerRegistry).addResolver(any(PathResourceResolver.class));
     }
 
-	@Test
+    @Test
     public void handleMissingUploadDirectory() {
         when(properties.getUploadDir()).thenReturn(null);
         knoteConfig.addResourceHandlers(resourceHandlerRegistry);
         verify(resourceHandlerRegistry, never()).addResourceHandler("/uploads/**");
     }
 
-	@Test
+    @Test
     public void verifyCachePeriodConfiguration() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
         knoteConfig.addResourceHandlers(resourceHandlerRegistry);
         verify(resourceHandlerRegistry).setCachePeriod(3600);
     }
 
-	@Test
+    @Test
     public void ensureResourceChainIsEnabled() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
         knoteConfig.addResourceHandlers(resourceHandlerRegistry);
         verify(resourceHandlerRegistry).resourceChain(true);
     }
 
-	@Test
+    @Test
     public void validatePathResourceResolverAddition() {
         when(properties.getUploadDir()).thenReturn("/valid/upload/dir/");
         knoteConfig.addResourceHandlers(resourceHandlerRegistry);
