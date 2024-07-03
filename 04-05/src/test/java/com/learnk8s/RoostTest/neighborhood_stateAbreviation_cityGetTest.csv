@@ -1,0 +1,11 @@
+stateAbreviation^|^AdditionalCSVvaluInfo^|^city^|^RequestBody^|^statusCode
+CA^|^Nilópolis^|^Los Angeles^|^{ "name": "John Doe", "email": "john.doe@example.com" }^|^200
+NY^|^Nilópolis^|^New York^|^{ "name": "Jane Smith", "email": "jane.smith@example.com" }^|^403
+TX^|^Nilópolis^|^Houston^|^{ "name": "Alice Johnson", "email": "alice.johnson@example.com" }^|^404
+FL^|^Nilópolis^|^Miami^|^{ "name": "Michael Brown", "email": "michael.brown@example.com" }^|^429
+IL^|^Nilópolis^|^Chicago^|^{ "name": "Emily Davis", "email": "emily.davis@example.com" }^|^500
+PA^|^Nilópolis^|^Philadelphia^|^{ "name": "David Wilson", "email": "david.wilson@example.com" }^|^503
+GA^|^Nilópolis^|^Atlanta^|^{ "name": "Chloe Miller", "email": "chloe.miller@example.com" }^|^504
+WA^|^Nilópolis^|^Seattle^|^{ "name": "Daniel Taylor", "email": "daniel.taylor@example.com" }^|^200
+MA^|^Nilópolis^|^Boston^|^{ "name": "Olivia Anderson", "email": "olivia.anderson@example.com" }^|^403
+AZ^|^Nilópolis^|^Phoenix^|^{ "name": "Ethan Thomas", "email": "ethan.thomas@example.com" }^|^404

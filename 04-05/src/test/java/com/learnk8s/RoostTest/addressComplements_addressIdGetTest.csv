@@ -1,0 +1,11 @@
+addressId^|^AdditionalCSVvaluInfo^|^RequestBody^|^statusCode
+1^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":1,\"info\":\"Sample request body\"}^|^200
+2^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":2,\"info\":\"Sample request body\"}^|^403
+3^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":3,\"info\":\"Sample request body\"}^|^404
+4^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":4,\"info\":\"Sample request body\"}^|^429
+5^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":5,\"info\":\"Sample request body\"}^|^500
+6^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":6,\"info\":\"Sample request body\"}^|^503
+7^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":7,\"info\":\"Sample request body\"}^|^504
+8^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":8,\"info\":\"Sample request body\"}^|^200
+9^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":9,\"info\":\"Sample request body\"}^|^403
+10^|^{\"with complements\": {\"value\": 14393}, \"without complements\": {\"value\": 24498}}^|^{\"userId\":10,\"info\":\"Sample request body\"}^|^404

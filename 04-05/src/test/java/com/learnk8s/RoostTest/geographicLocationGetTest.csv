@@ -1,0 +1,11 @@
+latitude^|^AdditionalCSVvaluInfo^|^longitude^|^radius^|^RequestBody^|^statusCode
+34.052235^|^AdditionalValue1^|^118.243683^|^5^|^{ "request": "info1", "details": { "param1": "value1" } }^|^200
+36.169941^|^AdditionalValue2^|^115.139830^|^15^|^{ "request": "info2", "details": { "param2": "value2" } }^|^404
+40.712776^|^AdditionalValue3^|^74.005974^|^20^|^{ "request": "info3", "details": { "param3": "value3" } }^|^500
+34.052235^|^AdditionalValue4^|^118.243683^|^10^|^{ "request": "info4", "details": { "param4": "value4" } }^|^422
+37.774929^|^AdditionalValue5^|^122.419418^|^50^|^{ "request": "info5", "details": { "param5": "value5" } }^|^200
+25.761680^|^AdditionalValue6^|^80.191790^|^30^|^{ "request": "info6", "details": { "param6": "value6" } }^|^403
+47.606209^|^AdditionalValue7^|^122.332071^|^8^|^{ "request": "info7", "details": { "param7": "value7" } }^|^429
+39.739236^|^AdditionalValue8^|^104.990251^|^25^|^{ "request": "info8", "details": { "param8": "value8" } }^|^503
+41.878114^|^AdditionalValue9^|^87.629798^|^40^|^{ "request": "info9", "details": { "param9": "value9" } }^|^400
+30.267153^|^AdditionalValue10^|^97.743061^|^12^|^{ "request": "info10", "details": { "param10": "value10" } }^|^504

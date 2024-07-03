@@ -1,0 +1,11 @@
+stateAbreviation^|^AdditionalCSVvaluInfo^|^RequestBody^|^statusCode
+CA^|^RJ^|^{\"name\":\"John Doe\",\"age\":30,\"city\":\"Los Angeles\"}^|^200
+TX^|^RJ^|^{\"name\":\"Jane Smith\",\"age\":25,\"city\":\"Houston\"}^|^404
+FL^|^RJ^|^{\"name\":\"Michael Brown\",\"age\":35,\"city\":\"Miami\"}^|^503
+NY^|^RJ^|^{\"name\":\"Emily Johnson\",\"age\":28,\"city\":\"New York\"}^|^429
+WA^|^RJ^|^{\"name\":\"Chris Lee\",\"age\":22,\"city\":\"Seattle\"}^|^500
+GA^|^RJ^|^{\"name\":\"Jessica Green\",\"age\":31,\"city\":\"Atlanta\"}^|^200
+IL^|^RJ^|^{\"name\":\"Sarah Carter\",\"age\":27,\"city\":\"Chicago\"}^|^403
+AZ^|^RJ^|^{\"name\":\"Brian Clark\",\"age\":29,\"city\":\"Phoenix\"}^|^404
+VA^|^RJ^|^{\"name\":\"Alexis King\",\"age\":34,\"city\":\"Richmond\"}^|^503
+NC^|^RJ^|^{\"name\":\"Olivia Martinez\",\"age\":26,\"city\":\"Charlotte\"}^|^504
