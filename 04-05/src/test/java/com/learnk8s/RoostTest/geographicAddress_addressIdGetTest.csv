@@ -1,0 +1,11 @@
+addressId^|^AdditionalCSVvaluInfo^|^RequestBody^|^statusCode
+1^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 1, "info": "Sample request body for user 1" }^|^200
+2^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 2, "info": "Sample request body for user 2" }^|^404
+3^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 3, "info": "Sample request body for user 3" }^|^503
+4^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 4, "info": "Sample request body for user 4" }^|^200
+5^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 5, "info": "Sample request body for user 5" }^|^429
+6^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 6, "info": "Sample request body for user 6" }^|^400
+7^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 7, "info": "Sample request body for user 7" }^|^500
+8^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 8, "info": "Sample request body for user 8" }^|^403
+9^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 9, "info": "Sample request body for user 9" }^|^200
+10^|^{ "address with id": { "value": 14393 }}^|^{ "userId": 10, "info": "Sample request body for user 10" }^|^404

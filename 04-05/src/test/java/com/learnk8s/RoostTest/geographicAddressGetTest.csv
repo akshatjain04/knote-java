@@ -1,0 +1,11 @@
+address^|^AdditionalCSVvaluInfo^|^number^|^RequestBody^|^statusCode
+123 Elm St^|^71^|^(555) 123-4567^|^{ "name": "John Doe", "age": 30 }^|^200
+456 Oak St^|^71^|^(555) 234-5678^|^{ "name": "Jane Smith", "age": 25 }^|^404
+789 Pine St^|^71^|^(555) 345-6789^|^{ "name": "Alice Johnson", "age": 28 }^|^503
+101 Maple St^|^71^|^(555) 456-7890^|^{ "name": "Bob Brown", "age": 45 }^|^500
+202 Birch St^|^71^|^(555) 567-8901^|^{ "name": "Carol White", "age": 32 }^|^200
+303 Cedar St^|^71^|^(555) 678-9012^|^{ "name": "Dave Black", "age": 38 }^|^429
+404 Spruce St^|^71^|^(555) 789-0123^|^{ "name": "Eva Green", "age": 29 }^|^400
+505 Redwood St^|^71^|^(555) 890-1234^|^{ "name": "Frank Grey", "age": 41 }^|^403
+606 Willow St^|^71^|^(555) 901-2345^|^{ "name": "Grace Hall", "age": 36 }^|^404
+707 Palm St^|^71^|^(555) 012-3456^|^{ "name": "Henry Dale", "age": 33 }^|^200
