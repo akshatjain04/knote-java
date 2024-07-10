@@ -31,14 +31,14 @@
 Feature: WiFi Troubleshooting for Fiber Internet Customers
 
 Background:
-  * def serviceTestManagement-v2_URL = karate.properties['serviceTestManagement-v2_URL'] || 'http://localhost:4010'
-  * def serviceActivationAndConfiguration-v1_URL = karate.properties['serviceActivationAndConfiguration-v1_URL'] || 'http://localhost:4010'
-  * def serviceTestManagement-v2_AUTH_TOKEN = karate.properties['serviceTestManagement-v2_AUTH_TOKEN'] || 'auth-token-placeholder'
-  * def serviceActivationAndConfiguration-v1_AUTH_TOKEN = karate.properties['serviceActivationAndConfiguration-v1_AUTH_TOKEN'] || 'auth-token-placeholder'
+  * def serviceTestManagement_v2_URL = karate.properties['serviceTestManagement_v2_URL'] || karate.get('serviceTestManagement_v2_URL','http://localhost:4010')
+  * def serviceActivationAndConfiguration_v1_URL = karate.properties['serviceActivationAndConfiguration_v1_URL'] || karate.get('serviceActivationAndConfiguration_v1_URL','http://localhost:4010')
+  * def serviceTestManagement_v2_AUTH_TOKEN = karate.properties['serviceTestManagement_v2_AUTH_TOKEN'] || karate.get('serviceTestManagement_v2_AUTH_TOKEN','auth-token-placeholder')
+  * def serviceActivationAndConfiguration_v1_AUTH_TOKEN = karate.properties['serviceActivationAndConfiguration_v1_AUTH_TOKEN'] || karate.get('serviceActivationAndConfiguration_v1_AUTH_TOKEN','auth-token-placeholder')
 
 Scenario: Initiate diagnostic test for WiFi interference issues
-  Given url serviceTestManagement-v2_URL
-  And header Authorization = 'Bearer ' + serviceTestManagement-v2_AUTH_TOKEN
+  * url serviceTestManagement_v2_URL
+  And header Authorization = 'Bearer ' + serviceTestManagement_v2_AUTH_TOKEN
   And def diagnosticPayload = 
     """
     {
@@ -60,8 +60,8 @@ Scenario: Initiate diagnostic test for WiFi interference issues
   And assert testId != null
 
 Scenario: Change WiFi channel to resolve interference issues
-  Given url serviceActivationAndConfiguration-v1_URL
-  And header Authorization = 'Bearer ' + serviceActivationAndConfiguration-v1_AUTH_TOKEN
+  * url serviceActivationAndConfiguration_v1_URL
+  And header Authorization = 'Bearer ' + serviceActivationAndConfiguration_v1_AUTH_TOKEN
   And def configurationPayload = 
     """
     {

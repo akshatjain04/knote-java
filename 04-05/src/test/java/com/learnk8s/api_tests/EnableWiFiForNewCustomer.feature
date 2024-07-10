@@ -28,10 +28,10 @@
 Feature: WiFi Troubleshooting for Fiber Internet Customers
 
 Background:
-    * def serviceActivationAndConfiguration-v1_URL = karate.properties['serviceActivationAndConfiguration-v1_URL'] || karate.get('serviceActivationAndConfiguration-v1_URL', 'http://localhost:4010')
+    * def serviceActivationAndConfiguration_v1_URL = karate.properties['serviceActivationAndConfiguration_v1_URL'] || karate.get('serviceActivationAndConfiguration_v1_URL', 'http://localhost:4010')
 
 Scenario: Enable WiFi for a new customer
-    Given url serviceActivationAndConfiguration-v1_URL + '/configuration'
+    * url serviceActivationAndConfiguration_v1_URL + '/configuration'
     And request
     """
     {
@@ -58,7 +58,7 @@ Scenario: Enable WiFi for a new customer
     And assert response.configuration == null
 
 Scenario: Attempt to Enable WiFi with Invalid Subscriber ID
-    Given url serviceActivationAndConfiguration-v1_URL + '/configuration'
+    * url serviceActivationAndConfiguration_v1_URL + '/configuration'
     And request
     """
     {

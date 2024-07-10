@@ -31,13 +31,13 @@
 Feature: WiFi Troubleshooting for Fiber Internet Customers
 
   Background:
-    * def serviceTestManagement_v2_URL = karate.properties['serviceTestManagement-v2_URL'] || 'http://localhost:4010'
-    * def serviceActivationAndConfiguration_v1_URL = karate.properties['serviceActivationAndConfiguration-v1_URL'] || 'http://localhost:4010'
-    * def serviceTestManagement_v2_AUTH_TOKEN = karate.properties['serviceTestManagement-v2_AUTH_TOKEN'] || 'auth_token_v2'
-    * def serviceActivationAndConfiguration_v1_AUTH_TOKEN = karate.properties['serviceActivationAndConfiguration-v1_AUTH_TOKEN'] || 'auth_token_v1'
+    * def serviceTestManagement_v2_URL = karate.properties['serviceTestManagement_v2_URL'] || karate.get('serviceTestManagement_v2_URL','http://localhost:4010')
+    * def serviceActivationAndConfiguration_v1_URL = karate.properties['serviceActivationAndConfiguration_v1_URL'] || karate.get('serviceActivationAndConfiguration_v1_URL','http://localhost:4010')
+    * def serviceTestManagement_v2_AUTH_TOKEN = karate.properties['serviceTestManagement_v2_AUTH_TOKEN'] || karate.get('serviceTestManagement_v2_AUTH_TOKEN','auth_token_v2')
+    * def serviceActivationAndConfiguration_v1_AUTH_TOKEN = karate.properties['serviceActivationAndConfiguration_v1_AUTH_TOKEN'] || karate.get('serviceActivationAndConfiguration_v1_AUTH_TOKEN','auth_token_v1')
 
   Scenario: Reset ONT device to resolve connectivity issues
-    Given url serviceTestManagement_v2_URL
+    * url serviceTestManagement_v2_URL
     And path '/serviceTest'
     And header Authorization = 'Bearer ' + serviceTestManagement_v2_AUTH_TOKEN
     And request 
@@ -64,7 +64,7 @@ Feature: WiFi Troubleshooting for Fiber Internet Customers
     """
     And def testId = response.control.code
 
-    Given url serviceActivationAndConfiguration_v1_URL
+    * url serviceActivationAndConfiguration_v1_URL
     And path '/configuration'
     And header Authorization = 'Bearer ' + serviceActivationAndConfiguration_v1_AUTH_TOKEN
     And request 
