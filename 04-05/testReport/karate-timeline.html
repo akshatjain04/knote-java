@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[1.1:27]","start":1722512268572,"end":1722512270116,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[1.1:27] 17:07:48.572-17:07:50.116 Login with valid email","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[1.2:27]","start":1722512270132,"end":1722512270340,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[1.2:27] 17:07:50.132-17:07:50.340 Login with valid email","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[2.1:41]","start":1722512270347,"end":1722512270573,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[2.1:41] 17:07:50.347-17:07:50.573 Login with invalid email format","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[2.2:42]","start":1722512270581,"end":1722512271016,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[2.2:42] 17:07:50.581-17:07:51.016 Login with invalid email format","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[3:44]","start":1722512271026,"end":1722512271391,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_patch[3:44] 17:07:51.026-17:07:51.391 Login without email in request body","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.1:32]","start":1722512273407,"end":1722512273837,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.1:32] 17:07:53.407-17:07:53.837 Create a new account with valid email","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.2:32]","start":1722512273848,"end":1722512274046,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.2:32] 17:07:53.848-17:07:54.046 Create a new account with valid email","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.3:32]","start":1722512274052,"end":1722512274247,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.3:32] 17:07:54.052-17:07:54.247 Create a new account with valid email","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.4:32]","start":1722512274254,"end":1722512274439,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[1.4:32] 17:07:54.254-17:07:54.439 Create a new account with valid email","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[2.1:57]","start":1722512274448,"end":1722512274836,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[2.1:57] 17:07:54.448-17:07:54.836 Attempt to create a new account with invalid email format","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[2.2:58]","start":1722512274844,"end":1722512275041,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[2.2:58] 17:07:54.844-17:07:55.041 Attempt to create a new account with invalid email format","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.1:73]","start":1722512275054,"end":1722512275228,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.1:73] 17:07:55.054-17:07:55.228 Create a new account without commit-hash header","className":"failed"},{"id":13,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.2:73]","start":1722512275237,"end":1722512275421,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.2:73] 17:07:55.237-17:07:55.421 Create a new account without commit-hash header","className":"failed"},{"id":14,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.3:73]","start":1722512275429,"end":1722512275798,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.3:73] 17:07:55.429-17:07:55.798 Create a new account without commit-hash header","className":"failed"},{"id":15,"group":1,"content":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.4:73]","start":1722512275806,"end":1722512275983,"title":"src\/test\/java\/com\/learnk8s\/api_tests\/accounts_post[3.4:73] 17:07:55.806-17:07:55.983 Create a new account without commit-hash header","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
