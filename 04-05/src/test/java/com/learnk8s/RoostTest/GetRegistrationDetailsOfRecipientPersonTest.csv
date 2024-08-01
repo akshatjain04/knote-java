@@ -1,0 +1,2 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+GET^|^http://localhost:8080/recipients/persons/27364922937/registrations?size=13&offset=42^|^{ "Token": "your_auth_token", "api-version": "1.0.0" }^|^{}^|^200^|^{ "total": 100, "registrations": [ { "id": "uuid_here", "reference": "ref_here", "startDate": "2021-01-01", "endDate": "2021-12-31", "status": "active", "credentialUrl": "http://example.com/credential", "suspendedUntil": "2021-06-01", "issuedAt": "2021-02-01T08:30:00Z", "createdAt": "2021-01-15T08:30:00Z", "updatedAt": "2021-01-20T08:30:00Z" } ] }
