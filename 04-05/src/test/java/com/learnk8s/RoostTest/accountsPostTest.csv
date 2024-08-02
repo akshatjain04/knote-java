@@ -1,0 +1,11 @@
+email^|^statusCode^|^scenario
+alice@example.com^|^201^|^{"commit-hash":"b1c2d3e","RequestBody":{"email":"alice@example.com"}}
+bob@example.net^|^400^|^{"commit-hash":"f4g5h6i","RequestBody":{"email":"bob@example.net"}}
+carol@example.org^|^201^|^{"commit-hash":"j7k8l9m","RequestBody":{"email":"carol@example.org"}}
+dave@example.co^|^400^|^{"commit-hash":"n0p1q2r","RequestBody":{"email":"dave@example.co"}}
+eve@example.io^|^201^|^{"commit-hash":"s3t4u5v","RequestBody":{"email":"eve@example.io"}}
+frank@example.biz^|^400^|^{"commit-hash":"w6x7y8z","RequestBody":{"email":"frank@example.biz"}}
+grace@example.co.uk^|^201^|^{"commit-hash":"a1b2c3d","RequestBody":{"email":"grace@example.co.uk"}}
+henry@example.ca^|^400^|^{"commit-hash":"e4f5g6h","RequestBody":{"email":"henry@example.ca"}}
+irene@example.eu^|^201^|^{"commit-hash":"i7j8k9l","RequestBody":{"email":"irene@example.eu"}}
+jake@example.us^|^400^|^{"commit-hash":"m0n1o2p","RequestBody":{"email":"jake@example.us"}}
