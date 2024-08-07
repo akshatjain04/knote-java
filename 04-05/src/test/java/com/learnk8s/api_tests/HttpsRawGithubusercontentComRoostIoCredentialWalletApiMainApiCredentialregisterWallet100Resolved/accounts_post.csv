@@ -1,0 +1,4 @@
+commit_hash,email
+"1234567","user@example.com"
+"0abcdef","test@karate.com"
+"null","karate@framework.io"
