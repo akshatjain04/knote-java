@@ -1,0 +1,17 @@
+package com.learnk8s.knote.Controller;
+
+public interface Categories {
+
+	interface saveNotes {
+
+	}
+
+	interface uploadImage {
+
+	}
+
+	interface saveNote {
+
+	}
+
+}
