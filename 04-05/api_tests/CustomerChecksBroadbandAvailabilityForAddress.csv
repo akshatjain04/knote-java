@@ -1,0 +1,11 @@
+subscriberId^|^address^|^actionType^|^frequencyBand^|^wifiIndex^|^passwd^|^mode^|^statusCode^|^scenario
+1^|^123 Elm St^|^HGW_WIFI_ENABLE^|^2.4GHz^|^1^|^abc123^|^0^|^200^|^normal_operation
+2^|^456 Oak St^|^HGW_WIFI_DISABLE^|^5GHz^|^2^|^def456^|^1^|^200^|^maintenance
+3^|^789 Pine St^|^HGW_WIFI_SET_PASSWD^|^2.4GHz^|^3^|^ghi789^|^0^|^404^|^error_handling
+4^|^101 Maple St^|^HGW_WIFI_CONFIGURATION^|^5GHz^|^4^|^jkl012^|^1^|^200^|^configuration_change
+5^|^102 Birch St^|^GPON_ONT_RESET^|^2.4GHz^|^5^|^mno345^|^0^|^503^|^system_reset
+6^|^103 Cedar St^|^HGW_WIFI_ENABLE^|^5GHz^|^6^|^pqr678^|^1^|^200^|^normal_operation
+7^|^104 Redwood St^|^HGW_WIFI_DISABLE^|^2.4GHz^|^7^|^stu901^|^0^|^429^|^throttling_error
+8^|^105 Spruce St^|^HGW_WIFI_SET_PASSWD^|^5GHz^|^8^|^vwx234^|^1^|^200^|^password_reset
+9^|^106 Palm St^|^HGW_WIFI_CONFIGURATION^|^2.4GHz^|^9^|^yzA567^|^0^|^401^|^unauthorized_access
+10^|^107 Willow St^|^GPON_ONT_RESET^|^5GHz^|^10^|^BCD890^|^1^|^200^|^system_reset
