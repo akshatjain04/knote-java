@@ -1,0 +1,11 @@
+petId^|^additionalMetadata^|^file^|^RequestBody^|^statusCode
+1^|^Metadata for pet 1^|^{ "name": "Fido", "type": "dog" }^|^200
+2^|^Metadata for pet 2^|^{ "name": "Whiskers", "type": "cat" }^|^200
+3^|^Metadata for pet 3^|^{ "name": "Buddy", "type": "dog" }^|^200
+4^|^Metadata for pet 4^|^{ "name": "Milo", "type": "cat" }^|^200
+5^|^Metadata for pet 5^|^{ "name": "Polly", "type": "parrot" }^|^200
+6^|^Metadata for pet 6^|^{ "name": "Rex", "type": "dog" }^|^200
+7^|^Metadata for pet 7^|^{ "name": "Shadow", "type": "cat" }^|^200
+8^|^Metadata for pet 8^|^{ "name": "Goldie", "type": "fish" }^|^200
+9^|^Metadata for pet 9^|^{ "name": "Bella", "type": "dog" }^|^200
+10^|^Metadata for pet 10^|^{ "name": "Max", "type": "cat" }^|^200
