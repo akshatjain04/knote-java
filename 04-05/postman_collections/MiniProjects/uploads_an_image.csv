@@ -1,0 +1,7 @@
+petId,additionalMetadata,statusCode,scenario
+12345678,"Lorem sit mollit reprehenderit",200,successful operation
+-123456,"consequat",200,successful operation
+23456789,"Lorem sit mollit reprehenderit",200,successful operation
+-234567,"consequat",200,successful operation
+34567890,"Lorem sit mollit reprehenderit",200,successful operation
+-345678,"consequat",200,successful operation
