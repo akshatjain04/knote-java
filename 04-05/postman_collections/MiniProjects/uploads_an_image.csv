@@ -1,0 +1,2 @@
+petId,additionalMetadata,statusCode,scenario
+15357428,"{\n  \"code\": 15357428,\n  \"type\": \"ut ullamco cillum occaecat reprehenderit\",\n  \"message\": \"voluptate minim qui ullamco est\"\n}",200,successful operation
