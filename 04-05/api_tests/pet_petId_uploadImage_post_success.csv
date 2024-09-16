@@ -1,0 +1,12 @@
+code^|^type^|^message^|^petId^|^additionalMetadata^|^file
+123^|^error^|^Invalid user input^|^101234567890^|^Updated records^|^image1.jpg
+234^|^warning^|^Missing field^|^101234567891^|^Data verified^|^image2.jpg
+345^|^info^|^Operation successful^|^101234567892^|^Sync completed^|^image3.jpg
+456^|^error^|^System overload^|^101234567893^|^Maintenance required^|^image4.jpg
+567^|^warning^|^Low disk space^|^101234567894^|^Check system health^|^image5.jpg
+678^|^info^|^User added^|^101234567895^|^New user profile created^|^image6.jpg
+789^|^error^|^Network timeout^|^101234567896^|^Attempt reconnect^|^image7.jpg
+890^|^warning^|^High memory usage^|^101234567897^|^Optimize performance^|^image8.jpg
+901^|^info^|^Backup completed^|^101234567898^|^Backup at 2023-03-21^|^image9.jpg
+1234^|^error^|^Unauthorized access^|^101234567899^|^Security breach^|^image10.jpg
+2345^|^warning^|^Deprecated API^|^1012345678100^|^Update API version^|^image11.jpg
