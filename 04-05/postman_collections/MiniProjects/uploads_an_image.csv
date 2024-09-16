@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+12345,"{\n  \"code\": -24537263,\n  \"type\": \"aliqua do consequat\",\n  \"message\": \"nulla\"\n}",200,successful operation
+23456,"{\n  \"code\": -24537263,\n  \"type\": \"aliqua do consequat\",\n  \"message\": \"nulla\"\n}",200,successful operation
+34567,"{\n  \"code\": -24537263,\n  \"type\": \"aliqua do consequat\",\n  \"message\": \"nulla\"\n}",200,successful operation
+45678,"{\n  \"code\": -24537263,\n  \"type\": \"aliqua do consequat\",\n  \"message\": \"nulla\"\n}",200,successful operation
+56789,"{\n  \"code\": -24537263,\n  \"type\": \"aliqua do consequat\",\n  \"message\": \"nulla\"\n}",200,successful operation
