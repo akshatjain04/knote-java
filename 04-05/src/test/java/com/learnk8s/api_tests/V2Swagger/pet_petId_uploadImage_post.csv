@@ -1,0 +1,3 @@
+petId,additionalMetadata,file,filename,contentType,number,string
+"12345","Metadata about image","karate-sample.png","test-image.png","image/png","200","string"
+"67890","Additional details","karate-sample.jpg","another-image.jpg","image/jpeg","200","string"
