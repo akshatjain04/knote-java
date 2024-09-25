@@ -1,0 +1,11 @@
+subscriberId^|^addressId^|^complementType^|^complementDescription^|^complementValue^|^statusCode^|^scenario
+USR001^|^ADDR1001^|^FLR^|^Floor^|^3^|^ACTIVE^|^Delivery
+USR002^|^ADDR1002^|^BLDG^|^Building^|^A^|^PENDING^|^ProfileUpdate
+USR003^|^ADDR1003^|^UNIT^|^Unit^|^27B^|^SUSPENDED^|^Registration
+USR004^|^ADDR1004^|^RM^|^Room^|^12A^|^ACTIVE^|^Delivery
+USR005^|^ADDR1005^|^STE^|^Suite^|^9F^|^PENDING^|^AccountClosure
+USR006^|^ADDR1006^|^APT^|^Apartment^|^58^|^ACTIVE^|^Registration
+USR007^|^ADDR1007^|^FLR^|^Floor^|^6^|^SUSPENDED^|^ProfileUpdate
+USR008^|^ADDR1008^|^BLDG^|^Building^|^B2^|^ACTIVE^|^Delivery
+USR009^|^ADDR1009^|^UNIT^|^Unit^|^101^|^PENDING^|^AccountClosure
+USR010^|^ADDR1010^|^RM^|^Room^|^7C^|^SUSPENDED^|^Registration

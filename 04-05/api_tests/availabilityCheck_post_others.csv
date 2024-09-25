@@ -1,0 +1,11 @@
+subscriberId^|^addressId^|^type^|^description^|^value^|^statusCode^|^scenario
+SVTL002^|^14394^|^ES^|^East Side Apartment^|^ARC202^|^100^|^New Registration
+SVTL003^|^14395^|^WN^|^West North Villa^|^VLA203^|^200^|^Update Profile
+SVTL004^|^14396^|^SD^|^South District Condo^|^CND204^|^300^|^Cancellation
+SVTL005^|^14397^|^INVALID^|^Invalid Data Test^|^INV205^|^400^|^Data Correction
+SVTL006^|^14398^|^^|^No Type Provided^|^NOT206^|^500^|^New Addition
+SVTL007^|^14399^|^ND^|^North District House^|^NOD207^|^600^|^Profile Deletion
+SVTL008^|^14400^|^ED^|^East District Loft^|^LOF208^|^700^|^Address Change
+SVTL009^|^14401^|^WD^|^West District Duplex^|^DUP209^|^800^|^Scenario Testing
+SVTL010^|^14402^|^MD^|^Midtown Studio^|^STD210^|^900^|^Verification
+SVTL011^|^14403^|^CD^|^Central District Mansion^|^MSN211^|^INVALID^|^Profile Update
