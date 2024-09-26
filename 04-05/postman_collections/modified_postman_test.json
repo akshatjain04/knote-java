@@ -1,0 +1,25 @@
+{
+  "item": [
+    null
+  ],
+  "event": [],
+  "variable": [
+    {
+      "id": "baseUrl",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "9e6ea5d2-a524-435d-bde3-a537435d449a",
+    "name": "Hello world",
+    "version": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": ""
+  }
+}
