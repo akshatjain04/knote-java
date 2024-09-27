@@ -1,0 +1,3 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^https://api.example.com/users^|^^|^{ "name": "John Doe", "email": "john.doe@example.com" }^|^201^|^{ "userId": "", "name": "John Doe", "email": "john.doe@example.com" }
+POST^|^https://api.example.com/users/{userId}/addresses^|^^|^{ "street": "123 Main St", "city": "Somewhere", "state": "CA", "zip": "12345" }^|^201^|^{ "addressId": "", "street": "123 Main St", "city": "Somewhere", "state": "CA", "zip": "12345" }
