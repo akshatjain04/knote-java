@@ -1,0 +1,7 @@
+userId,statusCode,scenario
+"esse Lorem",200,User details
+"invalidUserId1",404,User details
+"invalidUserId2",500,User details
+"invalidUserId3",401,User details
+"invalidUserId4",403,User details
+"invalidUserId5",502,User details
