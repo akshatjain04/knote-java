@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"1",200,{\"userId\": \"in Duis magna in ipsum\",\"name\": \"ut Exc\",\"email\": \"deserunt minim et sed\"}
+"2",200,{\"userId\": \"in Duis magna in ipsum\",\"name\": \"ut Exc\",\"email\": \"deserunt minim et sed\"}
+"3",200,{\"userId\": \"in Duis magna in ipsum\",\"name\": \"ut Exc\",\"email\": \"deserunt minim et sed\"}
+"4",200,{\"userId\": \"in Duis magna in ipsum\",\"name\": \"ut Exc\",\"email\": \"deserunt minim et sed\"}
+"5",200,{\"userId\": \"in Duis magna in ipsum\",\"name\": \"ut Exc\",\"email\": \"deserunt minim et sed\"}
