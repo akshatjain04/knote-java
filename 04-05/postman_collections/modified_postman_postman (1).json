@@ -1,17 +1,17 @@
 {
   "item": [
     {
-      "id": "b0632a47-a68a-42c3-92f2-98b0317cdf5f",
+      "id": "c85ef140-c5e3-4ffb-9dd3-95df9de8db4f",
       "name": "users",
       "item": [
         null,
         null,
         {
-          "id": "54e65ce0-300d-4771-a9f1-b86dcff4b51a",
+          "id": "5b3e04ea-ca57-4d01-83b9-89ff5637db09",
           "name": "{userId}",
           "item": [
             {
-              "id": "da2578e0-6314-4275-b8f1-942c2d85d647",
+              "id": "516cc986-171a-44ab-9f52-34ac250c8d55",
               "name": "Get a user by ID",
               "request": {
                 "name": "Get a user by ID",
@@ -46,7 +46,7 @@
               },
               "response": [
                 {
-                  "id": "d207e3c8-4799-4dcb-b66f-35df91992055",
+                  "id": "f42ff019-50ba-425b-a551-d041c857a7c4",
                   "name": "User details",
                   "originalRequest": {
                     "url": {
@@ -85,7 +85,7 @@
                       "value": "application/json"
                     }
                   ],
-                  "body": "{\n  \"userId\": \"in Duis magna in ipsum\",\n  \"name\": \"ut Exc\",\n  \"email\": \"deserunt minim et sed\"\n}",
+                  "body": "{\n  \"userId\": \"anim in\",\n  \"name\": \"esse veniam proident deserunt\",\n  \"email\": \"aliqua in Lorem officia Excepteur\"\n}",
                   "cookie": [],
                   "_postman_previewlanguage": "json"
                 }
@@ -129,7 +129,7 @@
     }
   ],
   "info": {
-    "_postman_id": "8938f003-90c4-4857-a311-3a7a24e70281",
+    "_postman_id": "54fdf0dd-9323-4844-91d3-64481c9527bc",
     "name": "User CRUD API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
