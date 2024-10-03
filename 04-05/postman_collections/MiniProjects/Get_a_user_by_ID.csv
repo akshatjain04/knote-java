@@ -1,7 +1,7 @@
 userId,statusCode,scenario
-"qui",200,"Ut est reprehenderit ut laborum"
-"invalid_user_1",404,"Invalid scenario data"
-"invalid_user_2",500,"Invalid scenario data"
-"invalid_user_3",503,"Invalid scenario data"
-"invalid_user_4",401,"Invalid scenario data"
-"invalid_user_5",400,"Invalid scenario data"
+"esse Lorem",200,User details
+"invalidUserId1",404,User details
+"invalidUserId2",500,User details
+"invalidUserId3",401,User details
+"invalidUserId4",403,User details
+"invalidUserId5",502,User details
