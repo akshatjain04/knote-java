@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"ad non anim aute mollit",200,{\"userId\": \"ad non anim aute mollit\", \"name\": \"eiusmod enim nostrud\", \"email\": \"voluptate quis\"}
+"random_incorrect_value_1",404,{\"userId\": \"random_incorrect_value_1\", \"name\": \"incorrect_name_1\", \"email\": \"incorrect_email_1\"}
+"random_incorrect_value_2",500,{\"userId\": \"random_incorrect_value_2\", \"name\": \"incorrect_name_2\", \"email\": \"incorrect_email_2\"}
+"random_incorrect_value_3",503,{\"userId\": \"random_incorrect_value_3\", \"name\": \"incorrect_name_3\", \"email\": \"incorrect_email_3\"}
+"random_incorrect_value_4",401,{\"userId\": \"random_incorrect_value_4\", \"name\": \"incorrect_name_4\", \"email\": \"incorrect_email_4\"}
