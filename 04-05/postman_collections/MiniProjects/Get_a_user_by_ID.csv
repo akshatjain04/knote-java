@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"Excepteur anim ullamco exercitation ex",200,"User details"
+"InvalidUserId1",404,"User details"
+"InvalidUserId2",500,"User details"
+"InvalidUserId3",401,"User details"
+"InvalidUserId4",403,"User details"
