@@ -1,6 +1,4 @@
 userId,statusCode,scenario
-"eu ut",200,"User details"
-"random_id_1",404,"User details"
-"random_id_2",500,"User details"
-"random_id_3",503,"User details"
-"random_id_4",401,"User details"
+"cupidatat tempor et irure in",200,"{\n  \"userId\": \"cupidatat tempor et irure in\",\n  \"name\": \"non quis in enim ut\",\n  \"email\": \"ut cillum occaecat qui id\"\n}"
+"non cupidatat et tempor in",200,"{\n  \"userId\": \"non cupidatat et tempor in\",\n  \"name\": \"quis non in enim ut\",\n  \"email\": \"cillum ut occaecat qui id\"\n}"
+"tempor cupidatat et irure in",200,"{\n  \"userId\": \"tempor cupidatat et irure in\",\n  \"name\": \"in non quis enim ut\",\n  \"email\": \"occaecat ut cillum qui id\"\n}"
