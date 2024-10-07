@@ -1,0 +1,1823 @@
+[
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login",
+        "timestamp": 1728295983804,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost Enterprise Login | Software as a Service</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"download-widget\">\n                    <img src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\" alt=\"env\" class=\"login-logo\" />\n                    <ul class=\"list-inline list-download d-flex flex-row justify-content-center\">\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile%20openid&amp;openid.realm&amp;include_granted_scopes=true&amp;response_type=token&amp;client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"google\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://www.linkedin.com/oauth/v2/authorization?response_type=code&amp;scope=r_liteprofile%20r_emailaddress&amp;state=linkedin&amp;client_id=86zygzcspcyny4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"linkedin\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://github.com/login/oauth/authorize?scope=user%3Aemail&amp;client_id=eafb7541b0b0e50696ba&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"git\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=code&amp;scope=user.read&amp;state=azure&amp;client_id=08cdd099-7d9d-408a-ab8b-9816ffea74a4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"azure\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://dev-53854943.okta.com/oauth2/default/v1/authorize?response_type=code&amp;scope=openid%20profile%20email%20address&amp;state=okta&amp;client_id=0oa3x8katznHWlHeD5d7&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"okta\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://dev-rhbzrdc6aiq0sk33.us.auth0.com/authorize?response_type=code&amp;scope=openid%20profile%20email&amp;state=auth0&amp;client_id=SkAeOriflRfcpWxbJYzigQsafrzUIHBG&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"auth0\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://ping.tryroost.link/as/authorization.oauth2?response_type=code&amp;scope=openid%20profile%20email&amp;state=pingFederate&amp;client_id=roost-dev&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"pingFederate\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                    </ul>\n                    <span class=\"download-info text-center\">\n                      Sign-in is made easy via Google, LinkedIn, Github, Microsoft, Okta, Auth0, PingID integrations.\n                    </span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900783.752097,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "https://app.roost.ai/login",
+        "timestamp": 1728295980374,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900783.752097,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "pageload",
+        "url": "https://app.roost.ai/login",
+        "timestamp": 1728295985720,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost Enterprise Login | Software as a Service</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"download-widget\">\n                    <img src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\" alt=\"env\" class=\"login-logo\" />\n                    <ul class=\"list-inline list-download d-flex flex-row justify-content-center\">\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile%20openid&amp;openid.realm&amp;include_granted_scopes=true&amp;response_type=token&amp;client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"google\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://www.linkedin.com/oauth/v2/authorization?response_type=code&amp;scope=r_liteprofile%20r_emailaddress&amp;state=linkedin&amp;client_id=86zygzcspcyny4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"linkedin\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://github.com/login/oauth/authorize?scope=user%3Aemail&amp;client_id=eafb7541b0b0e50696ba&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"git\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=code&amp;scope=user.read&amp;state=azure&amp;client_id=08cdd099-7d9d-408a-ab8b-9816ffea74a4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"azure\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://dev-53854943.okta.com/oauth2/default/v1/authorize?response_type=code&amp;scope=openid%20profile%20email%20address&amp;state=okta&amp;client_id=0oa3x8katznHWlHeD5d7&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"okta\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://dev-rhbzrdc6aiq0sk33.us.auth0.com/authorize?response_type=code&amp;scope=openid%20profile%20email&amp;state=auth0&amp;client_id=SkAeOriflRfcpWxbJYzigQsafrzUIHBG&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"auth0\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                      <li class=\"list-inline-item\">\n                        <a\n                          href=\"https://ping.tryroost.link/as/authorization.oauth2?response_type=code&amp;scope=openid%20profile%20email&amp;state=pingFederate&amp;client_id=roost-dev&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\"\n                          class=\"pingFederate\"\n                          target=\"_self\"\n                          rel=\"noreferrer\"\n                        ></a>\n                      </li>\n                    </ul>\n                    <span class=\"download-info text-center\">\n                      Sign-in is made easy via Google, LinkedIn, Github, Microsoft, Okta, Auth0, PingID integrations.\n                    </span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900783.752097,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "click",
+        "x": 256,
+        "y": 372,
+        "elementDetails": {
+            "tagName": "A",
+            "id": null,
+            "classList": [
+                "google"
+            ],
+            "type": null,
+            "outerHTML": "<a href=\"https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile%20openid&amp;openid.realm&amp;include_granted_scopes=true&amp;response_type=token&amp;client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"google\" target=\"_self\" rel=\"noreferrer\"></a>"
+        },
+        "url": "https://app.roost.ai/login",
+        "timestamp": 1728295986127,
+        "htmlDiff": "-  Enterprise Login | Softw\n+ .ai | Your Testing Co-Pilot Powered byGenerative AI and L\n+ g\n- as a Service\n+ Language Models\n- download-widget\"><img src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\" alt=\"env\" class=\"login-logo\"><ul class=\"list-inline list-download d-flex flex-row justify-content-center\"><li class\n+ min-vh-100 min-vw-100 m-0 p-0\" style\n- l\n+ d\n- t-inline-item\"><a href=\"https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile%20openid&amp;openid.realm&amp;include_granted_scopes=true&amp;response_type=token&amp;client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"google\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://www.linkedin.com/oauth/v2/authorization?response_type=code&amp;scope=r_liteprofile%20r_emailaddress&amp;state=linkedin&amp;client_id=86zygzcspcyny4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"linkedin\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://github.com/login/oauth/authorize?scope=user%3Aemail&amp;client_id=eafb7541b0b0e50696ba&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"git\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=code&amp;scope=user.read&amp;state=azure&amp;client_id=08cdd099-7d9d-408a-ab8b-9816ffea74a4&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"azure\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://dev-53854943.okta.com/oauth2/default/v1/authorize?response_type=code&amp;scope=openid%20profile%20email%20address&amp;state=okta&amp;client_id=0oa3x8katznHWlHeD5d7&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"okta\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://dev-rhbzrdc6aiq0sk33.us.auth0.com/authorize?response_type=code&amp;scope=openid%20profile%20email&amp;state=auth0&amp;client_id=SkAeOriflRfcpWxbJYzigQsafrzUIHBG&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"auth0\" target=\"_self\" rel=\"noreferrer\"></a></li><li class=\"list-inline-item\"><a href=\"https://ping.tryroost.link/as/authorization.oauth2?response_type=code&amp;scope=openid%20profile%20email&amp;state=pingFederate&amp;client_id=roost-dev&amp;redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin\" class=\"pingFederate\" target=\"_self\" rel=\"noreferrer\"></a></li></ul><span class=\"download-info text-center\">Sign-in is made easy via Google, LinkedIn, Github, Microsoft, Okta, Auth0, PingID integrations.</span\n+ play: grid; place-items: center;\"><img class=\"rotate-loading-icon\" src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\" alt=\"Logging you in\" height=\"60px\" width=\"60px\"",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004793,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253Fopenid.realm&dsh=S-603904442%3A1728295986720233&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&ddm=0&include_granted_scopes=true&o2v=2&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email+profile+openid&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fapp.roost.ai&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ",
+        "timestamp": 1728295986470,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004796,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "https://accounts.google.com/_/bscframe",
+        "timestamp": 1728295987598,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "about:blank",
+        "timestamp": 1728295987629,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "about:blank",
+        "timestamp": 1728295987720,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "pageload",
+        "url": "https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=2007432616&timestamp=1728295987383",
+        "timestamp": 1728295987893,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "click",
+        "x": 753,
+        "y": 262,
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": "identifierId",
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "email",
+            "outerHTML": "<input type=\"email\" class=\"whsOnd zHQkBf\" jsname=\"YPqjbf\" autocomplete=\"username webauthn\" spellcheck=\"false\" tabindex=\"0\" aria-label=\"Email or phone\" name=\"identifier\" value=\"\" aria-disabled=\"false\" autocapitalize=\"none\" id=\"identifierId\" dir=\"ltr\" data-initial-dir=\"ltr\" data-initial-value=\"\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253Fopenid.realm&dsh=S-603904442%3A1728295986720233&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&ddm=0&include_granted_scopes=true&o2v=2&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email+profile+openid&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fapp.roost.ai&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ",
+        "timestamp": 1728295988214,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004900,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "keydown",
+        "key": "AKSHAT.JAIN@ZB.IO",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": "identifierId",
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "email",
+            "outerHTML": "<input type=\"email\" class=\"whsOnd zHQkBf\" jsname=\"YPqjbf\" autocomplete=\"username webauthn\" spellcheck=\"false\" tabindex=\"0\" aria-label=\"Email or phone\" name=\"identifier\" value=\"\" aria-disabled=\"false\" autocapitalize=\"none\" id=\"identifierId\" dir=\"ltr\" data-initial-dir=\"ltr\" data-initial-value=\"\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253Fopenid.realm&dsh=S-603904442%3A1728295986720233&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&ddm=0&include_granted_scopes=true&o2v=2&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email+profile+openid&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fapp.roost.ai&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ",
+        "timestamp": 1728296004896,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "about:blank",
+        "timestamp": 1728295996988,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295997319,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295997558,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295997841,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295997961,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295998082,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295998452,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295998672,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295998938,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295999047,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295999180,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004936,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "keydown",
+        "key": "[REDACTED]",
+        "elementDetails": {
+            "tagName": "INPUT",
+            "id": null,
+            "classList": [
+                "whsOnd",
+                "zHQkBf"
+            ],
+            "type": "password",
+            "outerHTML": "<input type=\"password\" value=\"[REDACTED]\">"
+        },
+        "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=APps6eb1tMKCJwYdcg3rO-iu1zvctgHXZ0JIuBSAlHmOsWbVzrwyEe3R6tcki9Da&app_domain=https%3A%2F%2Fapp.roost.ai&checkConnection=youtube%3A524&checkedDomains=youtube&cid=2&client_id=985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%23&ddm=0&dsh=S-603904442%3A1728295986720233&flowName=GeneralOAuthFlow&include_granted_scopes=true&o2v=2&opparams=%253Fopenid.realm&pstMsg=1&rart=ANgoxcfaxG90e7EZX1w5IDr8nSqqBVg1SBfnwQKC2AKde6udvjnxtgqd8Y7c_HSGl39JH7cI7nxDQUg5a0rjl4Ji9aH0Zr9xTdmPH0hxqguSC9ydhLZRKFQ&redirect_uri=https%3A%2F%2Fapp.roost.ai%2Flogin&response_type=token&scope=email%20profile%20openid&service=lso",
+        "timestamp": 1728295999282,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "pageload",
+        "url": "https://accounts.google.co.in/accounts/SetSID?ssdc=1&sidt=ALWU2cuHfzyERykvf8Mn70%2BkOP85x/CuavVEbuJ326DYNQ0KdLztnEWwLMpmu7SVcYXxPKw3Bxk1s57Z5DU7lDdh96MmobPH78xD2cg/OysGsUGgrQ6lIqqU3Srhxo35ywxPlqswHo%2BipQ43WGe8vGQi0zN%2BfitNwhLovB1OY23KtI8TrD1Jvo3o/2uo3vEO7yyKAk6MllT1RziY3Lkez3D1Z4hm7xWaf/UNMrN5w%2BcMOo/eJ585ZWJ/5cd81b/y82iPZrzxJFuExD0KfyhVPE5tJjSODEb6F7OhHaqCsxRfWFjVshivAVTN%2B9KTPZ35Ymotb4MxrQC4yxz4KpN3ri9PuzuoxEa1xobIxgcDEZ5X8k8cU58Q2KkCEfTYBPb2sqM7K%2ByTzNsI9gY5dJ5cR9hJlzHVnzqapbiF0da5bisMXqCN%2Bqp0UOlUZ4B9jt0srHGu8GdSY5%2BSczvv/v%2BxsHaoTwio92Ag%2BDvQNH5gJOVlvktZKPbvb1tFYFWdRoSEMEyBaSCCQcfJhiPfaG9/PW/yRlpYoRPlTUQ9VaBddnpmTLYJsiVSpPgLxUEB8/n93czSTlXHhMNtmJkkj8AG%2BdmZQGvaTFmrdm1dO1LDrTrp2ymo3wkKScv7%2BGUWruVzye4z76wVz%2BXlI2Rzr7/htDZneBmhb4MUcq4Fhpkx9R3H9MBwUZ4UXk2suDiDnzN2JzLfm92hB6u8ywhFupzgaLBgtaRDGBSyirRKdFNjke6Q8ZvC6YdEC/WWmY6DrwWrCkUjaRymjvqV&continue=https://accounts.google.com/signin/oauth/consent?authuser%3D0%26part%3DAJi8hAMgt5S1ANk3n9IJsEzb5J1CKTPna5h6hZt8moEndVVIcl2fHMG0z-jzZDdKAVIjWSQaXSjZsDugBLzm32f7-8kJumgp2nBrS9QAIhbcyCNAVpDK0fk8NcyxY462vFj1icWPc_wODDP5OMA4aqxnEIylBoiKF7-Ebw2oKizjLbD3omDyYKsfzzN9Q1lEJuy25bJ6HPQx9nQ5IwtBe9X2Prpw7T2d8jj98TXhLBV-pY4Qpf5lRJHjba__98o2_Pn2SJsVmdrIqigBm0lX7-F7PuD8ErmBoEhhbC4eKYq4jD5b3c0oC3tJX1gsNM66fYdT2ZIinrWShM6wry0lL7qMfU45-sNRrJw8nA9M-u9rdaEWfaDf1GTlsvb-OQD0ltRnU7F1scRscgJY7iUUiJVsEZ7_lBKCjrvvbmm33hgu9Y9lt9jNU7FOOLZnivFh7GvI4iFokqbcB3DfEkWA3Qc3_qdBc2aeQQ%26flowName%3DGeneralOAuthFlow%26as%3DS-603904442%253A1728295986720233%26client_id%3D985988082020-jmev47cm1v9mgsgu2ob2bt9jcag591d4.apps.googleusercontent.com%26rapt%3DAEjHL4MdGgaQ0_FdPqxzO_uoJzXKe5kmqMvFsRsqA8oFUZHmyIaeJVTS48QMMdnNPL6aGDfifiQHeklrisSPBNSC4zZLZbisGETNaZJ-3EnRBNcF8CWKrgs%23&tcc=1",
+        "timestamp": 1728296002941,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004941,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div id=\"layout\" class=\"layout\">\n        <header class=\"main-header\" id=\"main-header\">\n          <div class=\"container--1\">\n            <nav class=\"p-0 header-nav navbar navbar-expand navbar-light\">\n              <span class=\"vertical-nav-toggle-btn-replacement\"></span>\n              <a href=\"/\" class=\"brand-logo-container navbar-brand\">\n                <span class=\"logo-bg\"></span>\n              </a>\n              <div class=\"nav-item\"></div>\n              <div class=\"navbar-collapse collapse\" id=\"main-navigation\">\n                <div class=\"ml-auto\">\n                  <ul class=\"ml-auto align-items-center header-navbar-nav navbar-nav\">\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/gptCLIForm\"> RoostGPT Config </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a aria-current=\"page\" class=\"nav-link active\" href=\"/login\"> Login </a>\n                    </li>\n                    <li class=\"nav-item\">\n                      <a class=\"nav-link\" href=\"/myCluster\"> My Cluster </a>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </nav>\n          </div>\n        </header>\n        <div class=\"bodyContainer\">\n          <div class=\"nav-container\">\n            <div class=\"nav-sub-container\"></div>\n            <div class=\"my-container\">\n              <div>\n                <div class=\"d-flex flex-column min-vh-100 min-vw-100 m-0 p-0 justify-content-center align-items-center\">\n                  <div class=\"min-vh-100 min-vw-100 m-0 p-0\">\n                    <img\n                      class=\"rotate-loading-icon\"\n                      src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n                      alt=\"Logging you in\"\n                      height=\"60px\"\n                      width=\"60px\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <footer class=\"main-footer\">\n            <div class=\"leftend\">\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                <img\n                  src=\"https://roost.ai/hubfs/logos/Roost.ai-logo-gold.svg\"\n                  class=\"footer-logo\"\n                  height=\"25\"\n                  alt=\"ZBIO\"\n                />\n              </a>\n              <a href=\"https://roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> About Roost </a>\n              |\n              <a href=\"https://roost.ai/privacy-policy\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\">\n                Privacy Policy\n              </a>\n              |\n              <a href=\"https://docs.roost.ai\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> Documentation </a>\n              |\n              <a href=\"/docs/api\" target=\"_blank\" rel=\"noreferrer\" class=\"footer-item\"> API Reference </a>\n            </div>\n            <div class=\"rightend\">\n              <span class=\"footer-item\"> Download CLI </span>\n              |\n              <span class=\"footer-item\"> Install VS Code extension </span>\n            </div>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296004942,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "pageload",
+        "url": "https://app.roost.ai/login#access_token=ya29.a0AcM612wF0vGu20SAk1DjpP0YZ13skh_ZT803YrYOhqed7737DnCRoy-tr8yzQr33qtL4v6x0cJJ7M3rHhRGUUZ2exFQmdqiXW-A2TkhFyC-bVX_y7Zi0ppvT5N9td03KkEA8vIcCeHWExbYSvvQ-MsU9XjPYs-YNZWkvaCgYKAaYSARMSFQHGX2Mi5HFW_F2slD5mcRVC4m2FNg0171&token_type=Bearer&expires_in=3599&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=zb.io&prompt=none",
+        "timestamp": 1728296003429,
+        "htmlDiff": "",
+        "cookies": [
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ],
+        "fullHTML": "<html>\n  <head></head>\n  <body></body>\n</html>\n"
+    },
+    {
+        "type": "navigation",
+        "url": "https://app.roost.ai/roostgpt/tests",
+        "timestamp": 1728296005368,
+        "fullHTML": "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#212337\" />\n    <meta\n      name=\"description\"\n      content=\"GenAI driven Testing Co-Pilot, Revolutionize software testing with Generative AI. Convert user stories to test cases, simplify contract testing, and speed up acceptance. Elevate your software quality today!\"\n    />\n    <meta http-equiv=\"Content-Security-Policy\" content=\"\" data-rh=\"true\" />\n    <link rel=\"apple-touch-icon\" href=\"/logo192.png\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <script src=\"/env.js\"></script>\n    <title>Roost.ai | Your Testing Co-Pilot Powered byGenerative AI and Large Language Models</title>\n    <script defer=\"defer\" src=\"/static/js/main.74bd7e97.js\"></script>\n    <link href=\"/static/css/main.2619e3d3.css\" rel=\"stylesheet\" />\n  </head>\n  <body class=\"dark\">\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\">\n      <div aria-live=\"polite\" aria-atomic=\"true\" class=\"toasts-container-outer\">\n        <div class=\"toasts-container-inner\"></div>\n      </div>\n      <div class=\"loader_loaderBlueSpinner__Ip5Jt\">\n        <img\n          class=\"loader_rotateLoadingIcon__kPCOP\"\n          src=\"/static/media/Roost-V3-Logo.88a00f0cc7861be6bb6b913a59adb298.svg\"\n          alt=\"\"\n        />\n      </div>\n    </div>\n  </body>\n</html>\n",
+        "cookies": [
+            {
+                "name": "auth",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFrc2hhdC5qYWluLmdvb2dsZSIsImlhdCI6MTcyODI5NjAwNSwiZXhwIjoxNzI4OTAwODA1fQ.kgOITpu1Ipd2i59muAXOgGYa8ey6AJKSCJ8IKU5Tgpg",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900805.344433,
+                "size": 175,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cfruid",
+                "value": "1f0451ecffa7bafb6ba7315480a0d59412d7b0da-1728295984",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": -1,
+                "size": 59,
+                "httpOnly": true,
+                "secure": true,
+                "session": true,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "__cf_bm",
+                "value": "2IVBeCltj21n2z1cTOPaPAHEoNOhYLizRNSMpFehhSk-1728295984-1.0.1.1-UJcuuPc9f6pSvuUToSEsSvCcfWJyd2z0E5A4LtBUFEx6ZhulwBZnUusFt0R0DIZb6eqQAmWPQB7quyH.dxG_GA",
+                "domain": ".roost.ai",
+                "path": "/",
+                "expires": 1728297784.017614,
+                "size": 156,
+                "httpOnly": true,
+                "secure": true,
+                "session": false,
+                "sameSite": "None",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            },
+            {
+                "name": "theme",
+                "value": "dark",
+                "domain": ".app.roost.ai",
+                "path": "/",
+                "expires": 1728900804.286083,
+                "size": 9,
+                "httpOnly": false,
+                "secure": true,
+                "session": false,
+                "sameSite": "Strict",
+                "priority": "Medium",
+                "sameParty": false,
+                "sourceScheme": "Secure"
+            }
+        ]
+    }
+]
