@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"enim occaecat eiusmod et sunt",200,"User details"
+"random_invalid_user_1",404,"User details"
+"random_invalid_user_2",500,"User details"
+"random_invalid_user_3",503,"User details"
+"random_invalid_user_4",401,"User details"
