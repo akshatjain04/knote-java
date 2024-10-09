@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"ut",200,{ "userId": "ut", "name": "ipsum tempor", "email": "sint tempor minim" }
+"ut",200,{ "userId": "ut", "name": "ipsum tempor", "email": "sint tempor minim" }
+"ut",200,{ "userId": "ut", "name": "ipsum tempor", "email": "sint tempor minim" }
+"ut",200,{ "userId": "ut", "name": "ipsum tempor", "email": "sint tempor minim" }
+"ut",200,{ "userId": "ut", "name": "ipsum tempor", "email": "sint tempor minim" }
