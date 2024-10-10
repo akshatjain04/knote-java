@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"dolor",200,"User details"
+"exemplo",404,"Invalid user ID"
+"erroneus",500,"Server error"
+"invalidum",400,"Bad request"
+"nonexistent",401,"Unauthorized access"
