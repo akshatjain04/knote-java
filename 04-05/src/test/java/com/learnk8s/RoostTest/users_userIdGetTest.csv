@@ -1,0 +1,11 @@
+userId^|^RequestBody^|^statusCode
+user_01^|^{\"name\":\"John\",\"age\":30,\"email\":\"john.doe@example.com\"}^|^200
+user_02^|^{\"name\":\"Jane\",\"age\":25,\"email\":\"jane.doe@example.com\"}^|^200
+user_03^|^{\"name\":\"Alice\",\"age\":28,\"email\":\"alice.smith@example.com\"}^|^200
+user_04^|^{\"name\":\"Bob\",\"age\":32,\"email\":\"bob.jones@example.com\"}^|^200
+user_05^|^{\"name\":\"Charlie\",\"age\":29,\"email\":\"charlie.brown@example.com\"}^|^200
+user_06^|^{\"name\":\"Daisy\",\"age\":24,\"email\":\"daisy.hill@example.com\"}^|^200
+user_07^|^{\"name\":\"Ethan\",\"age\":35,\"email\":\"ethan.wood@example.com\"}^|^200
+user_08^|^{\"name\":\"Fiona\",\"age\":22,\"email\":\"fiona.grace@example.com\"}^|^200
+user_09^|^{\"name\":\"George\",\"age\":27,\"email\":\"george.king@example.com\"}^|^200
+user_10^|^{\"name\":\"Hannah\",\"age\":26,\"email\":\"hannah.lee@example.com\"}^|^200
