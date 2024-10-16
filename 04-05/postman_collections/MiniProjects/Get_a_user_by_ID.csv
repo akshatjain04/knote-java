@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"qui laborum eni",200,"User details"
+"invalid_user_01",404,"User details"
+"invalid_user_02",500,"User details"
+"invalid_user_03",403,"User details"
+"invalid_user_04",401,"User details"
