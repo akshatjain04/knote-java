@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"cupidatat non incididunt",200,User details
+"ab123",400,User details
+"xyz987",500,User details
+"user456",200,User details
+"test789",403,User details
