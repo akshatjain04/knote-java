@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"veniam velit qui minim",200,User details
+"qwerty123",400,User details
+"user_987654",500,User details
+"johndoe@example.com",200,User details
+"invalid_user_id",404,User details
