@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"irure labore",200,User details
+"ab123",404,User details
+"xyz789",500,User details
+"user456",200,User details
+"qwerty",403,User details
