@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"1",200,"{\n  \"userId\": \"aute in anim\",\n  \"name\": \"deserunt occaecat veniam aliqua\",\n  \"email\": \"voluptate commodo amet cupidatat\"\n}"
+"2",200,"{\n  \"userId\": \"aute in anim\",\n  \"name\": \"deserunt occaecat veniam aliqua\",\n  \"email\": \"voluptate commodo amet cupidatat\"\n}"
+"3",200,"{\n  \"userId\": \"aute in anim\",\n  \"name\": \"deserunt occaecat veniam aliqua\",\n  \"email\": \"voluptate commodo amet cupidatat\"\n}"
+"4",200,"{\n  \"userId\": \"aute in anim\",\n  \"name\": \"deserunt occaecat veniam aliqua\",\n  \"email\": \"voluptate commodo amet cupidatat\"\n}"
+"5",200,"{\n  \"userId\": \"aute in anim\",\n  \"name\": \"deserunt occaecat veniam aliqua\",\n  \"email\": \"voluptate commodo amet cupidatat\"\n}"
