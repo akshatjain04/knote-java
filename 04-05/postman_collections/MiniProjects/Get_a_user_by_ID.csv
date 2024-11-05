@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"randomUserId1",200^|"User details"
+"randomUserId2",200^|"User details"
+"randomUserId3",200^|"User details"
+"randomUserId4",200^|"User details"
+"randomUserId5",200^|"User details"
