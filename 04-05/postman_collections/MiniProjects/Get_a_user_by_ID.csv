@@ -1,0 +1,7 @@
+userId,statusCode,scenario
+"magna",200^|"User details"
+"random_id_1",404^|"Invalid user details"
+"random_id_2",500^|"Invalid user details"
+"random_id_3",503^|"Invalid user details"
+"random_id_4",401^|"Invalid user details"
+"random_id_5",403^|"Invalid user details"
