@@ -1,0 +1,7 @@
+userId,statusCode,scenario
+"esse ea",200,"{\n  \"userId\": \"esse ea\",\n  \"name\": \"reprehenderit ea Excepteur\",\n  \"email\": \"cillum amet\"\n}"
+"invalid_user_1",404,"Invalid User Scenario"
+"invalid_user_2",500,"Server Error Scenario"
+"invalid_user_3",400,"Bad Request Scenario"
+"invalid_user_4",401,"Unauthorized Access Scenario"
+"invalid_user_5",403,"Forbidden Access Scenario"
