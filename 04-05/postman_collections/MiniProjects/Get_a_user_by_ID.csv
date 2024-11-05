@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"voluptate pariatur culpa in",200,"User details"
+"random_invalid_user_id_1",404,"User details"
+"random_invalid_user_id_2",500,"User details"
+"random_invalid_user_id_3",401,"User details"
+"random_invalid_user_id_4",503,"User details"
