@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"1a2b3c",200,{\"userId\": \"id consequat laborum pariatur\",\"name\": \"ullamco nostrud sit exercitation aute\",\"email\": \"ad\"}
+"4d5e6f",200,{\"userId\": \"id consequat laborum pariatur\",\"name\": \"ullamco nostrud sit exercitation aute\",\"email\": \"ad\"}
+"7g8h9i",200,{\"userId\": \"id consequat laborum pariatur\",\"name\": \"ullamco nostrud sit exercitation aute\",\"email\": \"ad\"}
+"0j1k2l",200,{\"userId\": \"id consequat laborum pariatur\",\"name\": \"ullamco nostrud sit exercitation aute\",\"email\": \"ad\"}
+"3m4n5o",200,{\"userId\": \"id consequat laborum pariatur\",\"name\": \"ullamco nostrud sit exercitation aute\",\"email\": \"ad\"}
