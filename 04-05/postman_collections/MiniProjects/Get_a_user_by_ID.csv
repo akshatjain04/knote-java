@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"Lorem ullamco of",200,User details
+"InvalidUserId123",404,User details
+"AnotherInvalidID",500,User details
+"YetAnotherUserId",200,User details
+"WrongUserIdFormat",403,User details
