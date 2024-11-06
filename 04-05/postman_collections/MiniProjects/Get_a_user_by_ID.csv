@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"sit ut mollit",200,"User details"
+"random_invalid1",404,"User details"
+"random_invalid2",500,"User details"
+"random_invalid3",401,"User details"
+"random_invalid4",503,"User details"
