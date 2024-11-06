@@ -1,0 +1,5 @@
+userId,statusCode,scenario
+"culpa esse proident ut",200^|"User details"
+"invalid_user_123",404^|"User details"
+"another_bad_user",500^|"User details"
+"wrong_user_456",403^|"User details"
