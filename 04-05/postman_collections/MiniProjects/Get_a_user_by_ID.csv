@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"culpa",200^|"anim Ut"
+"randomInvalidUserId1",404^|"Invalid scenario"
+"randomInvalidUserId2",500^|"Invalid scenario"
+"randomInvalidUserId3",400^|"Invalid scenario"
+"randomInvalidUserId4",503^|"Invalid scenario"
