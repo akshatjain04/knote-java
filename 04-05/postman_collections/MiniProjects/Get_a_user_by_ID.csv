@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"anim exercitation",200,User details
+"random_string_1",404,User details
+"random_string_2",500,User details
+"random_string_3",200,User details
+"random_string_4",200,User details
