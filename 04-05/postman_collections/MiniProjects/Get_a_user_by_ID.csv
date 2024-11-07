@@ -1,0 +1,7 @@
+userId,statusCode,scenario
+"ea aliq",200,"{\n  \"userId\": \"ea aliq\",\n  \"name\": \"dolore\",\n  \"email\": \"dolor aute aliqua eiusmod qui\"\n}"
+"random_string1",404,"Invalid scenario"
+"random_string2",500,"Invalid scenario"
+"random_string3",503,"Invalid scenario"
+"random_string4",401,"Invalid scenario"
+"random_string5",200,"{\n  \"userId\": \"ea aliq\",\n  \"name\": \"dolore\",\n  \"email\": \"dolor aute aliqua eiusmod qui\"\n}"
