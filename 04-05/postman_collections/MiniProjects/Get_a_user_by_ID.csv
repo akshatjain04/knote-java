@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"pariatur Duis",200^|"aute do in fugiat"
+"invalid_user_id_1",404^|"random scenario 1"
+"invalid_user_id_2",500^|"random scenario 2"
+"invalid_user_id_3",503^|"random scenario 3"
+"invalid_user_id_4",401^|"random scenario 4"
