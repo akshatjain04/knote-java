@@ -1,6 +1,4 @@
 userId,statusCode,scenario
-"elit",200,{\"userId\": \"elit\",\"name\": \"tempor cillum\",\"email\": \"cillum exercitation anim\"}
-"lorem",200,{\"userId\": \"lorem\",\"name\": \"ipsum dolor\",\"email\": \"sit amet consectetur\"}
-"adipiscing",200,{\"userId\": \"adipiscing\",\"name\": \"elit sed\",\"email\": \"do eiusmod tempor\"}
-"incididunt",200,{\"userId\": \"incididunt\",\"name\": \"ut labore\",\"email\": \"et dolore magna\"}
-"aliqua",200,{\"userId\": \"aliqua\",\"name\": \"ut enim\",\"email\": \"ad minim veniam\"}
+"u1234",200,"User details"
+"u5678",200,"User details"
+"u91011",200,"User details"
