@@ -1,0 +1,4 @@
+userId,statusCode,scenario
+"u1234",200,"User details"
+"u5678",200,"User details"
+"u91011",200,"User details"
