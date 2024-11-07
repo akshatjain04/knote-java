@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"voluptate quis non",200,"User details"
+"randomInvalidUserId1",404,"User details"
+"randomInvalidUserId2",500,"User details"
+"randomInvalidUserId3",503,"User details"
+"randomInvalidUserId4",400,"User details"
