@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"aliqua incididunt mollit",200,"User details"
+"random_invalid_string_1",404,"User details"
+"random_invalid_string_2",500,"User details"
+"random_invalid_string_3",503,"User details"
+"random_invalid_string_4",401,"User details"
