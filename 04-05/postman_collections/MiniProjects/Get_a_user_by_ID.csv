@@ -1,0 +1,6 @@
+userId,statusCode,scenario
+"velit occaecat",200,"{\n  \"userId\": \"velit occaecat\",\n  \"name\": \"in in\",\n  \"email\": \"fugiat\"\n}"
+"invalid_userId_1",404,"Invalid scenario"
+"invalid_userId_2",500,"Invalid scenario"
+"invalid_userId_3",401,"Invalid scenario"
+"invalid_userId_4",503,"Invalid scenario"

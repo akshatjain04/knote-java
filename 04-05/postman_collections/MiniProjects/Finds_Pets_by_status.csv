@@ -1,0 +1,3 @@
+status,statusCode,scenario
+"success",200,"successful operation"
+"error",400,"Invalid status value"
