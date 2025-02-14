@@ -1,0 +1,11 @@
+id^|^statusCode^|^scenario
+1^|^200^|^LoginSuccess
+2^|^500^|^ServerError
+3^|^404^|^PageNotFound
+4^|^403^|^ForbiddenAccess
+5^|^201^|^UserCreated
+6^|^401^|^Unauthorized
+7^|^400^|^BadRequest
+8^|^202^|^RequestAccepted
+9^|^301^|^MovedPermanently
+10^|^302^|^FoundRedirect
