@@ -1,0 +1,46 @@
+{
+  "item": [
+    {
+      "id": "f98b9e13-8a16-45b3-8837-0ccca97e948e",
+      "name": "users",
+      "item": [
+        null,
+        null
+      ],
+      "event": []
+    },
+    {
+      "id": "f5b4ca65-f44e-4319-ba4d-1d490e19dbdf",
+      "name": "tempName/{userId}",
+      "item": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "8948e28b-c960-4476-9f72-6faf5a527b25",
+    "name": "User CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "API to manage users and their addresses",
+      "type": "text/plain"
+    }
+  }
+}
