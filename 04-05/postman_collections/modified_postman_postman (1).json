@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "bc39675c-5c1f-4127-9d9c-9297a364240e",
+      "id": "f98b9e13-8a16-45b3-8837-0ccca97e948e",
       "name": "users",
       "item": [
         null,
@@ -10,7 +10,7 @@
       "event": []
     },
     {
-      "id": "d0f4c485-1980-46cc-a8c3-30112bc93d81",
+      "id": "f5b4ca65-f44e-4319-ba4d-1d490e19dbdf",
       "name": "tempName/{userId}",
       "item": [
         null,
@@ -35,7 +35,7 @@
     }
   ],
   "info": {
-    "_postman_id": "1a45ad1b-a155-4f80-a38d-ea46e75a2cc4",
+    "_postman_id": "8948e28b-c960-4476-9f72-6faf5a527b25",
     "name": "User CRUD API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
