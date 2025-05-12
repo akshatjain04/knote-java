@@ -1,11 +1,11 @@
-username^|^email^|^firstName^|^lastName^|^statusCode^|^scenario
-user1^|^user1@example.com^|^John^|^Doe^|^200^|^Login
-user2^|^user2@example.com^|^Jane^|^Doe^|^200^|^Registration
-user3^|^user3@example.com^|^Jake^|^Smith^|^200^|^Login
-user4^|^user4@example.com^|^Jessica^|^Jones^|^400^|^Password_Reset
-user5^|^user5@example.com^|^James^|^Brown^|^200^|^Login
-user6^|^user6@example.com^|^Jennifer^|^Aniston^|^200^|^Registration
-user7^|^user7@example.com^|^Jonathan^|^Davis^|^400^|^Password_Reset
-user8^|^user8@example.com^|^Julia^|^Roberts^|^200^|^Login
-user9^|^user9@example.com^|^Jeff^|^Bridges^|^200^|^Registration
-user10^|^user10@example.com^|^Jeremy^|^Renner^|^400^|^Password_Reset
+username^|^email^|^firstName^|^lastName^|^name^|^category^|^status^|^statusCode^|^scenario
+jsmith^|^jsmith@example.com^|^John^|^Smith^|^John Smith^|^User^|^Active^|^200^|^Admin
+djones^|^djones@example.com^|^David^|^Jones^|^David Jones^|^User^|^Inactive^|^400^|^Visitor
+mjackson^|^mjackson@example.com^|^Michael^|^Jackson^|^Michael Jackson^|^Admin^|^Active^|^200^|^Admin
+edwards^|^edwards@example.com^|^Edward^|^Sward^|^Edward Sward^|^Admin^|^Active^|^200^|^User
+swilliams^|^swilliams@example.com^|^Sarah^|^Williams^|^Sarah Williams^|^User^|^Inactive^|^400^|^Visitor
+kwright^|^kwright@example.com^|^Katie^|^Wright^|^Katie Wright^|^Admin^|^Active^|^200^|^Admin
+bturner^|^bturner@example.com^|^Bob^|^Turner^|^Bob Turner^|^User^|^Active^|^200^|^User
+cwhite^|^cwhite@example.com^|^Charlie^|^White^|^Charlie White^|^Admin^|^Inactive^|^400^|^Visitor
+aharris^|^aharris@example.com^|^Alice^|^Harris^|^Alice Harris^|^User^|^Active^|^200^|^Admin
+rmartin^|^rmartin@example.com^|^Richard^|^Martin^|^Richard Martin^|^Admin^|^Active^|^200^|^User
