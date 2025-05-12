@@ -1,0 +1,11 @@
+petId^|^username^|^password^|^statusCode^|^scenario
+123^|^JohnDoe^|^abc123^|^200^|^1
+456^|^JaneSmith^|^pass456^|^404^|^2
+789^|^MarkTwain^|^mark789^|^405^|^3
+321^|^EmilyBlunt^|^emily321^|^400^|^4
+654^|^DavidGoliath^|^david654^|^200^|^5
+987^|^CindyLauper^|^cindy987^|^404^|^6
+135^|^ClarkKent^|^clark135^|^405^|^7
+246^|^LoisLane^|^lois246^|^400^|^8
+369^|^BruceWayne^|^bruce369^|^200^|^9
+753^|^SelinaKyle^|^selina753^|^404^|^10
