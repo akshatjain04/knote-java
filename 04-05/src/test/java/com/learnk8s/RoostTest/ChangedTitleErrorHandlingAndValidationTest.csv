@@ -1,0 +1,7 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+post^|^/pet^|^{"type": "oauth2", "scopes": ["write:pets", "read:pets"] }^|^{"id": "","name": "","photoUrls.0": "","tags[0].id": "","tags[0].name": "","status": ""}^|^405^|^{"description": "Invalid input", "headers": "No response headers"}
+get^|^/pet/{petId}^|^{"type": "apiKey", "name": "api_key", "in": "header" }^|^{}^|^404^|^{"description": "Pet not found", "headers": "No response headers"}
+post^|^/store/order^|^{}^|^{"id": "", "petId": "", "quantity": "", "shipDate": "", "status": "", "complete": ""}^|^400^|^{"description": "Invalid Order", "headers": "No response headers"}
+get^|^/store/order/{orderId}^|^{}^|^{}^|^400^|^{"description": "Invalid ID supplied", "headers": "No response headers"}
+post^|^/user^|^{}^|^{"id": "", "username": "", "firstName": "", "lastName": "", "email": "", "password": "", "phone": "", "userStatus": ""}^|^default^|^{"description": "successful operation", "headers": "No response headers"}
+get^|^/user/login^|^{}^|^{}^|^400^|^{"description": "Invalid username supplied", "headers": "No response headers"}
