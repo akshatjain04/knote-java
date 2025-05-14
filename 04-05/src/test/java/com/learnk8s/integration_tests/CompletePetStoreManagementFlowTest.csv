@@ -1,0 +1,16 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY  
+post^|^/user^|^{}^|^{"username": "testuser1", "email": "test@email.com", "firstName": "Test", "lastName": "User", "password": "pass123", "phone": "1234567890", "userStatus": 0}^|^default^|^successful operation
+get^|^/user/testuser1^|^{}^|^{}^|^200^|^{"id": 0, "username": "testuser1", "firstName": "Test", "lastName": "User", "email": "test@email.com", "password": "pass123", "phone": "1234567890", "userStatus": 0} 
+post^|^/pet^|^{}^|^{"name" : "Fluffy", "status" : "available", "photoUrls" : [""], "tags" : [{"id" : 0, "name" : "string"}], "id" : 0}^|^405^|^Invalid input  
+get^|^/pet/{petId}^|^{}^|^{}^|^200^|^{"id": 0, "name": "Fluffy", "photoUrls": [""], "tags": [{"id": 0, "name": ""}], "status": "available"} 
+post^|^/pet/{petId}/uploadImage^|^{}^|^{}^|^200^|^{"code": 0, "type": "", "message": ""}  
+put^|^/pet^|^{}^|^{"id": 0, "name": "Fluffy", "photoUrls": [""], "tags": [{"id": 0, "name": ""}], "status": "pending"}^|^400^|^Invalid ID supplied
+get^|^/pet/findByStatus^|^{}^|^{"status": "pending"}^|^200^|^Pet details 
+get^|^/pet/findByTags^|^{}^|^{}^|^200^|^Pets by tags list 
+get^|^/store/inventory^|^{}^|^{}^|^200^|^Inventory details
+post^|^/store/order^|^{}^|^{"id": 0, "petId": 0, "quantity": 1, "shipDate": "tomorrow", "status": "placed", "complete": true}^|^200^|^Order details
+get^|^/store/order/{orderId}^|^{}^|^{}^|^200^|^{"id": 0, "petId": 0, "quantity": 1, "shipDate": "", "status": "placed", "complete": true}  
+delete^|^/store/order/{orderId}^|^{}^|^{}^|^400^|^Invalid ID supplied
+delete^|^/pet/{petId}^|^{}^|^{}^|^400^|^Invalid ID supplied
+delete^|^/user/testuser1^|^{}^|^{}^|^400^|^Invalid username supplied
+get^|^/user/logout^|^{}^|^{}^|^200^|^{"id": 0, "username": "testuser1", "firstName": "Test", "lastName": "User", "email": "test@email.com", "password": "pass123", "phone": "1234567890", "userStatus": 0}  

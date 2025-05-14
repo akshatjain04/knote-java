@@ -1,0 +1,7 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+post^|^https://petstore.swagger.io/v2/pet^|^{"Content-type": "application/json"}^|^{}^|^405^|^{"description": "Invalid input", "headers": "No response headers"}
+get^|^https://petstore.swagger.io/v2/pet/invalidId^|^{"Content-type": "application/json"}^|^{}^|^404^|^{"description": "Pet not found", "headers": "No response headers"}
+get^|^https://petstore.swagger.io/v2/store/order/0^|^{"Content-type": "application/json"}^|^{}^|^400^|^{"description": "Invalid ID supplied", "headers": "No response headers"}
+get^|^https://petstore.swagger.io/v2/store/order/11^|^{"Content-type": "application/json"}^|^{}^|^400^|^{"description": "Invalid ID supplied", "headers": "No response headers"}
+post^|^https://petstore.swagger.io/v2/user^|^{"Content-type": "application/json"}^|^{}^|^400^|^{"description": "Invalid input", "headers": "No response headers"}
+get^|^https://petstore.swagger.io/v2/user/login^|^{"Content-type": "application/json"}^|^{"username": "invalid", "password": "invalid"}^|^400^|^{"description": "Invalid username supplied", "headers": "No response headers"}
