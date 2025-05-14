@@ -1,0 +1,6 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+post^|^https://petstore.swagger.io/v2/user/createWithList^|^{}^|^{"body":[{"username":"bulkuser1","email":"bulk1@test.com","firstName":"Bulk","lastName":"User1"},{"username":"bulkuser2","email":"bulk2@test.com","firstName":"Bulk","lastName":"User2"}]}^|^default^|^{"description": "successful operation"}
+post^|^https://petstore.swagger.io/v2/pet^|^{"oauth2":[{"scope":"write:pets"},{"scope":"read:pets"}]}^|^{"name":"Max","category":"Dog","status":"available"}^|^405^|^{"description": "Invalid input"}
+post^|^https://petstore.swagger.io/v2/pet^|^{"oauth2":[{"scope":"write:pets"},{"scope":"read:pets"}]}^|^{"name":"Charlie","category":"Dog","status":"available"}^|^405^|^{"description": "Invalid input"}
+get^|^https://petstore.swagger.io/v2/user/bulkuser1^|^{}^|^{}^|^200^|^{"id": "", "username": "bulkuser1", "firstName": "Bulk", "lastName": "User1", "email": "bulk1@test.com", "password": "", "phone": "", "userStatus": ""}
+get^|^https://petstore.swagger.io/v2/user/bulkuser2^|^{}^|^{}^|^200^|^{"id": "", "username": "bulkuser2", "firstName": "Bulk", "lastName": "User2", "email": "bulk2@test.com", "password": "", "phone": "", "userStatus": ""}
