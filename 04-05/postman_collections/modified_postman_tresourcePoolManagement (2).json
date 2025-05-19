@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "7ef07c62-a635-4a39-be5e-6a55d40fe7fb",
+      "id": "d1c0f51a-b944-4685-84d4-5d860ff2cdcc",
       "name": "Change Create a Availability Check",
       "request": {
         "name": "Change Create a Availability Check",
@@ -40,7 +40,7 @@
       },
       "response": [
         {
-          "id": "c19c5f70-9624-46ce-8d65-8ff9941d7474",
+          "id": "e9fbae0d-fc68-4b75-b6e9-d47071820d48",
           "name": "successful operation",
           "originalRequest": {
             "url": {
@@ -83,7 +83,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "cfcad34a-199a-426b-ac1f-a62b89f65dc5",
+          "id": "6d8974d4-78d6-4bc9-b5f2-e3029faac3dd",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -126,7 +126,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "730dcc8e-adda-4f22-b7f3-ef94a2bc31ea",
+          "id": "f56e1681-fdf2-4b24-bffc-2ba4db3c28f6",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -169,7 +169,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "b8f24849-53a7-4128-92d2-057405ecf672",
+          "id": "4badcc8d-2147-4d77-9ad3-b72a439e9e41",
           "name": "Forbidden - Scope Not Permitted",
           "originalRequest": {
             "url": {
@@ -212,7 +212,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "75a42b38-b66b-4180-8934-02e6deae3373",
+          "id": "0182819a-f268-4cab-9dfa-d8001767a270",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -255,7 +255,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f84a835a-8c41-4ec5-a10b-0b856414ae25",
+          "id": "8cc8811c-9c02-4caa-866d-65857cb32d6a",
           "name": "Too Many Requests - Exceeded Quota",
           "originalRequest": {
             "url": {
@@ -298,7 +298,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "0f7d9209-63f1-4e13-9684-8bbaa169c193",
+          "id": "ffd9458d-6e54-4ca8-bf6e-1257781988a2",
           "name": "Internal Server Error",
           "originalRequest": {
             "url": {
@@ -341,7 +341,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "369ab842-5fb2-4434-906b-063ea7a21e4c",
+          "id": "97695b31-a3d1-4969-9ab3-52703b97b272",
           "name": "Service Unavailable",
           "originalRequest": {
             "url": {
@@ -384,7 +384,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "90f85d28-a1ce-4376-8b2c-957843163459",
+          "id": "fb0be623-4b4e-4371-a7cd-3c2825789e1b",
           "name": "Gateway Timeout",
           "originalRequest": {
             "url": {
@@ -457,7 +457,7 @@
     }
   ],
   "info": {
-    "_postman_id": "82e01a56-2899-47f0-8e76-bf157c116943",
+    "_postman_id": "2300cc26-c5e0-496a-bf13-03c636d77963",
     "name": "ResourcePoolManagement",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
