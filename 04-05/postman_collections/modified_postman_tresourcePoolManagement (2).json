@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "40c54b02-bf41-457a-99a2-b83ea90ad447",
+      "id": "c9d3ca32-137e-4dc4-b650-e92e6bc05930",
       "name": "Change Create a Availability Check",
       "request": {
         "name": "Change Create a Availability Check",
@@ -40,7 +40,7 @@
       },
       "response": [
         {
-          "id": "85113e22-fe9f-4e0d-acea-e974655ad3f6",
+          "id": "b7f1ff08-926f-4f75-87d1-e83d7378a8fe",
           "name": "successful operation",
           "originalRequest": {
             "url": {
@@ -53,12 +53,6 @@
               "query": [],
               "variable": []
             },
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
             "method": "POST",
             "body": {
               "mode": "raw",
@@ -75,15 +69,15 @@
           "header": [
             {
               "key": "Content-Type",
-              "value": "application/json"
+              "value": "text/plain"
             }
           ],
-          "body": "{\n  \"control\": {\n    \"type\": \"S\",\n    \"code\": 200,\n    \"message\": \"OK\"\n  },\n  \"resource\": {\n    \"inventoryId\": 1766156,\n    \"maxBandwidth\": 1000,\n    \"availabilityType\": 1,\n    \"availabilityCode\": 0,\n    \"availabilityDescription\": \"Viável - Viabilidade técnica confirmada\",\n    \"products\": {\n      \"product\": [\n        {\n          \"type\": \"Banda Larga\",\n          \"catalogId\": \"BL_100MB\",\n          \"name\": \"VELOC_100MBPS\",\n          \"technology\": \"\"\n        },\n        {\n          \"type\": \"Banda Larga\",\n          \"catalogId\": \"BL_200MB\",\n          \"name\": \"VELOC_200MBPS\",\n          \"technology\": \"\"\n        },\n        {\n          \"type\": \"Banda Larga\",\n          \"catalogId\": \"BL_400MB\",\n          \"name\": \"VELOC_400MBPS\",\n          \"technology\": \"\"\n        },\n        {\n          \"type\": \"Banda Larga\",\n          \"catalogId\": \"BL_500MB\",\n          \"name\": \"VELOC_500MBPS\",\n          \"technology\": \"\"\n        },\n        {\n          \"type\": \"Banda Larga\",\n          \"catalogId\": \"BL_1000MB\",\n          \"name\": \"VELOC_1000MBPS\",\n          \"technology\": \"\",\n          \"best_offer\": true\n        }\n      ]\n    }\n  }\n}",
+          "body": "",
           "cookie": [],
-          "_postman_previewlanguage": "json"
+          "_postman_previewlanguage": "text"
         },
         {
-          "id": "97c7e795-91ed-4b82-b3c6-704bc1899996",
+          "id": "85ab7ce1-06b1-4bfb-9ce7-2a94354ecfba",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -126,7 +120,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "1e3c299c-ec0c-487c-90ea-0fb862368b8d",
+          "id": "0c25da7e-4307-45e0-9006-f404ab788fd3",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -169,7 +163,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "d3c2fede-5992-45bd-9237-5c9aee26eabb",
+          "id": "b036c328-6b1c-46a8-bcf5-52118e270edd",
           "name": "Forbidden - Scope Not Permitted",
           "originalRequest": {
             "url": {
@@ -212,7 +206,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "04752848-1e29-4e78-bc12-476d032ab397",
+          "id": "68fb75cc-1b05-4da1-9667-e79f43bed758",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -255,7 +249,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3c103ecd-2d1a-447c-bc6e-9c16a1f01e96",
+          "id": "1314a37d-e33c-4bc6-ab90-42fda53def57",
           "name": "Too Many Requests - Exceeded Quota",
           "originalRequest": {
             "url": {
@@ -298,7 +292,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2d9ba9ff-4749-4323-b486-800ec2fe6a74",
+          "id": "f8c25590-5d3d-42b6-b35b-14ae1eea17d0",
           "name": "Internal Server Error",
           "originalRequest": {
             "url": {
@@ -341,7 +335,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "de56ed56-5904-4978-bdae-2de6163bd1ba",
+          "id": "96737691-8cdf-4765-94cf-23612fc60028",
           "name": "Service Unavailable",
           "originalRequest": {
             "url": {
@@ -384,7 +378,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "ddc08d7d-9ab6-4a77-8040-8391e024ee7b",
+          "id": "feb10187-4aca-4c1e-ae78-1ebb211d4d94",
           "name": "Gateway Timeout",
           "originalRequest": {
             "url": {
@@ -457,7 +451,7 @@
     }
   ],
   "info": {
-    "_postman_id": "31be4432-4677-490d-89b9-0f24b2f3e315",
+    "_postman_id": "0ad9946e-eca8-4266-9045-6a2b5383a011",
     "name": "ResourcePoolManagement",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
