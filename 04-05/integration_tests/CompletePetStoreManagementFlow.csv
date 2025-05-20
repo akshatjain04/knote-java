@@ -1,0 +1,11 @@
+^|^email^|^firstName^|^lastName^|^password^|^phone^|^statusCode^|^scenario
+user1^|^user1@example.com^|^John^|^Doe^|^pass1^|^1234567890^|^200^|^{'status':'success'}
+user2^|^user2@example.com^|^Jane^|^Smith^|^pass2^|^0987654321^|^200^|^{'status':'success'}
+user3^|^user3@example.com^|^Emily^|^Brown^|^pass3^|^1122334455^|^200^|^{'status':'success'}
+user4^|^user4@example.com^|^Michael^|^Johnson^|^pass4^|^2233445566^|^200^|^{'status':'success'}
+user5^|^user5@example.com^|^David^|^Wilson^|^pass5^|^3344556677^|^200^|^{'status':'success'}
+user6^|^user6@example.com^|^Robert^|^Miller^|^pass6^|^4455667788^|^200^|^{'status':'success'}
+user7^|^user7@example.com^|^William^|^Moore^|^pass7^|^5566778899^|^200^|^{'status':'success'}
+user8^|^user8@example.com^|^Richard^|^Anderson^|^pass8^|^6677889900^|^200^|^{'status':'success'}
+user9^|^user9@example.com^|^Joseph^|^Thomas^|^pass9^|^7788990011^|^200^|^{'status':'success'}
+user10^|^user10@example.com^|^Charles^|^Jackson^|^pass10^|^8899001122^|^200^|^{'status':'success'}
