@@ -1,0 +1,11 @@
+^|^password^|^name^|^image^|^statusCode^|^scenario
+user1@example.com^|^password1^|^Alice Johnson^|^image1.jpg^|^200^|^{"action":"login","device":"mobile"}
+user2@example.com^|^password2^|^Bob Smith^|^image2.jpg^|^201^|^{"action":"register","device":"desktop"}
+user3@example.com^|^password3^|^Charlie Brown^|^image3.jpg^|^404^|^{"action":"view","device":"tablet"}
+user4@example.com^|^password4^|^David Wilson^|^image4.jpg^|^500^|^{"action":"edit","device":"mobile"}
+user5@example.com^|^password5^|^Eve Davis^|^image5.jpg^|^200^|^{"action":"logout","device":"desktop"}
+user6@example.com^|^password6^|^Frank Miller^|^image6.jpg^|^201^|^{"action":"delete","device":"tablet"}
+user7@example.com^|^password7^|^Grace Anderson^|^image7.jpg^|^404^|^{"action":"upload","device":"mobile"}
+user8@example.com^|^password8^|^Harry White^|^image8.jpg^|^500^|^{"action":"download","device":"desktop"}
+user9@example.com^|^password9^|^Ivy Martin^|^image9.jpg^|^200^|^{"action":"comment","device":"tablet"}
+user10@example.com^|^password10^|^Jack Lee^|^image10.jpg^|^201^|^{"action":"share","device":"mobile"}

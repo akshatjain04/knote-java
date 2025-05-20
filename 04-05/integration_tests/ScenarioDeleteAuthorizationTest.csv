@@ -1,0 +1,11 @@
+^|^email^|^statusCode^|^scenario
+123e4567-e89b-12d3-a456-426614174000^|^john.doe@example.com^|^200^|^{"method": "GET", "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174001^|^jane.smith@example.com^|^400^|^{"method": "GET", "url": "/authorizations", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174002^|^alice.johnson@example.com^|^200^|^{"method": "GET", "url": "/authorizations/123e4567-e89b-12d3-a456-426614174002", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174003^|^bob.williams@example.com^|^401^|^{"method": "GET", "url": "/authorizations", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174004^|^emily.davis@example.com^|^200^|^{"method": "GET", "url": "/authorizations/123e4567-e89b-12d3-a456-426614174004", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174005^|^michael.brown@example.com^|^400^|^{"method": "GET", "url": "/authorizations", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174006^|^olivia.martinez@example.com^|^200^|^{"method": "GET", "url": "/authorizations/123e4567-e89b-12d3-a456-426614174006", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174007^|^david.clark@example.com^|^401^|^{"method": "GET", "url": "/authorizations", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174008^|^sophia.rodriguez@example.com^|^200^|^{"method": "GET", "url": "/authorizations/123e4567-e89b-12d3-a456-426614174008", "headers": {"Authorization": "Bearer token"}, "body": null}
+123e4567-e89b-12d3-a456-426614174009^|^christopher.lewis@example.com^|^400^|^{"method": "GET", "url": "/authorizations", "headers": {"Authorization": "Bearer token"}, "body": null}
