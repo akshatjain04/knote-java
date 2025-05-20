@@ -1,0 +1,38 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^https://petstore.swagger.io/v2/pet^|^Authorization: Bearer <OAuth2 token>^|^{
+  "id": 0,
+  "name": "",
+  "photoUrls": [],
+  "tags": [
+    {
+      "id": 0,
+      "name": ""
+    }
+  ],
+  "status": ""
+}^|^405^|^{
+  "message": "Invalid input"
+}
+GET^|^https://petstore.swagger.io/v2/pet/-1^|^Authorization: Bearer <OAuth2 token>^|^{}^|^404^|^{
+  "message": "Pet not found"
+}
+GET^|^https://petstore.swagger.io/v2/store/order/0^|^{}^|^{}^|^400^|^{
+  "message": "Invalid ID supplied"
+}
+GET^|^https://petstore.swagger.io/v2/store/order/11^|^{}^|^{}^|^400^|^{
+  "message": "Invalid ID supplied"
+}
+POST^|^https://petstore.swagger.io/v2/user^|^{}^|^{
+  "id": 0,
+  "username": "",
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "password": "",
+  "phone": "",
+  "userStatus": 0
+}^|^default^|^{}
+POST^|^https://petstore.swagger.io/v2/user/login^|^{}^|^{
+  "username": "",
+  "password": ""
+}^|^400^|^{}

@@ -1,0 +1,18 @@
+^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^https://petstore.swagger.io/v2/user^|^Content-Type:application/json^|^{"id":1,"username":"testuser1","firstName":"Test","lastName":"User","email":"test@email.com","password":"pass123","phone":"1234567890","userStatus":1}^|^200^|^
+GET^|^https://petstore.swagger.io/v2/user/login?username=testuser1&password=pass123^|^Content-Type:application/json^|^^|^200^|^{"code":200,"type":"unknown","message":"success"}^|^
+POST^|^https://petstore.swagger.io/v2/pet^|^Content-Type:application/json^|^{"id":1,"category":{"id":1,"name":"Cat"},"name":"Fluffy","photoUrls":[""],"tags":[{"id":1,"name":""}],"status":"available"}^|^200^|^
+GET^|^https://petstore.swagger.io/v2/pet/1^|^Content-Type:application/json^|^^|^200^|^{"id":1,"category":{"id":1,"name":"Cat"},"name":"Fluffy","photoUrls":[""],"tags":[{"id":1,"name":""}],"status":"available"}^|^
+POST^|^https://petstore.swagger.io/v2/pet/1/uploadImage^|^Content-Type:multipart/form-data^|^{"additionalMetadata":"", "file": "image.jpg"}^|^200^|^{"code":200,"type":"unknown","message":"success"}^|^
+PUT^|^https://petstore.swagger.io/v2/pet^|^Content-Type:application/json^|^{"id":1,"category":{"id":1,"name":"Cat"},"name":"Fluffy","photoUrls":[""],"tags":[{"id":1,"name":""}],"status":"pending"}^|^200^|^
+GET^|^https://petstore.swagger.io/v2/pet/findByStatus?status=pending^|^Content-Type:application/json^|^^|^200^|^[{"id":1,"category":{"id":1,"name":"Cat"},"name":"Fluffy","photoUrls":[""],"tags":[{"id":1,"name":""}],"status":"pending"}]^|^
+GET^|^https://petstore.swagger.io/v2/pet/findByTags?tags=friendly^|^Content-Type:application/json^|^^|^200^|^[{"id":1,"category":{"id":1,"name":"Cat"},"name":"Fluffy","photoUrls":[""],"tags":[{"id":1,"name":"friendly"}],"status":"pending"}]^|^
+GET^|^https://petstore.swagger.io/v2/store/inventory^|^Content-Type:application/json^|^^|^200^|^
+POST^|^https://petstore.swagger.io/v2/store/order^|^Content-Type:application/json^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"placed","complete":false}^|^200^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"placed","complete":false}^|^
+GET^|^https://petstore.swagger.io/v2/store/order/1^|^Content-Type:application/json^|^^|^200^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"placed","complete":false}^|^
+PUT^|^https://petstore.swagger.io/v2/store/order/1^|^Content-Type:application/json^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"approved","complete":false}^|^200^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"approved","complete":false}^|^
+PUT^|^https://petstore.swagger.io/v2/store/order/1^|^Content-Type:application/json^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"delivered","complete":true}^|^200^|^{"id":1,"petId":1,"quantity":1,"shipDate":"tomorrow","status":"delivered","complete":true}^|^
+DELETE^|^https://petstore.swagger.io/v2/store/order/1^|^Content-Type:application/json^|^^|^200^|^
+DELETE^|^https://petstore.swagger.io/v2/pet/1^|^Content-Type:application/json^|^^|^200^|^
+DELETE^|^https://petstore.swagger.io/v2/user/testuser1^|^Content-Type:application/json^|^^|^200^|^
+GET^|^https://petstore.swagger.io/v2/user/logout^|^Content-Type:application/json^|^^|^200^|^
