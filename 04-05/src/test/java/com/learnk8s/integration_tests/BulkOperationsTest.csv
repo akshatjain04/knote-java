@@ -1,0 +1,4 @@
+^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^https://petstore.swagger.io/v2/user/createWithArray^|^Content-Type:application/json^|^[{"id":0,"username":"bulkuser1","firstName":"Bulk","lastName":"User1","email":"bulk1@test.com","password":"string","phone":"string","userStatus":0},{"id":0,"username":"bulkuser2","firstName":"Bulk","lastName":"User2","email":"bulk2@test.com","password":"string","phone":"string","userStatus":0}]^|^200^|^
+POST^|^https://petstore.swagger.io/v2/pet^|^Content-Type:application/json^|^{"id":0,"category":{"id":0,"name":"Dog"},"name":"Max","photoUrls":["string"],"tags":[],"status":"available"}^|^200^|^
+POST^|^https://petstore.swagger.io/v2/pet^|^Content-Type:application/json^|^{"id":0,"category":{"id":0,"name":"Dog"},"name":"Charlie","photoUrls":["string"],"tags":[],"status":"available"}^|^200^|^
