@@ -1,0 +1,11 @@
+access_token,token_type_hint,grant_type,refresh_token,authorization_code,statusCode,scenario
+xyz123,Bearer,client_credentials,ref123,auth456,200,200 - Terminate Access Token
+abc789,Bearer,password,ref456,auth789,400,400 Bad Request - Missing Access Token
+lmn456,Bearer,authorization_code,ref789,auth123,401,401 Unauthorized - Invalid Token
+uvw321,Bearer,client_credentials,ref456,auth456,200,200 - Terminate Access Token
+def234,Bearer,password,ref789,auth789,400,400 Bad Request - Missing Access Token
+ghi567,Bearer,authorization_code,ref123,auth123,401,401 Unauthorized - Invalid Token
+jkl890,Bearer,client_credentials,ref456,auth456,200,200 - Terminate Access Token
+mno012,Bearer,password,ref789,auth789,400,400 Bad Request - Missing Access Token
+pqr345,Bearer,authorization_code,ref123,auth123,401,401 Unauthorized - Invalid Token
+stu678,Bearer,client_credentials,ref456,auth456,200,200 - Terminate Access Token
