@@ -1,0 +1,10 @@
+grant_type,refresh_token,authorization_code,ignoreCache,return_authn_schemes,return_client_metadata,return_unconsented_scopes,response_type,claims[],statusCode,scenario
+client_credentials,RT101,AC101,false,scheme1,false,false,Bearer,claims1,200,200 - Generate Token With Detailed Request
+client_credentials,RT102,AC102,false,scheme2,false,true,Bearer,claims2,200,200 - Generate Token With Detailed Request
+refresh_token,RT103,AC103,true,scheme3,true,false,Bearer,claims3,400,400 Bad Request - Unsupported "response_type"
+refresh_token,RT104,AC104,true,scheme4,true,true,Bearer,claims4,401,401 Unauthorized - Missing/Bad Client Credentials
+client_credentials,RT105,AC105,false,scheme5,false,false,Bearer,claims5,200,200 - Generate Token With Detailed Request
+refresh_token,RT106,AC106,true,scheme6,true,true,Bearer,claims6,400,400 Bad Request - Unsupported "response_type"
+client_credentials,RT107,AC107,false,scheme7,false,false,Bearer,claims7,401,401 Unauthorized - Missing/Bad Client Credentials
+refresh_token,RT108,AC108,true,scheme8,true,true,Bearer,claims8,200,200 - Generate Token With Detailed Request
+client_credentials,RT109,AC109,false,scheme9,false,false,Bearer,claims9,400,400 Bad Request - Unsupported "response_type"
