@@ -1,0 +1,5 @@
+username,password,statusCode,scenario
+"apiUser1","securePass123",200,"successful operation"
+"apiUser2","passWord456",200,"successful operation"
+"","",400,"Invalid username/password supplied"
+"invalidUser/@!","123",400,"Invalid username/password supplied"

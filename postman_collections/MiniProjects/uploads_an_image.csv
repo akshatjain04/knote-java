@@ -1,0 +1,8 @@
+petId,additionalMetadata,statusCode,scenario
+"1","metadata1",200,"successful operation"
+"2","metadata2",200,"successful operation"
+"3","metadata3",200,"successful operation"
+"4","metadata4",200,"successful operation"
+"abc","invalid_metadata",400,"error scenario"
+"invalidId","test_fail_metadata",500,"server error scenario"
+"test/invalid","fail_case_metadata",404,"not found scenario"
