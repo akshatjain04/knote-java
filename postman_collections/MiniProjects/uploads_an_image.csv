@@ -1,0 +1,7 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","adoption process",200,"successful operation"
+"67890","vaccination info",200,"successful operation"
+"11223","feeding schedule",200,"successful operation"
+"44556","exercise routine",200,"successful operation"
+"99887","\"special care\" /notes",200,"successful operation"
+"77665","medical history",200,"successful operation"

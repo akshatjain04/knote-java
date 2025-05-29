@@ -1,0 +1,25 @@
+username,statusCode,scenario
+JohnDoe,200,successful operation
+AmySmith,400,Invalid username supplied
+UnknownUser,404,User not found
+DavidJones,200,successful operation
+InvalidUser,400,Invalid username supplied
+NotFound,404,User not found
+JaneDoe,200,successful operation
+TestUser,400,Invalid username supplied
+NoUser,404,User not found
+MikeWilliams,200,successful operation
+BadUser,400,Invalid username supplied
+NullUser,404,User not found
+EmmaJones,200,successful operation
+ErrorUser,400,Invalid username supplied
+EmptyUser,404,User not found
+SamuelJohnson,200,successful operation
+FailUser,400,Invalid username supplied
+MissedUser,404,User not found
+OliviaTaylor,200,successful operation
+IncorrectUser,400,Invalid username supplied
+DisappearedUser,404,User not found
+HarryWhite,200,successful operation
+NoSuchUser,400,Invalid username supplied
+GhostUser,404,User not found
