@@ -1,0 +1,11 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Owner requested access",200,"successful operation"
+"67890","Routine check conducted",200,"successful operation"
+"11223","Annual vaccination record",200,"successful operation"
+"44556","Scheduled visit follow-up",200,"successful operation"
+"99887","Updated medical details",200,"successful operation"
+"12312","Microchip identification check",200,"successful operation"
+"54321","Emergency care protocol follow-up",200,"successful operation"
+"98765","Pet adoption finalized",200,"successful operation"
+"34567","Dental cleaning procedure details",200,"successful operation"
+"67878","Pre-neutering assessment report",200,"successful operation"
