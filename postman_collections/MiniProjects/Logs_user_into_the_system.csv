@@ -1,0 +1,5 @@
+username,password,statusCode,scenario
+"user1","pass123!",200,"successful operation"
+"user2","secure456@",200,"successful operation"
+"user_invalid","wrong/\"input\"",400,"Invalid username/password supplied"
+"test_user","bad\"/entry",400,"Invalid username/password supplied"

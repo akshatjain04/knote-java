@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,"johnDoe","John","Doe","john.doe@example.com","secret123","2025550191","Active",500,"successful operation"
+2,"sarahSmith","Sarah","Smith","sarah.smith@example.com","ssmithPassword","2025550123","Inactive",500,"successful operation"
+3,"mikeJones","Mike","Jones","mike.jones@example.com","mjonesPassword","2025550145","Active",500,"successful operation"
+4,"lindaEvans","Linda","Evans","linda.evans@example.com","levansPassword","2025550189","Inactive",500,"successful operation"
+5,"steveAdams","Steve","Adams","steve.adams@example.com","sadamsPassword","2025550167","Active",500,"successful operation"
