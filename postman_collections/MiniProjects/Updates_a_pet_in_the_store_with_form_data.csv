@@ -1,0 +1,11 @@
+petId,name,status,statusCode,scenario
+1234,"Buddy","available",405,"Invalid input"
+5678,"Lucy","pending",405,"Invalid input"
+9101,"Max","adopted",405,"Invalid input"
+1121,"Bella","available",405,"Invalid input"
+3141,"Charlie","pending",405,"Invalid input"
+5151,"Molly","adopted",405,"Invalid input"
+7171,"Daisy","available",405,"Invalid input"
+9191,"Lucky","pending",405,"Invalid input"
+1212,"Sadie","adopted",405,"Invalid input"
+3232,"Rocky","available",405,"Invalid input"

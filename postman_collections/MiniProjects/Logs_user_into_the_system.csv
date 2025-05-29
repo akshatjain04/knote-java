@@ -1,0 +1,11 @@
+username,password,statusCode,scenario
+"user1","pass123",200,"successful operation"
+"user2","password456",200,"successful operation"
+"user_invalid","wrongpassword/"sup"plied",400,"Invalid username/password supplied"
+"test_user","test/@##$",400,"Invalid username/password supplied"
+"validUser3","validPass789",200,"successful operation"
+"dummy_invalid","123abc",400,"Invalid username/password supplied"
+"user_api","api_pass",200,"successful operation"
+"invalid@api.com","randomPass#!",400,"Invalid username/password supplied"
+"user_success","success_code789",200,"successful operation"
+"random_invalid_user","inv/\"entry/"code",400,"Invalid username/password supplied"
