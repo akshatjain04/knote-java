@@ -1,0 +1,11 @@
+tags,statusCode,scenario
+"doggie, string",200,"successful operation"
+"category, long",200,"successful operation"
+"id, long",200,"successful operation"
+"photoUrls, string",200,"successful operation"
+"status, string",200,"successful operation"
+"abcd1234 ",400,"Invalid tag value"
+"xyz890 ",400,"Invalid tag value"
+"12345 ",400,"Invalid tag value"
+"null ",400,"Invalid tag value"
+"[] ",400,"Invalid tag value"
