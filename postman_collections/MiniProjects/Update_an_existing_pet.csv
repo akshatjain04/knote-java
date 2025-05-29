@@ -1,0 +1,10 @@
+name,photoUrls,id,category.id,category.name,tags,status,statusCode,scenario
+John,"https://example.com/john.jpg",123,56,Cars,Leather Seats,Available,400,Invalid ID supplied
+Jane,"https://example.com/jane.jpg",456,78,Furniture,Sofa,Pending,404,Pet not found
+Jim,"https://example.com/jim.jpg",789,22,Electronics,LED,Sold,405,Validation exception
+Joey,"https://example.com/joey.jpg",321,56,Cars,Sunroof,Available,400,Invalid ID supplied
+Jamie,"https://example.com/jamie.jpg",654,78,Furniture,Bed,Pending,404,Pet not found
+Justin,"https://example.com/justin.jpg",987,22,Electronics,LCD,Sold,405,Validation exception
+Janet,"https://example.com/janet.jpg",234,56,Cars,GPS,Available,400,Invalid ID supplied
+Joy,"https://example.com/joy.jpg",567,78,Furniture,Chair,Pending,404,Pet not found
+Joe,"https://example.com/joe.jpg",891,22,Electronics,Laptop,Sold,405,Validation exception
