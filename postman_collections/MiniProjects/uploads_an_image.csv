@@ -1,0 +1,11 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Healthy dog",200,"successful operation"
+"67890","Playful cat",200,"successful operation"
+"11223","Adopted rabbit",200,"successful operation"
+"44556","Lost hamster",200,"successful operation"
+"77889","Cared-for bird",200,"successful operation"
+"99876","Pet with needs",200,"successful operation"
+"88765","Stray animal",200,"successful operation"
+"77654","Energetic puppy",200,"successful operation"
+"66543","Calm turtle",200,"successful operation"
+"55432","Friendly tiger",200,"successful operation"
