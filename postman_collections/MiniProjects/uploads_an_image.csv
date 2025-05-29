@@ -1,8 +1,6 @@
 petId,additionalMetadata,statusCode,scenario
-"1","metadata1",200,"successful operation"
-"2","metadata2",200,"successful operation"
-"3","metadata3",200,"successful operation"
-"4","metadata4",200,"successful operation"
-"abc","invalid_metadata",400,"error scenario"
-"invalidId","test_fail_metadata",500,"server error scenario"
-"test/invalid","fail_case_metadata",404,"not found scenario"
+"12345","Sample metadata about pet",200,"successful operation"
+"54321","Another sample metadata",200,"successful operation"
+"67890","Additional test metadata",200,"successful operation"
+"09876","Metadata for API testing",200,"successful operation"
+"44567","General pet information",200,"successful operation"
