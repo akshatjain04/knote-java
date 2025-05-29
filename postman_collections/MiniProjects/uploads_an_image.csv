@@ -1,0 +1,11 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Pet has been vaccinated",200,"successful operation"
+"67890","Needs to be spayed",200,"successful operation"
+"54321","Recent adopter request",200,"successful operation"
+"98765","Owner requested grooming",200,"successful operation"
+"11223","High priority foster care",200,"successful operation"
+"44556","Returning pet to shelter",200,"successful operation"
+"33445","Follow-up on diagnosis",200,"successful operation"
+"99887","New vaccination schedule",200,"successful operation"
+"55667","Awaiting microchip implant",200,"successful operation"
+"22990","Pending adoption approval",200,"successful operation"
