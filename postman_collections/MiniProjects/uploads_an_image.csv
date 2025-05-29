@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+"10245","Quote with /\"escaped/\" characters",200,"successful operation"
+"78432","Another /\"escaped/\" quote within metadata",200,"successful operation"
+"15478","Special metadata info containing /\"quotes/\"",200,"successful operation"
+"98765","Additional data field /\"filled/\"",200,"successful operation"
+"87654","Provided /\"metadata/\" includes specifics",200,"successful operation"

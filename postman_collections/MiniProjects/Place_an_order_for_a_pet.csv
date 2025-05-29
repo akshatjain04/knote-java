@@ -1,0 +1,7 @@
+id,petId,quantity,shipDate,status,complete,statusCode,scenario
+123456,789012,3,2022-11-11T00:00:00,"placed",true,200,"successful operation"
+234567,890123,2,2022-11-12T00:00:00,"approved",false,200,"successful operation"
+345678,901234,1,2022-11-13T00:00:00,"delivered",true,200,"successful operation"
+456789,012345,5,2022-11-15T00:00:00,"returned",false,400,"Invalid Order"
+567890,123456,4,2022-11-16T00:00:00,"cancelled",true,400,"Invalid Order"
+678901,234567,6,2022-11-17T00:00:00,"refunded",false,400,"Invalid Order"
