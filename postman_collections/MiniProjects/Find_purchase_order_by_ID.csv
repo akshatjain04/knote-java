@@ -1,0 +1,25 @@
+orderId,statusCode,scenario
+ORD_12345,200,successful operation
+ORD_12346,400,Invalid ID supplied
+ORD_12347,404,Order not found
+ORD_12348,200,successful operation
+ORD_12349,400,Invalid ID supplied
+ORD_12350,404,Order not found
+ORD_12351,200,successful operation
+ORD_12352,400,Invalid ID supplied
+ORD_12353,404,Order not found
+ORD_12354,200,successful operation
+ORD_12355,400,Invalid ID supplied
+ORD_12356,404,Order not found
+ORD_12357,200,successful operation
+ORD_12358,400,Invalid ID supplied
+ORD_12359,404,Order not found
+ORD_12360,200,successful operation
+ORD_12361,400,Invalid ID supplied
+ORD_12362,404,Order not found
+ORD_12363,200,successful operation
+ORD_12364,400,Invalid ID supplied
+ORD_12365,404,Order not found
+ORD_12366,200,successful operation
+ORD_12367,400,Invalid ID supplied
+ORD_12368,404,Order not found

@@ -1,0 +1,5 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","sample metadata",200,"successful operation"
+"67890","additional info about the pet",200,"successful operation"
+"33456","metadata for testing",200,"successful operation"
+"51234","helper test payload",200,"successful operation"
