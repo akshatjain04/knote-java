@@ -1,0 +1,5 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Pet info retrieval",200,"successful operation"
+"67890","New pet registration",200,"successful operation"
+"54321","Missing data /error",400,"{\n  \"code\": 88070601,\n  \"type\": \"quis proident ut laboris\",\n  \"message\": \"d\"\n}"
+"98765","Pet update failure",500,"{\n  \"code\": 88070601,\n  \"type\": \"quis proident ut laboris\",\n  \"message\": \"d\"\n}"
