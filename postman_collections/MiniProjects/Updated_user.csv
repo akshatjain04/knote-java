@@ -1,0 +1,6 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+"jackma12",12345678,"Jack","Ma","jackma12@alibaba.com","pwd1234","1234567890",0,400,"Invalid user supplied"
+"elon_musk",87654321,"Elon","Musk","elonmusk@tesla.com","SpaceX2022","0987654321",1,400,"Invalid user supplied"
+"jeff.bezos",13579246,"Jeff","Bezos","jeff.bezos@amazon.com","BlueOrigin21","24681357",0,404,"User not found"
+"jay_z",8642097531,"Jay","Z","jayz@example.com","Beyonce4ever","3149204680",1,404,"User not found"
+"tcook",24682468,"Tim","Cook","tcook@apple.com","Appleseed1!","8624824680",0,400,"Invalid user supplied"
