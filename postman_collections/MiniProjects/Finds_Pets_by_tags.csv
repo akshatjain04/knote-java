@@ -1,0 +1,7 @@
+tags,statusCode,scenario
+"successful-operation",200,"Successful operation"
+"invalid-tag",400,"Invalid tag value"
+"some-other-tag",200,"Successful operation"
+"bad-input",400,"Invalid tag value"
+"valid-tag",200,"Successful operation"
+"unrecognized-tag",400,"Invalid tag value"

@@ -1,0 +1,5 @@
+id,petId,quantity,shipDate,status,complete,statusCode,scenario
+"1","101","3","2023-10-01T10:00:00Z","approved","true","200","successful operation"
+"2","102","1","2023-10-02T11:00:00Z","delivered","true","200","successful operation"
+"3","103","-5","INVALID_DATE","pending","false","400","Invalid Order"
+"4","","0","2023-10-01T10:00:00Z","","true","400","Invalid Order"

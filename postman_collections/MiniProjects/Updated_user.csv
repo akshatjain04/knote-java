@@ -1,0 +1,6 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+johnsmith22,105,"John","Smith",johnsmith22@gmail.com,js_22_password,1234567890,1,400,Invalid user supplied
+sarahjohnson,210,"Sarah","Johnson",sarahjohnson@gmail.com,sjohnson_password,0987654321,0,404,User not found
+michael88,315,"Michael","Aston",michael88@gmail.com,michael88_password,1029384756,1,400,Invalid user supplied
+lucywhite,420,"Lucy","White",lucywhite@gmail.com,lwhite_password,1122334455,0,404,User not found
+peterbrown,525,"Peter","Brown",peterbrown@gmail.com,pbrown_password,5566778899,1,400,Invalid user supplied
