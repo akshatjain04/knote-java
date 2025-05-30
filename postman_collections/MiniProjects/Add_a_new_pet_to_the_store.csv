@@ -1,0 +1,11 @@
+name,photoUrls,id,category.id,category.name,tags,status,statusCode,scenario
+John,"https://site.com/John.jpg",3452,21,Pets,dogs,available,405,Invalid input
+Jane,"https://site.com/Jane.jpg",8721,34,Electronics,laptops,pending,405,Invalid input
+Mike,"https://site.com/Mike.jpg",4563,76,Fashion,shirts,sold,405,Invalid input
+Emma,"https://site.com/Emma.jpg",2345,12,Footwear,shoes,unavailable,405,Invalid input
+Alex,"https://site.com/Alex.jpg",6789,54,Books,novels,available,405,Invalid input
+Sara,"https://site.com/Sara.jpg",1234,32,Gardening,seeds,pending,405,Invalid input
+Eli,"https://site.com/Eli.jpg",5678,11,Kitchen,utensils,sold,405,Invalid input
+Olivia,"https://site.com/Olivia.jpg",8965,45,Automobile,cars,unavailable,405,Invalid input
+Noah,"https://site.com/Noah.jpg",2341,19,Real estate,houses,available,405,Invalid input
+Lucy,"https://site.com/Lucy.jpg",7804,37,Sports,bats,pending,405,Invalid input
