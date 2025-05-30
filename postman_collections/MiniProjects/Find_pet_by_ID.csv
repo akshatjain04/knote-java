@@ -1,0 +1,11 @@
+petId,statusCode,scenario
+1245,200,"successful operation"
+6798,400,"Invalid ID supplied"
+7632,404,"Pet not found"
+9087,200,"successful operation"
+1023,400,"Invalid ID supplied"
+8976,200,"successful operation"
+7654,404,"Pet not found"
+2378,200,"successful operation"
+7643,400,"Invalid ID supplied"
+1823,404,"Pet not found"

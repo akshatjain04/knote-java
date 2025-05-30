@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+"1482","No metadata available",200,"successful operation"
+"7321","Quick check for pet record",200,"successful operation"
+"4956","Retrieve recent updates",200,"successful operation"
+"2693","Confirmed identifiable records",200,"successful operation"
+"1126","Last checked entry data",200,"successful operation"

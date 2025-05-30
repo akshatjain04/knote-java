@@ -1,0 +1,11 @@
+username,statusCode,scenario
+johnDoe123,400,"Invalid username supplied"
+susane45,404,"User not found"
+melindag_92,400,"Invalid username supplied"
+tom_brady7,400,"Invalid username supplied"
+jsmith,404,"User not found"
+alphaBeta2022,400,"Invalid username supplied"
+randy_Rodgers,404,"User not found"
+martini_russo,400,"Invalid username supplied"
+hawkeye76,404,"User not found"
+leoMessi10,400,"Invalid username supplied"
