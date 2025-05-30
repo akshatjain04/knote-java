@@ -1,0 +1,11 @@
+username,password,statusCode,scenario
+"user1","password123",200,"successful operation"
+"user2","password456",200,"successful operation"
+"user3","password789",400,"Invalid username/password supplied"
+"user4","pas/sword",400,"Invalid username/password supplied"
+"user5","pass123!",200,"successful operation"
+"user6","invalid_pass*",400,"Invalid username/password supplied"
+"user7","secure_pass1!",200,"successful operation"
+"user8","mis/match123",400,"Invalid username/password supplied"
+"user9","user_pass!@",200,"successful operation"
+"user10","wrong_pass?",400,"Invalid username/password supplied"
