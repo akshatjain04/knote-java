@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,1.id,1.username,1.firstName,1.lastName,1.email,1.password,1.phone,1.userStatus,statusCode,scenario
+1,"jdoe","John","Doe","jdoe@example.com","password1","1234567890",1,10,"jsmith","Jane","Smith","jsmith@example.com","password2","0987654321",0,200,"successful operation"
+2,"mjohns","Mary","Johns","mjohns@example.com","passmary","2345678901",1,20,"arodgers","Aaron","Rodgers","arodgers@example.com","packpass","1122334455",0,201,"successful operation"
+3,"bmurray","Bill","Murray","bmurray@example.com","golfbill","3456789012",0,30,"shayekh","Sam","Hayekh","shayekh@example.com","samsam","2233445566",1,500,"successful operation"
+4,"tparker","Tony","Parker","tparker@example.com","basketball","4567890123",1,40,"cmartin","Chris","Martin","cmartin@example.com","coldplay","3344556677",0,202,"successful operation"
+5,"spears","Britney","Spears","spears@example.com","popstar","5678901234",0,50,"rkelly","R."&|^"Kelly","rkelly@example.com","rapstar","4455667788",1,500,"successful operation"
