@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+15609046,"sed sunt magna",200,"successful operation"
+12345678,"sample metadata",200,"successful operation"
+98765432,"testing data",200,"successful operation"
+22334455,"extra information",200,"successful operation"
+43561987,"updated metadata",200,"successful operation"
