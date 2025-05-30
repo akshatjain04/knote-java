@@ -1,11 +1,11 @@
 {
   "item": [
     {
-      "id": "50ddbfc1-706e-46ad-96e7-9331b9e64f5c",
+      "id": "c3cfdb88-553e-4db9-8706-f1498ad27703",
       "name": "pet",
       "item": [
         {
-          "id": "dd359b01-7d0d-4c95-a06f-b4993119c52e",
+          "id": "b9a3d8c7-b0a2-482f-a53c-bf246b89d79f",
           "name": "Add a new pet to the store",
           "request": {
             "name": "Add a new pet to the store",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "947e8097-1d99-45fa-b994-510fbfe09fbb",
+          "id": "56f38d29-8879-4995-895b-00ea83101995",
           "name": "Update an existing pet",
           "request": {
             "name": "Update an existing pet",
@@ -293,11 +293,11 @@
           }
         },
         {
-          "id": "7942a94e-420f-4a5c-a569-f1de8dfc24c2",
+          "id": "15ac4bf1-4b0e-4962-8135-ec2b1b611c3e",
           "name": "{petId}",
           "item": [
             {
-              "id": "f2cfc033-140a-499f-ab9a-27970e53ee1f",
+              "id": "aee35ca6-0f76-4a7e-81f2-86f4a96ffbaa",
               "name": "Find pet by ID",
               "request": {
                 "name": "Find pet by ID",
@@ -509,7 +509,7 @@
               }
             },
             {
-              "id": "993cade3-8edd-410f-a2cf-3705bca19da0",
+              "id": "b2e143c4-09fd-48f5-ab35-2cf914e9952e",
               "name": "Updates a pet in the store with form data",
               "request": {
                 "name": "Updates a pet in the store with form data",
@@ -664,7 +664,7 @@
               }
             },
             {
-              "id": "dbf9db2b-1026-4aea-9b9b-3f3ef0d686bf",
+              "id": "170d8664-08d1-43f0-bfd3-f648eac3bed3",
               "name": "Deletes a pet",
               "request": {
                 "name": "Deletes a pet",
@@ -840,7 +840,7 @@
               }
             },
             {
-              "id": "7b50e34e-7093-49ea-97a4-77f077eea611",
+              "id": "068750bc-7e3e-4b5c-ad0a-bb90fd5a9a85",
               "name": "uploads an image",
               "request": {
                 "name": "uploads an image",
@@ -1007,7 +1007,7 @@
           "event": []
         },
         {
-          "id": "fd4cd699-4c5c-456c-ae75-e6581f7b1fb6",
+          "id": "62e09ba8-9b6c-4ff5-86da-f3c92c702a7e",
           "name": "Finds Pets by status",
           "request": {
             "name": "Finds Pets by status",
@@ -1180,7 +1180,7 @@
           }
         },
         {
-          "id": "4b2e78a4-7acc-41e0-98c9-759055c9e925",
+          "id": "1e662e56-cc6b-4dff-a563-90d47bae6a9b",
           "name": "Finds Pets by tags",
           "request": {
             "name": "Finds Pets by tags",
@@ -1356,11 +1356,11 @@
       "event": []
     },
     {
-      "id": "1c2f17f0-ac7f-4fe6-bce2-784113aa87a8",
+      "id": "c6fab4be-4540-49d6-8af1-b35862d4f81f",
       "name": "store",
       "item": [
         {
-          "id": "53950be1-10c7-4530-beea-e360ae5071b7",
+          "id": "ce8cecf3-aaa0-4cc0-a1b8-e19946926eaf",
           "name": "Returns pet inventories by status",
           "request": {
             "name": "Returns pet inventories by status",
@@ -1464,11 +1464,11 @@
           }
         },
         {
-          "id": "f6e579ea-101f-432f-b6cd-7b1602667764",
+          "id": "89ca4d27-7d57-4bf0-8b11-d7c9c5cbfaa0",
           "name": "order",
           "item": [
             {
-              "id": "17f8b51b-97a8-430c-8a71-36f67074445a",
+              "id": "6ac04661-3238-47ef-ab8f-19206726a3c1",
               "name": "Place an order for a pet",
               "request": {
                 "name": "Place an order for a pet",
@@ -1605,11 +1605,11 @@
               }
             },
             {
-              "id": "cd058691-03f3-4da8-9f3d-1d1676e37328",
+              "id": "289fecf8-6f54-4eb9-9509-82280a06e0f2",
               "name": "{orderId}",
               "item": [
                 {
-                  "id": "33413dcd-50cd-4d19-a00f-86388de2acbc",
+                  "id": "f91662b2-558a-43cd-98d7-96aa06d28187",
                   "name": "Find purchase order by ID",
                   "request": {
                     "name": "Find purchase order by ID",
@@ -1781,7 +1781,7 @@
                   }
                 },
                 {
-                  "id": "d88a4e78-c116-4e27-bee7-c6ae7ac74371",
+                  "id": "72e3c35f-2c0f-4953-aa10-5fecd9b51c99",
                   "name": "Delete purchase order by ID",
                   "request": {
                     "name": "Delete purchase order by ID",
@@ -1913,11 +1913,11 @@
       "event": []
     },
     {
-      "id": "742374eb-3ad8-4b05-b26b-d4589cac3e88",
+      "id": "5f49f9d1-19c6-4131-b6a0-b69c0d374d17",
       "name": "user",
       "item": [
         {
-          "id": "7be7f7ee-5342-416b-9dfc-1a772bb597bd",
+          "id": "39726bbf-baf5-41fe-be1c-eaa84c3cb8f4",
           "name": "Create user",
           "request": {
             "name": "Create user",
@@ -2006,7 +2006,7 @@
           }
         },
         {
-          "id": "4253d50d-baf2-4cef-9a6d-613438e9fe07",
+          "id": "8a6617aa-0cc3-48bf-8103-a42b2dcf0475",
           "name": "Creates list of users with given input array",
           "request": {
             "name": "Creates list of users with given input array",
@@ -2089,11 +2089,11 @@
           }
         },
         {
-          "id": "4a8ce7b9-7aad-4857-80a0-c3373de81444",
+          "id": "e25f3235-783a-4883-8f84-acf98129beae",
           "name": "{username}",
           "item": [
             {
-              "id": "951d7069-51eb-4055-af24-0681d4c2a482",
+              "id": "e4eda405-343d-4b42-b59d-f90568a04004",
               "name": "Get user by user name",
               "request": {
                 "name": "Get user by user name",
@@ -2261,7 +2261,7 @@
               }
             },
             {
-              "id": "0d05760c-380a-47b1-9d4e-29b76ba2fc4b",
+              "id": "89acea86-e9a0-425a-b228-e88b6ce53038",
               "name": "Updated user",
               "request": {
                 "name": "Updated user",
@@ -2412,7 +2412,7 @@
               }
             },
             {
-              "id": "23b96828-244d-4657-8130-f2244b53ff0a",
+              "id": "3bcb096a-5541-443b-96be-f2919f280f50",
               "name": "Delete user",
               "request": {
                 "name": "Delete user",
@@ -2535,7 +2535,7 @@
           "event": []
         },
         {
-          "id": "e2a9b7b3-1d26-43b5-b318-2f72b486c0e2",
+          "id": "60894593-1ea2-4533-9bc7-cfbd104054a8",
           "name": "Logs user into the system",
           "request": {
             "name": "Logs user into the system",
@@ -2686,7 +2686,7 @@
           }
         },
         {
-          "id": "7c3b1f6c-d5fd-4062-9f62-e841504a6c2b",
+          "id": "e341f9d0-6ae5-4a6f-80cf-5f6b3058d3b4",
           "name": "Logs out current logged in user session",
           "request": {
             "name": "Logs out current logged in user session",
@@ -2754,7 +2754,7 @@
           }
         },
         {
-          "id": "4ba52675-f0cd-4598-8ccd-7685db6e5a35",
+          "id": "2f941b1e-148c-4da1-9ff6-28fe9e87d57c",
           "name": "Creates list of users with given input array",
           "request": {
             "name": "Creates list of users with given input array",
@@ -2854,7 +2854,7 @@
     }
   ],
   "info": {
-    "_postman_id": "43f77fd6-2ec1-48af-8163-63d6675ca04d",
+    "_postman_id": "9ad52f89-6dec-4478-ad2b-4d4c4f1d5950",
     "name": "Swagger Petstore",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
