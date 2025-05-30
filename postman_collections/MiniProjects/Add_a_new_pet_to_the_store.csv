@@ -1,0 +1,8 @@
+name,photoUrls,id,category.id,category.name,tags,status,statusCode,scenario
+doggie,[],12345,567,pets,[],available,405,Invalid input
+puppy,[],67890,890,animals,[],pending,405,Invalid input
+kitty,[],23456,910,cats,[],sold,405,Invalid input
+rabbit,[],78901,121,mammals,[],available,405,Invalid input
+hamster,[],34567,312,rodents,[],pending,405,Invalid input
+turtle,[],89012,141,reptiles,[],sold,405,Invalid input
+parrot,[],45678,516,birds,[],available,405,Invalid input

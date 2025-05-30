@@ -1,0 +1,11 @@
+petId,statusCode,scenario
+1,400,Invalid ID supplied
+2,400,Invalid ID supplied
+3,400,Invalid ID supplied
+4,404,Pet not found
+5,404,Pet not found
+6,404,Pet not found
+7890,400,Invalid ID supplied
+12345,404,Pet not found
+67890,400,Invalid ID supplied
+54321,404,Pet not found
