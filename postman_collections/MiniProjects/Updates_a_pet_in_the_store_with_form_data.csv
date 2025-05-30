@@ -1,0 +1,6 @@
+petId,name,status,statusCode,scenario
+1234,"doggie","available",405,Invalid input
+5678,"fluffy","pending",405,Invalid input
+9012,"sparky","sold",405,Invalid input
+3456,"max","available",405,Invalid input
+7890,"bella","pending",405,Invalid input

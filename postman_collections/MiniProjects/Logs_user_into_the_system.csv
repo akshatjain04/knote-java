@@ -1,0 +1,7 @@
+username,password,statusCode,scenario
+"validUser","securePass123",200,"successful operation"
+"apiTester","testPassword1",200,"successful operation"
+"johndoe","pass123",200,"successful operation"
+"invalidUser","incorrectPassword",400,"Invalid username/password supplied"
+"user123","wrongPass",400,"Invalid username/password supplied"
+"xyzUser","badPwd",400,"Invalid username/password supplied"

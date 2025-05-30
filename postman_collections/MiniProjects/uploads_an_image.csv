@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+31147848,"Valid metadata",200,"successful operation"
+82557105,"More info on pet",200,"successful operation"
+12234509,"Additional details provided",200,"successful operation"
+48552971,"Pet metadata description",200,"successful operation"
+21123941,"Helpful pet metadata",200,"successful operation"
