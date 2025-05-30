@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Sample metadata for pet",200,"successful operation"
+"67890","Additional metadata example",200,"successful operation"
+"11223","Metadata details for pet",200,"successful operation"
+"44556","Pet metadata info",200,"successful operation"
+"77889","More metadata information",200,"successful operation"
