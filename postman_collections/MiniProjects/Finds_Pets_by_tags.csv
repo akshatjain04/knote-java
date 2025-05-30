@@ -1,0 +1,7 @@
+tags,statusCode,scenario
+"[{\"id\": 12345,\"name\": \"doggie\"},{\"id\": 67890, \"name\": \"kittie\"}]",200,successful operation
+"[{\"id\": /"invalid/","name": /"invalid/"},{\"id\": /"invalid/", "name": /"invalid/"}]",400,Invalid tag value
+"[{\"id\": 11112,\"name\": \"birdie\"},{\"id\": 33344, \"name\": \"turtlie\"}]",200,successful operation
+"[{\"id\": /"invalid/","name": /"invalid/"},{\"id\": /"invalid/", "name": /"invalid/"}]",400,Invalid tag value
+"[{\"id\": 99987,\"name\": \"duckie\"},{\"id\": 55566, \"name\": \"goosie\"}]",200,successful operation
+"[{\"id\": /"invalid/","name": /"invalid/"},{\"id\": /"invalid/", "name": /"invalid/"}]",400,Invalid tag value
