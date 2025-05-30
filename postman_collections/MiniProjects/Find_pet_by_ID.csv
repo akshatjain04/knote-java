@@ -1,0 +1,7 @@
+petId,statusCode,scenario
+"12345",200,"successful operation"
+"67890",200,"successful operation"
+"54321",400,"Invalid ID supplied"
+"abcdef",400,"Invalid ID supplied"
+"00000",404,"Pet not found"
+"99999",404,"Pet not found"

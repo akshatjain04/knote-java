@@ -1,0 +1,7 @@
+orderId,statusCode,scenario  
+"12345",200,"successful operation"  
+"67890",200,"successful operation"  
+"abcde!",400,"Invalid ID supplied"  
+"fghij@",400,"Invalid ID supplied"  
+"zyx987",404,"Order not found"  
+"lmn123",404,"Order not found"  

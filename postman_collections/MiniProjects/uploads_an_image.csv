@@ -1,0 +1,9 @@
+petId,additionalMetadata,statusCode,scenario
+"12345","Standard metadata",200,"Successful operation"
+"67890","Detailed metadata",200,"Successful operation"
+"112233","Extra metadata information",200,"Successful operation"
+"44567","Additional notes",200,"Successful operation"
+"99012","Specific metadata details",200,"Successful operation"
+"invalid_pet_id","Corrupted metadata",404,"Operation failed"
+"99999","Unknown metadata structure",500,"Internal server error"
+"example_pet_id","Sample failed metadata",403,"Forbidden access"

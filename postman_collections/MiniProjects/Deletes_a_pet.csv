@@ -1,0 +1,7 @@
+petId,statusCode,scenario
+12345,400,"Invalid ID supplied"
+67890,404,"Pet not found"
+90321,404,"Pet not found"
+76454,400,"Invalid ID supplied"
+76054,404,"Pet not found"
+44215,400,"Invalid ID supplied"
