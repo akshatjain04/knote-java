@@ -1,0 +1,11 @@
+status,statusCode,scenario
+"Success",200,"successful operation"
+"Failure",400,"Invalid status value"
+"Operational",200,"successful operation"
+"Incorrect",400,"Invalid status value"
+"Complete",200,"successful operation"
+"Invalid",400,"Invalid status value"
+"Processed",200,"successful operation"
+"NotAvailable",400,"Invalid status value"
+"Finished",200,"successful operation"
+"N/A",400,"Invalid status value"
