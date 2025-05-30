@@ -1,0 +1,7 @@
+username,password,statusCode,scenario
+"test_user1","password123",200,"successful operation"
+"example_user2","securePass456",200,"successful operation"
+"invalid_user","wrongPass",400,"Invalid username/password supplied"
+"random_user3","pass/!@#",400,"Invalid username/password supplied"
+"user_valid5","validPass789",200,"successful operation"
+"missing_user","",400,"Invalid username/password supplied"
