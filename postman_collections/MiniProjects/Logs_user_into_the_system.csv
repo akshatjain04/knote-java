@@ -1,0 +1,9 @@
+username,password,statusCode,scenario
+"validUser","validPass",200,"successful operation"
+"anotherValidUser","anotherValidPass",200,"successful operation"
+"invalidUser","wrongPassword",400,"Invalid username/password supplied"
+"unformattedUser","\"invalidPass\"",400,"Invalid username/password supplied"
+"testUser123","testPass321",200,"successful operation"
+"faultyUser","nullPass",400,"Invalid username/password supplied"
+"newTester","testerPass",200,"successful operation"
+"badFormatUser","\"invalid\"/format/pass\"",400,"Invalid username/password supplied"

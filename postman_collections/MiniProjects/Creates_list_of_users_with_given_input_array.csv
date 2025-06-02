@@ -1,0 +1,4 @@
+id,username,firstName,lastName,email,password,phone,userStatus,1.id,1.username,1.firstName,1.lastName,1.email,1.password,1.phone,1.userStatus,statusCode,scenario
+123,"JohnDoe","John","Doe","johndoe@email.com","Password123","1234567890",1,456,"JaneRoe","Jane","Roe","janeroe@email.com","Password456","0987654321",2,500,"successful operation"
+234,"MikeSmith","Mike","Smith","mikesmith@email.com","Password234","2345678901",2,789,"EmilyJones","Emily","Jones","emilyjones@email.com","Password789","3456789012",1,500,"successful operation"
+345,"LisaTaylor","Lisa","Taylor","lisataylor@email.com","Password345","4567890123",1,123,"MarkWilliams","Mark","Williams","markwilliams@email.com","Password123","5678901234",2,500,"successful operation"

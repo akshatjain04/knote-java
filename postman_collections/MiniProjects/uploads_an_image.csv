@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+12345,"metadata info",200,"successful operation"
+67890,"example data",200,"successful operation"
+54321,"sample payload",200,"successful operation"
+98765,"test metadata",200,"successful operation"
+11235,"metadata details",200,"successful operation"
