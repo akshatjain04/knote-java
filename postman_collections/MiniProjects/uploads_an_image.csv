@@ -1,0 +1,4 @@
+petId,additionalMetadata,statusCode,scenario
+10456487^|"Valid API call",200^|"successful operation"
+87421356^|"Test for",200^|"successful operation"
+95276142^|"Value/Helper-Val Meta",200^|"successful operation
