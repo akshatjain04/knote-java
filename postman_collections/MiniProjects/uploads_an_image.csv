@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+123456,"Sample metadata",200,"successful operation"
+789123,"Additional data for pet",200,"successful operation"
+456789,"Pet metadata details",200,"successful operation"
+112233,"Metadata for testing",200,"successful operation"
+334455,"Extra metadata",200,"successful operation"
