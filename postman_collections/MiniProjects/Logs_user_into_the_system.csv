@@ -1,0 +1,8 @@
+username,password,statusCode,scenario
+"validUser1","SecurePa$sw0rd123",200,"successful operation"
+"validUser2","AnotherP@assw0rd!",200,"successful operation"
+"invalidUser#","",400,"Invalid username/password supplied"
+"@user123","short",400,"Invalid username/password supplied"
+"randomUsername","Pa$$wordWithEscape\"Quote\"",200,"successful operation"
+"validUser3","AComplex&P@ssw0rd",200,"successful operation"
+"fakeUser*","insecure",400,"Invalid username/password supplied"
