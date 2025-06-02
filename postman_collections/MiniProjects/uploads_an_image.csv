@@ -1,0 +1,4 @@
+petId,additionalMetadata,statusCode,scenario
+84420790,"valid metadata",200,"successful operation"
+84420791,"example metadata",200,"successful operation"
+84420792,"sample metadata",200,"successful operation"
