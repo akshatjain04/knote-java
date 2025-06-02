@@ -1,0 +1,10 @@
+username,statusCode,scenario
+john_doe,200,successful operation
+invalid_user,400,Invalid username supplied
+missing_user,404,User not found
+mary_jane,200,successful operation
+error_user,400,Invalid username supplied
+non_existent_user,404,User not found
+peter_parker,200,successful operation
+faulty_user,400,Invalid username supplied
+absent_user,404,User not found

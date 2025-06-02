@@ -1,0 +1,7 @@
+petId,additionalMetadata,statusCode,scenario
+28765013,"commodo elit Duis esse anim",200,"successful operation"
+12345678,"example metadata info",200,"successful operation"
+87654321,"sample additional data",200,"successful operation"
+98765432,"test metadata field",200,"successful operation"
+54321678,"another example metadata",200,"successful operation"
+11223344,"random valid metadata",200,"successful operation"
