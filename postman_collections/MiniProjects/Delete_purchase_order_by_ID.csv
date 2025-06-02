@@ -1,0 +1,11 @@
+orderId,statusCode,scenario
+1,400,"Invalid ID supplied"
+2,404,"Order not found"
+7,400,"Invalid ID supplied"
+9,400,"Invalid ID supplied"
+10,404,"Order not found"
+15,400,"Invalid ID supplied"
+20,404,"Order not found"
+80,400,"Invalid ID supplied"
+90,404,"Order not found"
+100,400,"Invalid ID supplied"
