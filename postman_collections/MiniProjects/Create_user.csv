@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+45837,"MickyD","Michael","Davis","MickyD@gmail.com","p@ssw0rd1","1234567890",1,500,successful operation
+94230,"JaneA","Jane","Anderson","JaneA@yahoo.com","h3ll0Wrld","0987654321",2,500,successful operation
+57328,"BobbyG","Robert","Griffin","BobbyG@hotmail.com","qwerty123","1122334455",1,500,successful operation
+83456,"LaraC","Lara","Croft","LaraC@tomb.com","r@1d3r","2233445566",0,500,successful operation
+49328,"OscarW","Oscar","Wilde","OscarW@aol.com","p1ctur3,"3344556677",2,500,successful operation
