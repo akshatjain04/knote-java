@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+12345,"example metadata",200,"successful operation"
+67890,"another metadata entry",200,"successful operation"
+54321,"test metadata value",200,"successful operation"
+98765,"sample additional metadata",200,"successful operation"
+11234,"metadata with quotes \"/escaped/\"",200,"successful operation"
