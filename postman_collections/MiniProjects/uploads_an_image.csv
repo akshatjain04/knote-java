@@ -1,0 +1,7 @@
+petId,additionalMetadata,statusCode,scenario
+123456789,"Additional information about the pet",200,"Successful operation"
+987654321,"Metadata with \"special\" characters",200,"Successful operation"
+456789123,"Another metadata example",200,"Successful operation"
+-83272894,"Invalid metadata example",404,"Error scenario"
+0,"Empty metadata placeholder",500,"Invalid scenario"
+-123456,"Faulty meta example",401,"Unauthorized access"
