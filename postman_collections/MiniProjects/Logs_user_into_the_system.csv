@@ -1,0 +1,5 @@
+username,password,statusCode,scenario
+"validUser1","strongPassword123",200,"successful operation"
+"validUser2","Password#456",200,"successful operation"
+"invalidUser!","weakPass",400,"Invalid username/password supplied"
+"another!Invalid","123",400,"Invalid username/password supplied"
