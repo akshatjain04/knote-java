@@ -1,0 +1,7 @@
+petId,additionalMetadata,statusCode,scenario
+12345,"Sample metadata description",200,"successful operation"
+67890,"Another test metadata with \"quoted\" text",200,"successful operation"
+112233,"Detailed example metadata",200,"successful operation"
+445566,"Metadata with \"escaped quote\" example",200,"successful operation"
+778899,"Case with variety of metadata characters @#%",200,"successful operation"
+101112,"Special symbols and metadata examples}",200,"successful operation"
