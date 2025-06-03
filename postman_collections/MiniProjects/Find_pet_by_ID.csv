@@ -1,0 +1,10 @@
+petId,statusCode,scenario
+123456,200,successful operation
+234567,400,Invalid ID supplied
+345678,404,Pet not found
+456789,200,successful operation
+567890,400,Invalid ID supplied
+678901,404,Pet not found
+789012,200,successful operation
+890123,400,Invalid ID supplied
+901234,404,Pet not found
