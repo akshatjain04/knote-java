@@ -1,0 +1,11 @@
+username,statusCode,scenario
+john_doe,400,"Invalid username supplied"
+mary_jane,404,"User not found"
+adam_smith,400,"Invalid username supplied"
+sarah_paul,404,"User not found"
+alex_king,400,"Invalid username supplied"
+emma_adams,404,"User not found"
+michael_snow,400,"Invalid username supplied"
+lucy_white,404,"User not found"
+jack_brown,400,"Invalid username supplied"
+grace_thomas,404,"User not found"

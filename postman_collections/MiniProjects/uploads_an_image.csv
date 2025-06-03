@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+987654321,"metadata example",200,"successful operation"
+123456789,"another example metadata",200,"successful operation"
+555666777,"sample metadata test",200,"successful operation"
+345678901,"test metadata with quotes \\"inside\\"",200,"successful operation"
+111222333,"metadata data string with edge cases",200,"successful operation"
