@@ -1,0 +1,69 @@
+^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+post^|^https://petstore.swagger.io/v2/pet^|^Authorization:Bearer write:pets,read:pets^|^{
+  "id": 0,
+  "name": "string",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}^|^405^|^{
+  "code": 405,
+  "type": "unknown",
+  "message": "Invalid input"
+}
+put^|^https://petstore.swagger.io/v2/pet^|^Authorization:Bearer write:pets,read:pets^|^{
+  "id": 0,
+  "name": "string",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}^|^404^|^{
+  "code": 404,
+  "type": "unknown",
+  "message": "Pet not found"
+}
+get^|^https://petstore.swagger.io/v2/store/order/0^|^Authorization:Bearer write:pets,read:pets^|^^|^400^|^{
+  "code": 400,
+  "type": "unknown",
+  "message": "Invalid ID supplied"
+}
+get^|^https://petstore.swagger.io/v2/store/order/11^|^Authorization:Bearer write:pets,read:pets^|^^|^400^|^{
+  "code": 400,
+  "type": "unknown",
+  "message": "Invalid ID supplied"
+}
+post^|^https://petstore.swagger.io/v2/user^|^Authorization:Bearer write:pets,read:pets^|^{
+  "id": 0,
+  "username": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "password": "string",
+  "phone": "string",
+  "userStatus": 0
+}^|^200^|^{
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+post^|^https://petstore.swagger.io/v2/user/login^|^Authorization:Bearer write:pets,read:pets^|^{
+  "username": "string",
+  "password": "string"
+}^|^400^|^{
+  "code": 400,
+  "type": "unknown",
+  "message": "Invalid username/password supplied"
+}
