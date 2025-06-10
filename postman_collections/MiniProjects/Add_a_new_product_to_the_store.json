@@ -1,0 +1,37 @@
+[
+  {
+    "name_string": "apple",
+    "description_string": "Fresh and juicy red apple",
+    "price_number": 20,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_string": "banana",
+    "description_string": "Ripe yellow banana perfect for snacking",
+    "price_number": 15,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_string": "",
+    "description_string": "Invalid description",
+    "price_number": -5,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name_string": "cherry",
+    "description_string": "Small, ripe cherries packed with flavor",
+    "price_number": 25,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_string": "invalid_name_123!@#",
+    "description_string": "",
+    "price_number": 0,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
