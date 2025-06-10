@@ -1,0 +1,27 @@
+[
+  {
+    "responseBody": "{\n  \"id\": 10,\n  \"name\": \"apple\",\n  \"description\": \"description of the product\",\n  \"price\": 20\n}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\n  \"id\": -1,\n  \"name\": \"\",\n  \"description\": \"Invalid description\",\n  \"price\": -5\n}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "responseBody": "{\n  \"id\": 999,\n  \"name\": \"test_product\",\n  \"description\": \"product description for testing\",\n  \"price\": 55\n}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\n  \"id\": null,\n  \"name\": \"\",\n  \"description\": \"\",\n  \"price\": \"NaN\"\n}",
+    "statusCode": 422,
+    "scenario": "Unprocessable Entity"
+  },
+  {
+    "responseBody": "{\n  \"id\": 20,\n  \"name\": \"orange\",\n  \"description\": \"fruit product\",\n  \"price\": 25\n}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  }
+]

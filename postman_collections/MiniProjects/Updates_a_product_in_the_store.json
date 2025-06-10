@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "prod_12345",
+    "id": 10,
+    "name": "2023-10-01",
+    "description": "2023-10-02",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "prod_invalid",
+    "id": -1,
+    "name": "invalid-date",
+    "description": "2023-13-32",
+    "price": -10,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "prod_67890",
+    "id": 20,
+    "name": "2023-09-30",
+    "description": "2023-10-05",
+    "price": 50,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "",
+    "id": 0,
+    "name": "2021-02-30",
+    "description": "not-a-date",
+    "price": 99999,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "prod_54321",
+    "id": 15,
+    "name": "2023-10-10",
+    "description": "2023-11-15",
+    "price": 19.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  }
+]

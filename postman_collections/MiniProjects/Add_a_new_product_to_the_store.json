@@ -1,0 +1,37 @@
+[
+  {
+    "name": "apple",
+    "description": "description of the product",
+    "price": 20,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "banana",
+    "description": "fresh yellow bananas",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "",
+    "description": "desc",
+    "price": -1,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "pear123",
+    "description": "",
+    "price": "twenty",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "null_item",
+    "description": "missing info",
+    "price": 0,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
