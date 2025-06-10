@@ -1,0 +1,42 @@
+[
+  {
+    "baseUrl": "https://api.example.com",
+    "name": "apple",
+    "description": "Fresh red apple",
+    "price": 20,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.shop.com/v1/products",
+    "name": "banana",
+    "description": "Ripe yellow banana",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.store.com/v2/item",
+    "name": "orange",
+    "description": "Juicy, sweet orange",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "invalid-url",
+    "name": "",
+    "description": "",
+    "price": -10,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "baseUrl": "https://api.fake.com/malformed",
+    "name": "123@name",
+    "description": "%%INVALID_DESCRIPTION%%",
+    "price": "NaN",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
