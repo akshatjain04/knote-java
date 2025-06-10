@@ -1,0 +1,52 @@
+[
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "prod123",
+    "id": 10,
+    "name": "2023-10-01",
+    "description": "2023-10-01",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "prod456",
+    "id": -5,
+    "name": "2023-15-01",
+    "description": "invalid_date",
+    "price": -10,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "prod789",
+    "id": 15,
+    "name": "2023-09-30",
+    "description": "2023-09-30",
+    "price": 30,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "baseUrl": "https://api.invalid-url.com/products",
+    "productId": "prod000",
+    "id": "NaN",
+    "name": "",
+    "description": "2023-02-31",
+    "price": "string_value",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "prod999",
+    "id": 20,
+    "name": "2023-10-05",
+    "description": "2023-10-05",
+    "price": 40,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  }
+]

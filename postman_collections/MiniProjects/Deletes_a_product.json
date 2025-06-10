@@ -1,0 +1,32 @@
+[
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "12345",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "98765",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "baseUrl": "https://api.nonexistent.com/products",
+    "productId": "invalid_product_id",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "empty",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.invalid.com/products",
+    "productId": "00000",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
