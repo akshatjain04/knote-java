@@ -1,0 +1,27 @@
+[
+  {
+    "baseUrl": "https://api.example.com/products",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.invalid-url.com",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "baseUrl": "https://api.example.com/users",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "not-a-url",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  }
+]
