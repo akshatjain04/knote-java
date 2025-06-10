@@ -1,0 +1,52 @@
+[
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "PROD12345",
+    "id": 101,
+    "name": "2023-10-12",
+    "description": "2023-10-15",
+    "price": 29.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "baseUrl": "https://api.example.com/products",
+    "productId": "PROD67890",
+    "id": 202,
+    "name": "2023-08-08",
+    "description": "2023-08-10",
+    "price": 49.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "baseUrl": "https://api.example.com/items",
+    "productId": "INVALID_PRODUCT",
+    "id": -1,
+    "name": "2023-13-40",
+    "description": "invalid-date",
+    "price": -99.99,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.badurl.invalid",
+    "productId": "",
+    "id": "NaN",
+    "name": "invalid-date",
+    "description": "2024-14-99",
+    "price": 0,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "baseUrl": "https://api.test.fake/products",
+    "productId": null,
+    "id": 0,
+    "name": "0000-00-00",
+    "description": "0000-00-00",
+    "price": 999999999999,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
