@@ -1,0 +1,42 @@
+[
+  {
+    "baseUrl": "https://api.example.com/v1/products",
+    "name": "Laptop",
+    "description": "High-performance laptop with 16GB RAM",
+    "price": 1299.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.example.com/v1/products",
+    "name": "Smartphone",
+    "description": "Latest model smartphone with advanced features",
+    "price": 799.5,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.wrong-url.com/foo/bar",
+    "name": "InvalidDevice123!",
+    "description": "",
+    "price": -99.99,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "baseUrl": "https://api.invalid.com/v1/products",
+    "name": "1234InvalidName",
+    "description": "###InvalidDescription###",
+    "price": 0,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "baseUrl": "https://api.example.com/v1/items",
+    "name": "Tablet",
+    "description": "Lightweight tablet with 10-inch screen",
+    "price": 499,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "baseUrl": "https://api.example.com/resource",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "baseUrl": "https://api.example.com/resource?invalidParam=value",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "baseUrl": "http://incorrect-url/resource",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "baseUrl": "https://api.example.net/endpoint",
+    "statusCode": 401,
+    "scenario": "Unauthorized access"
+  },
+  {
+    "baseUrl": "https://api.testsite.com/resource-not-found",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
