@@ -1,0 +1,27 @@
+[
+  {
+    "productId": "12345-ABCDE",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "productId": "98765-ZYXWV",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "54321-LMNOQ",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "productId": "00000-XXXXX",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "67890-PQRST",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  }
+]
