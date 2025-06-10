@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "P12345",
+    "id": 10,
+    "name": "2023-09-12",
+    "description": "2023-09-15",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "P98765",
+    "id": 20,
+    "name": "2023-10-01",
+    "description": "2023-10-05",
+    "price": 30,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "INVALID_PRODUCT",
+    "id": -1,
+    "name": "InvalidDate",
+    "description": "InvalidDate",
+    "price": -100,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "P00000",
+    "id": 8989,
+    "name": "2022-12-01",
+    "description": "2022-12-05",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "MISSING_PRODUCT",
+    "id": 99999,
+    "name": "Missing",
+    "description": "Missing",
+    "price": 0,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
