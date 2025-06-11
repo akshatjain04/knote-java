@@ -1,0 +1,44 @@
+[
+  {
+    "name": "apple",
+    "description": "Fresh red apple",
+    "price": 20,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "banana",
+    "description": "Ripe yellow banana",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "cherry",
+    "description": "Sweet and juicy cherries",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "",
+    "description": "Missing name product",
+    "price": -10,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "grape",
+    "description": "",
+    "price": 0,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "watermelon",
+    "description": "Overpriced watermelon",
+    "price": "invalid_price",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]

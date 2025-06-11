@@ -1,0 +1,27 @@
+[
+  {
+    "statusCode": 200,
+    "scenario": "Successful operation",
+    "responseBody": "{\n  \"id\": 10,\n  \"name\": \"apple\",\n  \"description\": \"description of the product\",\n  \"price\": 20\n}"
+  },
+  {
+    "statusCode": 400,
+    "scenario": "Bad Request",
+    "responseBody": "{\n  \"id\": -1,\n  \"name\": \"invalid_product\",\n  \"description\": \"\",\n  \"price\": -5\n}"
+  },
+  {
+    "statusCode": 500,
+    "scenario": "Internal Server Error",
+    "responseBody": "{\n  \"id\": 99999999,\n  \"name\": \"undefined\",\n  \"description\": \"null\",\n  \"price\": 0\n}"
+  },
+  {
+    "statusCode": 403,
+    "scenario": "Forbidden",
+    "responseBody": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"description\": \"Permission denied\",\n  \"price\": null\n}"
+  },
+  {
+    "statusCode": 200,
+    "scenario": "Successful operation",
+    "responseBody": "{\n  \"id\": 20,\n  \"name\": \"banana\",\n  \"description\": \"description of the product\",\n  \"price\": 15\n}"
+  }
+]
