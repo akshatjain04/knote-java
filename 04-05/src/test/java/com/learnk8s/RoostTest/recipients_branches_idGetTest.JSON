@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Users"
+    },
+    "name": "John Doe",
+    "photoUrls": ["https://example.com/profile.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "VIP"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Resources"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Invalid Tests"
+    },
+    "name": "Invalid User",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": "invalid-id",
+        "name": 12345
+      }
+    ],
+    "status": "invalid-status",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Security"
+    },
+    "name": "Unauthorized Test",
+    "photoUrls": ["https://example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 2,
+        "name": "Role: User"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Boundary Testing"
+    },
+    "name": "",
+    "photoUrls": ["https://example.com"],
+    "tags": [],
+    "status": "",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Non-Existing Resource"
+    },
+    "name": "Nonexistent Branch",
+    "photoUrls": ["https://example.com/photo1.jpg", "https://example.com/photo2.jpg"],
+    "tags": [
+      {
+        "id": 3,
+        "name": "Category: Archive"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Data Validation"
+    },
+    "name": "Valid Branch",
+    "photoUrls": ["https://valid-url.com/image.jpg"],
+    "tags": [
+      {
+        "id": 4,
+        "name": "Location: HQ"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "HTTP Method Testing"
+    },
+    "name": "Method Test",
+    "photoUrls": ["https://api.test/resource.jpg"],
+    "tags": [],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "key": "value"
+      }
+    },
+    "statusCode": 405
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Header Validation"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Malformed Path Parameters"
+    },
+    "name": "Malformed Case",
+    "photoUrls": ["https://example.com/malformed"],
+    "tags": [
+      {
+        "id": 5,
+        "name": "Location: Satellite"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/{id}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  }
+]

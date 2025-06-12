@@ -1,0 +1,279 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Account Creation"
+    },
+    "name": "testSuccessfulAccountCreation",
+    "photoUrls": ["https://valid-url1.com", "https://valid-url2.com"],
+    "tags": [
+      {
+        "id": 201,
+        "name": "success-path"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "username": "testuser",
+        "password": "testpass"
+      }
+    },
+    "statusCode": 201
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Account Creation With Valid Commit-Hash"
+    },
+    "name": "testAccountCreationWithValidCommitHash",
+    "photoUrls": ["https://example.com/photo"],
+    "tags": [
+      {
+        "id": 202,
+        "name": "commit-hash-validation"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json",
+        "commit-hash": "1234abc"
+      },
+      "body": {
+        "username": "test_user_2",
+        "password": "StrongPass123"
+      }
+    },
+    "statusCode": 201
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Account Creation With Invalid Commit-Hash"
+    },
+    "name": "testAccountCreationWithInvalidCommitHash",
+    "photoUrls": ["https://invalid-url!.com"],
+    "tags": [
+      {
+        "id": 203,
+        "name": "error-checks"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json",
+        "commit-hash": "12345"
+      },
+      "body": {
+        "username": "another_user",
+        "password": "WeakPass"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Account Creation With Empty Commit-Hash"
+    },
+    "name": "testAccountCreationWithEmptyCommitHash",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 204,
+        "name": "error-path"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json",
+        "commit-hash": ""
+      },
+      "body": {
+        "username": "user_123",
+        "password": "Pass123"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Response Headers Validation"
+    },
+    "name": "testResponseHeadersOnSuccessfulAccountCreation",
+    "photoUrls": ["https://valid-url.com/photo1"],
+    "tags": [
+      {
+        "id": 205,
+        "name": "header-validation"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "username": "header_valid",
+        "password": "headerPass123"
+      }
+    },
+    "statusCode": 201
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Invalid Payload Structure"
+    },
+    "name": "testErrorResponseForInvalidPayloadStructure",
+    "photoUrls": null,
+    "tags": [
+      {
+        "id": 206,
+        "name": "error-handling"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{invalid_json}"
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Missing Fields Validation"
+    },
+    "name": "testErrorResponseForMissingMandatoryFields",
+    "photoUrls": ["https://image-service.com/photo"],
+    "tags": [
+      {
+        "id": 207,
+        "name": "field-validation"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "username": null
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "OTP Validation"
+    },
+    "name": "testOTPSentOnSuccessfulAccountCreation",
+    "photoUrls": ["https://service.com/otp-image"],
+    "tags": [
+      {
+        "id": 208,
+        "name": "functional-check"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "username": "otp_user",
+        "password": "SecurePass123"
+      }
+    },
+    "statusCode": 201
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Commit-Hash Special Characters"
+    },
+    "name": "testSpecialCharactersInCommitHashHeader",
+    "photoUrls": ["https://example-service.com/photo"],
+    "tags": [
+      {
+        "id": 209,
+        "name": "special-char-validation"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json",
+        "commit-hash": "12@#ab7"
+      },
+      "body": {
+        "username": "special_chars_user",
+        "password": "Secur0!"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Missing Request Payload"
+    },
+    "name": "testResponseOnMissingPayload",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 210,
+        "name": "missing-payload-validation"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/accounts",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  }
+]

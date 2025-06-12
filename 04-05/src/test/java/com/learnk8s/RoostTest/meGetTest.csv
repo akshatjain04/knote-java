@@ -1,0 +1,11 @@
+RequestBody^|^statusCode^|^Token
+{"username":"user1","action":"login","timestamp":"2023-11-01T08:15:30Z"}^|^200^|^abc123token
+{"username":"user2","action":"logout","timestamp":"2023-11-01T09:20:45Z"}^|^200^|^def456token
+{"username":"admin","action":"login","timestamp":"2023-11-01T10:30:00Z"}^|^401^|^secure789token
+{"username":"guest","action":"browse","timestamp":"2023-11-01T11:05:15Z"}^|^200^|^xyz999token
+{"username":"user3","action":"update","timestamp":"2023-11-01T11:45:00Z"}^|^400^|^update003token
+{"username":"user4","action":"register","timestamp":"2023-11-01T12:00:00Z"}^|^200^|^newuser567token
+{"username":"user5","action":"login","timestamp":"2023-11-01T12:35:20Z"}^|^200^|^login212token
+{"username":"moderator","action":"delete","timestamp":"2023-11-01T13:15:00Z"}^|^401^|^mod2023token
+{"username":"tech_support","action":"scan","timestamp":"2023-11-01T14:00:30Z"}^|^400^|^support007token
+{"username":"user6","action":"read","timestamp":"2023-11-01T15:20:10Z"}^|^200^|^read303token

@@ -1,0 +1,349 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Authentication"
+    },
+    "name": "Valid Authentication Token",
+    "photoUrls": ["https://example.com/photo1.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "Auth"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Authentication"
+    },
+    "name": "Missing Authentication Token",
+    "photoUrls": [],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Authentication"
+    },
+    "name": "Invalid Authentication Token",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 2,
+        "name": "Token"
+      },
+      {
+        "id": 3,
+        "name": "Invalid"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer invalidToken456"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Validation"
+    },
+    "name": "Response Schema Validation",
+    "photoUrls": ["https://example.com/schema.jpg"],
+    "tags": [
+      {
+        "id": 4,
+        "name": "Schema"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Field Validation"
+    },
+    "name": "Null Optional Fields",
+    "photoUrls": null,
+    "tags": [
+      {
+        "id": 5,
+        "name": "NullFields"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Field Validation"
+    },
+    "name": null,
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 6,
+        "name": "MandatoryMissing"
+      }
+    ],
+    "status": "invalidStatus",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Validation"
+    },
+    "name": "Field Pattern Validation",
+    "photoUrls": ["https://example.com/valid.jpg"],
+    "tags": [
+      {
+        "id": 7,
+        "name": "Pattern"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Invalid Field"
+    },
+    "name": "Invalid Image URL Pattern",
+    "photoUrls": ["not-a-url"],
+    "tags": [
+      {
+        "id": 8,
+        "name": "ImagePattern"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Field Validation"
+    },
+    "name": "Missing Mandatory Field Error",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 9,
+        "name": "MandatoryMissing"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Error Handling"
+    },
+    "name": "Empty Response Body",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 10,
+        "name": "EmptyResponse"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 11,
+    "category": {
+      "id": 111,
+      "name": "Validation"
+    },
+    "name": "Response Headers Validation",
+    "photoUrls": ["https://example.com/headers.jpg"],
+    "tags": [
+      {
+        "id": 11,
+        "name": "Headers"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 12,
+    "category": {
+      "id": 112,
+      "name": "Error Handling"
+    },
+    "name": "Unsupported HTTP Method",
+    "photoUrls": ["https://example.com/method.jpg"],
+    "tags": [
+      {
+        "id": 12,
+        "name": "MethodError"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 405
+  },
+  {
+    "id": 13,
+    "category": {
+      "id": 113,
+      "name": "Field Validation"
+    },
+    "name": "Incorrect Format in Response Field",
+    "photoUrls": ["https://example.com/incorrect.jpg"],
+    "tags": [
+      {
+        "id": 13,
+        "name": "FormatError"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 14,
+    "category": {
+      "id": 114,
+      "name": "Scalability"
+    },
+    "name": "Large Response Size",
+    "photoUrls": ["https://example.com/large.jpg"],
+    "tags": [
+      {
+        "id": 14,
+        "name": "Payload"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/me",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  }
+]

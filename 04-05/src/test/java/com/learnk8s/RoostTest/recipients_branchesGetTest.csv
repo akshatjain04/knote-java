@@ -1,0 +1,11 @@
+coc-number^|^coc-branch-number^|^trade-name^|^size^|^offset^|^RequestBody^|^statusCode^|^Token
+12345678^|^123456789012^|^Alpha Group Ltd.^|^20^|^0^|^{"action":"create","details":{"description":"Request to initialize profile","priority":"high"}}^|^200^|^ABCD1234EFGH5678IJKL
+87654321^|^987654321098^|^Beta Enterprises^|^35^|^5^|^{"action":"update","details":{"description":"Add trade details","priority":"normal"}}^|^400^|^MNOP5678QRST9012UVWX
+11223344^|^112233445566^|^Gamma Solutions^|^15^|^10^|^{"action":"delete","details":{"description":"Remove inactive data","priority":"low"}}^|^401^|^YZAB3456CDEF6789GHIJ
+99887766^|^445566778899^|^Delta Works^|^50^|^0^|^{"action":"create","details":{"description":"Initialize account","priority":"high"}}^|^200^|^KLMN1234OPQR5678STUV
+55667788^|^667788990011^|^Epsilon Dynamics^|^10^|^2^|^{"action":"update","details":{"description":"Update processing orders","priority":"critical"}}^|^400^|^WXYZ9012ABCD3456EFGH
+33445566^|^223344556677^|^Zeta Corp Ltd.^|^12^|^1^|^{"action":"delete","details":{"description":"Remove user data","priority":"medium"}}^|^401^|^IJKL5678MNOP9801QRST
+44556677^|^556677889900^|^Eta Technologies^|^25^|^3^|^{"action":"create","details":{"description":"Request registration approval","priority":"normal"}}^|^200^|^UVWX3456YZA9012BCDE
+88888888^|^777778888999^|^Theta Innovations^|^30^|^4^|^{"action":"update","details":{"description":"Change ownership information","priority":"normal"}}^|^400^|^FGHI9012JKLM6578OPQR
+22334455^|^112122334455^|^Iota Systems^|^8^|^5^|^{"action":"delete","details":{"description":"Deactivate suspended accounts","priority":"low"}}^|^401^|^TUVW5678XYZA9801BCDE
+66778899^|^889990011222^|^Kappa Solutions Inc.^|^40^|^6^|^{"action":"create","details":{"description":"Approve batch submissions","priority":"high"}}^|^200^|^MNOP1234QRST5678UVWX

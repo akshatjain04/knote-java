@@ -1,0 +1,256 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 45,
+      "name": "Utilities"
+    },
+    "name": "ValidDeleteRequest",
+    "photoUrls": ["https://example.com/photo1.jpg"],
+    "tags": [
+      {
+        "id": 10,
+        "name": "Auth"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 46,
+      "name": "Authentication"
+    },
+    "name": "MissingAuthentication",
+    "photoUrls": ["https://invalid-url/"],
+    "tags": [
+      {
+        "id": 11,
+        "name": "NegativeTest"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 47,
+      "name": "Validation"
+    },
+    "name": "InvalidUUID",
+    "photoUrls": ["https://example.com/photo2.jpg"],
+    "tags": [
+      {
+        "id": 12,
+        "name": "UUIDValidation"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/12345-invalid",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 48,
+      "name": "Edge Cases"
+    },
+    "name": null,
+    "photoUrls": ["https://example.com/photo3.jpg"],
+    "tags": [
+      {
+        "id": 13,
+        "name": "NullValue"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/null",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 49,
+      "name": "Validation"
+    },
+    "name": "MissingUUID",
+    "photoUrls": [],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 50,
+      "name": "Authentication"
+    },
+    "name": "UnauthorizedAccess",
+    "photoUrls": ["https://secure.example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 14,
+        "name": "NegativeTest"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer invalid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 51,
+      "name": "Validation"
+    },
+    "name": "ExtraParameterInRequest",
+    "photoUrls": ["https://example.com/extra_photo.jpg"],
+    "tags": [
+      {
+        "id": 15,
+        "name": "QueryParamValidation"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-426614174000?extra=invalid",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 52,
+      "name": "Validation"
+    },
+    "name": "LargeUUID",
+    "photoUrls": ["https://example-large.com/long_photo_name.jpg"],
+    "tags": [
+      {
+        "id": 16,
+        "name": "UUIDValidation"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-42661417400012345678901234567890123456789012345678901234567890",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 53,
+      "name": "Concurrency"
+    },
+    "name": "SimultaneousRequestsWithValidIDs",
+    "photoUrls": ["https://example.com/photo4.jpg", "https://example.com/photo5.jpg"],
+    "tags": [
+      {
+        "id": 17,
+        "name": "Performance"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/{multiple-valid-ids}",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 54,
+      "name": "Edge Cases"
+    },
+    "name": "DoubleDeletion",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "NegativeTest"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/apikeys/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer valid-api-key",
+        "api-version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  }
+]

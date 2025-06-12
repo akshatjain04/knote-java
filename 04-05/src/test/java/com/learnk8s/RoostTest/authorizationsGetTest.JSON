@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "AuthTests"
+    },
+    "name": "TestValidAuthorization",
+    "photoUrls": [
+      "https://validimage.com/image.jpg"
+    ],
+    "tags": [
+      { "id": 1, "name": "authorization" },
+      { "id": 2, "name": "success" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "AuthTests"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": ""
+      },
+      "body": {}
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "AuthTests"
+    },
+    "name": "TestInvalidAuthorizationHeader",
+    "photoUrls": [
+      "https://example.com/invalid-url"
+    ],
+    "tags": [
+      { "id": 3, "name": "auth" },
+      { "id": 4, "name": "invalid" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer invalid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "ResponseValidation"
+    },
+    "name": "TestEmptyResponse",
+    "photoUrls": [],
+    "tags": [
+      { "id": 5, "name": "empty-response" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "ResponseValidation"
+    },
+    "name": null,
+    "photoUrls": [
+      "https://testsite.com/photo1.jpg",
+      ""
+    ],
+    "tags": [
+      { "id": 6, "name": "schema-validation" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "ErrorHandling"
+    },
+    "name": "TestInvalidEmailPattern",
+    "photoUrls": [],
+    "tags": [
+      { "id": 7, "name": "email-validation" },
+      { "id": 8, "name": "error-case" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "email": "invalid-email"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "OptionalFields"
+    },
+    "name": null,
+    "photoUrls": ["https://imageurl.com/image.jpg"],
+    "tags": [
+      { "id": 9, "name": "nullable-fields" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "name": null
+      }
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "ExtraFields"
+    },
+    "name": "TestExtraFieldsInResponse",
+    "photoUrls": ["https://validurl.com/photo.jpg"],
+    "tags": [
+      { "id": 10, "name": "extra-fields" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "unexpected_field": "unexpected_value"
+      }
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "HeadersValidation"
+    },
+    "name": "TestAPIHeadersContainVersion",
+    "photoUrls": [],
+    "tags": [
+      { "id": 11, "name": "headers-validation" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "PerformanceTests"
+    },
+    "name": "TestLargeAuthorizationDataset",
+    "photoUrls": [],
+    "tags": [
+      { "id": 12, "name": "performance" },
+      { "id": 13, "name": "large-dataset" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 11,
+    "category": {
+      "id": 111,
+      "name": "ValidationError"
+    },
+    "name": "TestMalformedUUIDInResponse",
+    "photoUrls": [],
+    "tags": [
+      { "id": 14, "name": "uuid-validation" },
+      { "id": 15, "name": "error-case" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "id": "invalid-uuid-format"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 12,
+    "category": {
+      "id": 112,
+      "name": "DataValidation"
+    },
+    "name": "TestNegativeTotalValueHandling",
+    "photoUrls": [],
+    "tags": [
+      { "id": 16, "name": "data-validation" }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {
+        "total": -5
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 13,
+    "category": {
+      "id": 113,
+      "name": "ValidationError"
+    },
+    "name": "TestMissingRequiredFieldsInResponse",
+    "photoUrls": [],
+    "tags": [
+      { "id": 17, "name": "validation-error" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 14,
+    "category": {
+      "id": 114,
+      "name": "ErrorHandling"
+    },
+    "name": "TestBadRequestForInvalidEndpoint",
+    "photoUrls": ["https://testsite.com/image.png"],
+    "tags": [
+      { "id": 18, "name": "bad-request" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/authorizations-invalid",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  }
+]

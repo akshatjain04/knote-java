@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"email":"user1@example.com","otp":"123456","client":"mobile"}^|^201
+{"email":"user2@example.com","otp":"654321","client":"web"}^|^400
+{"email":"user3@example.com","otp":"789012","client":"desktop"}^|^201
+{"email":"user4@example.com","otp":"321098","client":"api"}^|^400
+{"email":"user5@example.com","otp":"456789","client":"mobile"}^|^201
+{"email":"user6@example.com","otp":"876543","client":"web"}^|^201
+{"email":"user7@example.com","otp":"135792","client":"desktop"}^|^400
+{"email":"user8@example.com","otp":"987654","client":"api"}^|^201
+{"email":"user9@example.com","otp":"246810","client":"mobile"}^|^400
+{"email":"user10@example.com","otp":"112233","client":"web"}^|^201

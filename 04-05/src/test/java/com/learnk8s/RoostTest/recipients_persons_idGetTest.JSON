@@ -1,0 +1,238 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Pets"
+    },
+    "name": "Buddy",
+    "photoUrls": ["https://example.com/dog1.jpg", "https://example.com/dog2.jpg"],
+    "tags": [
+      {"id": 201, "name": "dog"},
+      {"id": 202, "name": "friendly"}
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": null,
+    "name": "",
+    "photoUrls": [],
+    "tags": [],
+    "status": "invalid_status",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "",
+        "category": null,
+        "photoUrls": [],
+        "tags": [],
+        "status": "invalid_status"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 102,
+      "name": "Cats"
+    },
+    "name": null,
+    "photoUrls": ["http://badurl@@@", "example.com/cat"],
+    "tags": [
+      {"id": 203, "name": "cat"}
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "PUT",
+      "url": "/pets/invalidUUID",
+      "headers": {
+        "Authorization": "Bearer validAuthToken"
+      },
+      "body": {
+        "name": null,
+        "photoUrls": ["http://badurl@@@", "example.com/cat"],
+        "status": "pending"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 103,
+      "name": "Reptiles"
+    },
+    "name": "Spike",
+    "photoUrls": ["https://example.com/lizard.jpg"],
+    "tags": [
+      {"id": 204, "name": "lizard"},
+      {"id": 205, "name": "fierce"}
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/00000000-0000-0000-0000-000000000000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Accept": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 104,
+      "name": "Birds"
+    },
+    "name": "Tweety",
+    "photoUrls": ["https://example.com/bird.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 6,
+    "category": null,
+    "name": "EdgeBird",
+    "photoUrls": ["https://example.com/bird2.jpg"],
+    "tags": [{"id": 206, "name": "bird"}],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/00000000-0000-0000-0000-000000000000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Accept": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 105,
+      "name": "Aquatic"
+    },
+    "name": "Nemo",
+    "photoUrls": ["https://example.com/fish.jpg"],
+    "tags": [{"id": 207, "name": "fish"}],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Accept": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": null,
+    "name": null,
+    "photoUrls": ["https://example.com/fish.jpg"],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 106,
+      "name": "Exotic"
+    },
+    "name": "Polly",
+    "photoUrls": ["https://example.com/parrot.jpg"],
+    "tags": [{"id": 208, "name": "parrot"}],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "API-Version": "1.0.0"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 107,
+      "name": "Wild"
+    },
+    "name": "Leo",
+    "photoUrls": ["https://example.com/lion.jpg"],
+    "tags": [{"id": 209, "name": "lion"}],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/not-a-valid-uuid",
+      "headers": {
+        "Authorization": "Bearer validAuthToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 11,
+    "category": {
+      "id": 108,
+      "name": "Domestic"
+    },
+    "name": "Snowball",
+    "photoUrls": ["https://example.com/rabbit.jpg"],
+    "tags": [{"id": 210, "name": "rabbit"}],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer validAuthToken",
+        "Accept": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 500
+  }
+]
