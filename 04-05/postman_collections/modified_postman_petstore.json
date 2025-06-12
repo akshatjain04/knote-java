@@ -107,7 +107,7 @@
                   "value": "application/json"
                 }
               ],
-              "body": "{\n  \"aliqua2c\": -72547408,\n  \"ipsum2_\": -47618997,\n  \"dolore483\": 73158698\n}",
+              "body": "{\n  \"culpa_b4\": 94188145,\n  \"quif04\": -78419637,\n  \"est6ff\": 8676794\n}",
               "cookie": [],
               "_postman_previewlanguage": "json"
             }
@@ -180,7 +180,7 @@
     }
   ],
   "info": {
-    "_postman_id": "44710fb1-3bde-43be-bba9-0ed7620db5e2",
+    "_postman_id": "763e580a-9a2a-4879-a1f7-4148be1de0ca",
     "name": "Swagger Petstore",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
