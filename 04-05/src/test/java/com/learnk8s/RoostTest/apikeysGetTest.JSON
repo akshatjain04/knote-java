@@ -1,0 +1,250 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Authentication"
+    },
+    "name": "testValidApiKeyRetrieval",
+    "photoUrls": ["https://example.com/valid-image.jpg"],
+    "tags": [
+      {
+        "id": 501,
+        "name": "Positive Test"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Authentication"
+    },
+    "name": "testNoAuthProvided",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 502,
+        "name": "Negative Test"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {},
+      "body": {}
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Authentication"
+    },
+    "name": "testInvalidAuthToken",
+    "photoUrls": [null],
+    "tags": [
+      {
+        "id": 503,
+        "name": "Negative Test"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer invalid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Data Handling"
+    },
+    "name": "testNoApiKeys",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 504,
+        "name": "Boundary Test"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Response Validation"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 505,
+        "name": "Schema Test"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Response Validation"
+    },
+    "name": "testApiKeyDetailsValidation",
+    "photoUrls": ["https://example.com/image1.jpg", "https://example.com/image2.jpg"],
+    "tags": [
+      {
+        "id": 506,
+        "name": "Schema Validation"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Header Validation"
+    },
+    "name": "testApiVersionHeader",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 507,
+        "name": "Header Test"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Endpoint Validation"
+    },
+    "name": "testMalformedEndpointPath",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 508,
+        "name": "Negative Test"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeyss",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Error Handling"
+    },
+    "name": "testNullApiKeyResponseValues",
+    "photoUrls": ["https://example.com/valid-image.jpg", null],
+    "tags": [
+      {
+        "id": 509,
+        "name": "Error Response Test"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 500
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Performance Testing"
+    },
+    "name": "testLargeNumberOfApiKeys",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 510,
+        "name": "Stress Test"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/apikeys",
+      "headers": {
+        "Authorization": "Bearer valid_api_key"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  }
+]

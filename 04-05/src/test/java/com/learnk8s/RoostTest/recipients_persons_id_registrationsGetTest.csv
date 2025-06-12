@@ -1,0 +1,11 @@
+id^|^credential-url^|^size^|^offset^|^RequestBody^|^statusCode^|^Token
+001e4567-e89b-12d3-a456-426614174001^|^https://example.com/credentials/001^|^20^|^0^|^{"username":"user1","action":"login","details":{"method":"oauth2","redirect":true}}^|^200^|^abc123token001
+001e4567-e89b-12d3-a456-426614174002^|^https://example.com/credentials/002^|^15^|^5^|^{"username":"user2","action":"logout","details":{"method":"manual","redirect":false}}^|^401^|^abc123token002
+001e4567-e89b-12d3-a456-426614174003^|^https://example.com/credentials/003^|^40^|^10^|^{"username":"user3","action":"refresh","details":{"method":"api","redirect":true}}^|^200^|^abc123token003
+001e4567-e89b-12d3-a456-426614174004^|^https://example.com/credentials/004^|^25^|^0^|^{"username":"user4","action":"register","details":{"method":"form","redirect":true}}^|^400^|^abc123token004
+001e4567-e89b-12d3-a456-426614174005^|^https://example.com/credentials/005^|^10^|^20^|^{"username":"user5","action":"verify","details":{"method":"email","redirect":false}}^|^200^|^abc123token005
+001e4567-e89b-12d3-a456-426614174006^|^https://example.com/credentials/006^|^35^|^15^|^{"username":"user6","action":"update","details":{"method":"patch","redirect":true}}^|^400^|^abc123token006
+001e4567-e89b-12d3-a456-426614174007^|^https://example.com/credentials/007^|^30^|^5^|^{"username":"user7","action":"delete","details":{"method":"delete","redirect":false}}^|^401^|^abc123token007
+001e4567-e89b-12d3-a456-426614174008^|^https://example.com/credentials/008^|^45^|^25^|^{"username":"user8","action":"get-data","details":{"method":"fetch","redirect":true}}^|^200^|^abc123token008
+001e4567-e89b-12d3-a456-426614174009^|^https://example.com/credentials/009^|^50^|^0^|^{"username":"user9","action":"send-data","details":{"method":"post","redirect":false}}^|^400^|^abc123token009
+001e4567-e89b-12d3-a456-426614174010^|^https://example.com/credentials/010^|^5^|^30^|^{"username":"user10","action":"retrieve","details":{"method":"get","redirect":true}}^|^200^|^abc123token010

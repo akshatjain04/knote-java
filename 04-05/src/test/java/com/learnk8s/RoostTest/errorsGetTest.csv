@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"userId":1,"action":"login","timestamp":"2023-10-01T14:23:00Z"}^|^200
+{"userId":2,"action":"logout","timestamp":"2023-10-01T15:40:00Z"}^|^200
+{"userId":3,"action":"purchase","timestamp":"2023-10-01T16:25:00Z","details":{"itemId":101,"amount":29.99}}^|^200
+{"userId":4,"action":"signup","timestamp":"2023-10-02T10:00:00Z"}^|^200
+{"userId":5,"action":"update_profile","timestamp":"2023-10-02T11:15:00Z"}^|^200
+{"userId":6,"action":"delete_account","timestamp":"2023-10-02T12:45:00Z"}^|^200
+{"userId":7,"action":"login","timestamp":"2023-10-03T08:05:00Z","details":{"device":"mobile","os":"android"}}^|^200
+{"userId":8,"action":"reset_password","timestamp":"2023-10-03T09:30:00Z","details":{"method":"email"}}^|^200
+{"userId":9,"action":"purchase","timestamp":"2023-10-03T14:20:00Z","details":{"itemId":202,"amount":15.99}}^|^200
+{"userId":10,"action":"logout","timestamp":"2023-10-03T18:10:00Z"}^|^200

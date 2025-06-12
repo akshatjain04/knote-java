@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 1,
+      "name": "Valid Category"
+    },
+    "name": "Valid Test Case",
+    "photoUrls": ["https://example.com/valid-photo.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "Test Tag"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 2,
+      "name": "Missing Authentication"
+    },
+    "name": "Test Case Missing Auth Header",
+    "photoUrls": ["https://example.com/another-valid-photo.jpg"],
+    "tags": [
+      {
+        "id": 2,
+        "name": "Tag Without Auth"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 3,
+      "name": "Invalid UUID Test"
+    },
+    "name": "Invalid UUID in Path",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 3,
+        "name": "Invalid Path Tag"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123-invalid-uuid/registrations",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 4,
+      "name": "Query Parameter Validation"
+    },
+    "name": "",
+    "photoUrls": ["https://example.com/photo-limit-test.jpg"],
+    "tags": [
+      {
+        "id": 4,
+        "name": "Size Limit Test Tag"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations?size=100",
+      "headers": {
+        "Authorization": "Bearer anotherToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": null,
+      "name": null
+    },
+    "name": "Negative Offset",
+    "photoUrls": null,
+    "tags": [
+      {
+        "id": 5,
+        "name": null
+      }
+    ],
+    "status": "invalid-status",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations?offset=-5",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 6,
+      "name": "Default Optional Params"
+    },
+    "name": "Default Query Params Case",
+    "photoUrls": [],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 7,
+      "name": "Empty Query Values"
+    },
+    "name": null,
+    "photoUrls": [
+      "https://example.com/example.jpg",
+      "https://example.com"
+    ],
+    "tags": [
+      {
+        "id": 7,
+        "name": "Credential URL Test Tag"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations?credential-url=",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 8,
+      "name": "Missing Path Parameters"
+    },
+    "name": "Missing Path Test Case",
+    "photoUrls": ["https://example.com/photo.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches//registrations",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 9,
+      "name": "Header Validations"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 9,
+        "name": "Invalid Header Tag"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {
+        "api-version": "2.0",
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 10,
+      "name": "Pagination Success"
+    },
+    "name": "Pagination Handling Test",
+    "photoUrls": [
+      "https://example.com/photo1.jpg",
+      "https://example.com/photo2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 10,
+        "name": "Pagination Tag"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches/123e4567-e89b-12d3-a456-426614174000/registrations?size=10&offset=20",
+      "headers": {
+        "Authorization": "Bearer validToken"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  }
+]

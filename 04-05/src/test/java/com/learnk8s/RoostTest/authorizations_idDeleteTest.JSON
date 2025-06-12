@@ -1,0 +1,250 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 10,
+      "name": "Authentication"
+    },
+    "name": "Valid Authorization Deletion",
+    "photoUrls": ["https://example.com/valid-photo.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "auth-success"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 11,
+      "name": "Path Parameter"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 2,
+        "name": "missing-param"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 12,
+      "name": "Validation Error"
+    },
+    "name": "Invalid UUID Path Param",
+    "photoUrls": ["http://invalid-url"],
+    "tags": [
+      {
+        "id": 3,
+        "name": "invalid-uuid"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/invalid-uuid",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 13,
+      "name": "Authentication"
+    },
+    "name": "",
+    "photoUrls": ["https://example.com/unauth-photo.jpg"],
+    "tags": [
+      {
+        "id": 4,
+        "name": "unauth-request"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 14,
+      "name": "Authentication"
+    },
+    "name": "Empty API Key Header",
+    "photoUrls": ["https://example.com/auth-empty.jpg"],
+    "tags": [
+      {
+        "id": 5,
+        "name": "empty-auth"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Authorization": ""
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 15,
+      "name": "Resource"
+    },
+    "name": "Non-existent Resource",
+    "photoUrls": ["https://example.com/nonexistent-photo.jpg"],
+    "tags": [
+      {
+        "id": 6,
+        "name": "resource-not-found"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174999",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 16,
+      "name": "Request Validation"
+    },
+    "name": "Malformed API Request",
+    "photoUrls": ["https://example.com/malformed.jpg"],
+    "tags": [
+      {
+        "id": 7,
+        "name": "malformed-request"
+      }
+    ],
+    "status": null,
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/!@#$%^&*()",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 17,
+      "name": "Authentication"
+    },
+    "name": "API Key Header Case Sensitivity",
+    "photoUrls": ["https://example.com/case-sensitive-auth.jpg"],
+    "tags": [
+      {
+        "id": 8,
+        "name": "auth-case-sensitivity"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "authorization": "BEARER valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 18,
+      "name": "Request Validation"
+    },
+    "name": "Large UUID",
+    "photoUrls": ["https://example.com/large-uuid.jpg"],
+    "tags": [
+      {
+        "id": 9,
+        "name": "oversized-uuid"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-426614174000-extra-chars",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 19,
+      "name": "Request Validation"
+    },
+    "name": "Valid UUID with Special Characters",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 10,
+        "name": "uuid-special-chars"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/authorizations/123e4567-e89b-12d3-a456-4266141740$",
+      "headers": {
+        "Authorization": "Bearer valid-api-key"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  }
+]

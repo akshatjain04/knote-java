@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 100,
+      "name": "Pets"
+    },
+    "name": "Dog",
+    "photoUrls": ["https://example.com/dog.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "Animal"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/1",
+      "headers": {
+        "Authorization": "Bearer validToken123"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 101,
+      "name": null
+    },
+    "name": null,
+    "photoUrls": ["invalid-url"],
+    "tags": [],
+    "status": "invalid_status",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "id": 2,
+        "category": {
+          "id": 101
+        },
+        "name": null,
+        "tags": [],
+        "photoUrls": ["invalid-url"],
+        "status": 12345
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 102,
+      "name": "Cats"
+    },
+    "name": "",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 5,
+        "name": null
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "PUT",
+      "url": "/pets/3",
+      "headers": {
+        "Authorization": "Bearer expiredToken456"
+      },
+      "body": {
+        "id": 3,
+        "category": {
+          "id": 102,
+          "name": "Cats"
+        },
+        "name": "",
+        "tags": [
+          {
+            "id": 5,
+            "name": null
+          }
+        ],
+        "photoUrls": [],
+        "status": "sold"
+      }
+    },
+    "statusCode": 403
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 103,
+      "name": "Birds"
+    },
+    "name": "Parrot",
+    "photoUrls": ["https://example.com/parrot.jpg"],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "PATCH",
+      "url": "/pets/4",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "status": "sold"
+      }
+    },
+    "statusCode": 405
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": null,
+      "name": null
+    },
+    "name": "Fish",
+    "photoUrls": ["https://example.com/fish.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/pets/5",
+      "headers": {
+        "Authorization": "Bearer validToken789"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 105,
+      "name": "Exotics"
+    },
+    "name": "Snake",
+    "photoUrls": ["https://example.com/snake.jpg", "https://example.com/snake2.jpg"],
+    "tags": [
+      {
+        "id": 8,
+        "name": "Reptile"
+      },
+      {
+        "id": 9,
+        "name": null
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/6",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 7,
+    "category": null,
+    "name": null,
+    "photoUrls": ["https://example.com/unknown.jpg"],
+    "tags": [],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "category": null,
+        "name": null,
+        "photoUrls": ["https://example.com/unknown.jpg"],
+        "tags": [],
+        "status": "sold"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 106,
+      "name": "Rodents"
+    },
+    "name": "Hamster",
+    "photoUrls": ["https://example.com/hamster.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 107,
+      "name": "Amphibians"
+    },
+    "name": "Frog",
+    "photoUrls": ["https://example.com/frog.jpg"],
+    "tags": [
+      {
+        "id": 10,
+        "name": "Wild"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer invalidToken987",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "category": {
+          "id": 107,
+          "name": "Amphibians"
+        },
+        "name": "Frog",
+        "photoUrls": ["https://example.com/frog.jpg"],
+        "tags": [
+          {
+            "id": 10,
+            "name": "Wild"
+          }
+        ],
+        "status": "pending"
+      }
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": null,
+      "name": "Unknown"
+    },
+    "name": "Dragon",
+    "photoUrls": [],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "PUT",
+      "url": "/pets/10",
+      "headers": {
+        "Content-Type": "application/xml"
+      },
+      "body": null
+    },
+    "statusCode": 415
+  }
+]

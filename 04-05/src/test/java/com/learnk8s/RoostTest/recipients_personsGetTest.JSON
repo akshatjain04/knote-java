@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "category": { "id": 101, "name": "Pagination" },
+    "name": "Valid query params with 'size' and 'offset'",
+    "photoUrls": ["https://example.com/photo1.jpg"],
+    "tags": [
+      { "id": 201, "name": "Pagination" },
+      { "id": 202, "name": "Query Params" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": { "id": 102, "name": "Default Behavior" },
+    "name": null,
+    "photoUrls": [],
+    "tags": [
+      { "id": 203, "name": "Default Parameters" }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 3,
+    "category": { "id": 103, "name": "Validation" },
+    "name": "",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      { "id": 204, "name": "Validation" }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?size=100",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": { "id": 104, "name": "Negative Offset" },
+    "name": "Negative offset test",
+    "photoUrls": null,
+    "tags": [
+      { "id": 205, "name": "Invalid Offset" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?offset=-1",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": { "id": 105, "name": "Authentication" },
+    "name": "Invalid token test",
+    "photoUrls": ["https://example.com/photo2.jpg"],
+    "tags": [
+      { "id": 206, "name": "Authentication" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?size=10",
+      "headers": { "Authorization": "Bearer INVALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 6,
+    "category": { "id": 106, "name": "Authentication" },
+    "name": "Missing token test",
+    "photoUrls": ["https://example.com/photo3.jpg"],
+    "tags": [
+      { "id": 207, "name": "Authentication" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?size=10",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 7,
+    "category": { "id": 107, "name": "Filter by Name" },
+    "name": "Filter by name",
+    "photoUrls": ["https://example.com/photo4.jpg"],
+    "tags": [
+      { "id": 208, "name": "Filtering" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?name=John",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": { "id": 108, "name": "Filter by Date" },
+    "name": "Valid birth-date filter",
+    "photoUrls": ["https://example.com/photo5.jpg"],
+    "tags": [
+      { "id": 209, "name": "Filtering" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?birth-date=1990-01-01",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": { "id": 109, "name": "Invalid Format" },
+    "name": "Invalid birth-date format",
+    "photoUrls": null,
+    "tags": [
+      { "id": 210, "name": "Validation" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?birth-date=01-01-1990",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": { "id": 110, "name": "Empty Response" },
+    "name": "Empty response test",
+    "photoUrls": ["https://example.com/photo6.jpg"],
+    "tags": [
+      { "id": 211, "name": "Filtering" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?name=NonExistentName",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 11,
+    "category": { "id": 111, "name": "Pagination" },
+    "name": "Maximum pagination values",
+    "photoUrls": [],
+    "tags": [
+      { "id": 212, "name": "Pagination" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons?size=50&offset=100",
+      "headers": { "Authorization": "Bearer VALID_API_KEY" },
+      "body": null
+    },
+    "statusCode": 200
+  }
+]

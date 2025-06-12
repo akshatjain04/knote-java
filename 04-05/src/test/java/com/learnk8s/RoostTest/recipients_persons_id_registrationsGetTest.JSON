@@ -1,0 +1,292 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Successful Requests"
+    },
+    "name": "Valid Path and Query Parameters",
+    "photoUrls": ["http://example.com/photo1.jpg", "http://example.com/photo2.jpg"],
+    "tags": [
+      {
+        "id": 201,
+        "name": "Filter Tests"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?credential-url=http://example.com&size=10&offset=0",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Mandatory Parameter Tests"
+    },
+    "name": "Valid Path Parameter Only",
+    "photoUrls": ["http://example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 202,
+        "name": "Path Parameter"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Missing Parameter Tests"
+    },
+    "name": null,
+    "photoUrls": ["invalid-url"],
+    "tags": [],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons//registrations",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Invalid Parameter Formats"
+    },
+    "name": "Invalid UUID Format",
+    "photoUrls": ["http://example.com/photo1.jpg"],
+    "tags": [
+      {
+        "id": 203,
+        "name": "Path Parameter Validation"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/invalid-uuid-format/registrations",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Boundary Testing"
+    },
+    "name": "Max Size Query Param",
+    "photoUrls": ["http://example.com/photo3.jpg"],
+    "tags": [
+      {
+        "id": 204,
+        "name": "Query Parameter"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?size=50",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Boundary Violation Tests"
+    },
+    "name": "Exceeding Max Size Query Param",
+    "photoUrls": ["https://example.com/invalid_photo"],
+    "tags": [
+      {
+        "id": 205,
+        "name": "Query Limit Validation"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?size=51",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Edge Case Tests"
+    },
+    "name": "Min Offset Query Param",
+    "photoUrls": ["http://examplephoto.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 206,
+        "name": "Offset Handling"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?offset=0",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Invalid Parameter Tests"
+    },
+    "name": "Negative Offset Query Param",
+    "photoUrls": ["http://example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 207,
+        "name": "Offset Validation"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?offset=-1",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Credential URL Tests"
+    },
+    "name": "Valid Credential URL Pattern",
+    "photoUrls": ["http://example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 208,
+        "name": "URL Validation"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?credential-url=https://example.com",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Invalid Credential URL Tests"
+    },
+    "name": "Invalid Credential URL Pattern",
+    "photoUrls": ["invalid-photo-url"],
+    "tags": [
+      {
+        "id": 209,
+        "name": "URL Pattern Rejection"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations?credential-url=invalid-url",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 11,
+    "category": {
+      "id": 111,
+      "name": "Authentication Tests"
+    },
+    "name": "Unauthorized Request",
+    "photoUrls": [],
+    "tags": [],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 12,
+    "category": {
+      "id": 112,
+      "name": "HTTP Method Validation"
+    },
+    "name": "Unsupported HTTP Method",
+    "photoUrls": ["http://example.com/photo.jpg"],
+    "tags": [
+      {
+        "id": 210,
+        "name": "Method Rejection"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/recipients/persons/123e4567-e89b-12d3-a456-426614174000/registrations",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": {
+        "dummyField": "dummyValue"
+      }
+    },
+    "statusCode": 405
+  }
+]

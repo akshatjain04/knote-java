@@ -1,0 +1,11 @@
+RequestBody^|^statusCode^|^Token
+{"action":"createUser","username":"UserA","email":"userA@example.com"}^|^200^|^abc123token
+{"action":"updateProfile","username":"UserB","email":"userB@example.com"}^|^200^|^xyz456token
+{"action":"deleteUser","username":"UserC","email":"userC@example.com"}^|^401^|^def789token
+{"action":"createUser","username":"UserD","email":"userD@example.com"}^|^200^|^ghi012token
+{"action":"updateProfile","username":"UserE","email":"userE@example.com"}^|^401^|^jkl345token
+{"action":"deleteUser","username":"UserF","email":"userF@example.com"}^|^200^|^mno678token
+{"action":"createUser","username":"UserG","email":"userG@example.com"}^|^401^|^pqr901token
+{"action":"updateProfile","username":"UserH","email":"userH@example.com"}^|^200^|^stu234token
+{"action":"deleteUser","username":"UserI","email":"userI@example.com"}^|^401^|^vwx567token
+{"action":"createUser","username":"UserJ","email":"userJ@example.com"}^|^200^|^yza890token

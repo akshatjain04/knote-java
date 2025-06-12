@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Valid Request with All Fields"
+    },
+    "name": "TestCompany",
+    "photoUrls": ["http://example.com/image1.jpg", "http://example.com/image2.png"],
+    "tags": [
+      {
+        "id": 11,
+        "name": "tag1"
+      },
+      {
+        "id": 12,
+        "name": "tag2"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=12345678&vestigingsnummer=87654321&handelsnaam=TestCompany",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Empty Query Parameters"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Missing Authentication"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=12345678",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Invalid Authentication Token"
+    },
+    "name": "TestCompany",
+    "photoUrls": ["http://example.com/image1.jpg"],
+    "tags": [
+      {
+        "id": 21,
+        "name": "invalidAuth"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=12345678",
+      "headers": {
+        "Authorization": "Bearer invalid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 403
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Null Query Parameters"
+    },
+    "name": null,
+    "photoUrls": [null],
+    "tags": [
+      {
+        "id": null,
+        "name": null
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=null&vestigingsnummer=null&handelsnaam=null",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Invalid Query Parameter Format"
+    },
+    "name": "!InvalidName",
+    "photoUrls": ["http://example.com/invalid_url"],
+    "tags": [
+      {
+        "id": 31,
+        "name": "invalidFormat"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=abc123!@&vestigingsnummer=###&handelsnaam=!InvalidName",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Exceeding Max Length Query Parameters"
+    },
+    "name": "VeryLongCompanyNameExceedingLimit",
+    "photoUrls": ["http://example.com/image.jpg"],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=123456789012345678901234567890&vestigingsnummer=123456789012345678901234567890&handelsnaam=VeryLongCompanyNameExceedingLimit",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Special Character Query Parameters"
+    },
+    "name": "!@#TestCompany",
+    "photoUrls": ["http://example.com/image_special_char.jpg"],
+    "tags": [
+      {
+        "id": 41,
+        "name": "specialChars"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=@#$%^&*&vestigingsnummer=($%@)&handelsnaam=!@#TestCompany",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Partial Query Parameters"
+    },
+    "name": "TestCompany",
+    "photoUrls": ["http://example.com/image_partial.jpg"],
+    "tags": [
+      {
+        "id": 51,
+        "name": "partialParams"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=12345678&handelsnaam=TestCompany",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "No Content Response"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/kvk/zoeken?kvkNummer=nonexistent",
+      "headers": {
+        "Authorization": "Bearer valid_api_token",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  }
+]

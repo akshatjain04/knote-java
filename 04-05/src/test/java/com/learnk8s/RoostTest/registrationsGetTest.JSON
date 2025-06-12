@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Pets"
+    },
+    "name": "Bobby",
+    "photoUrls": ["https://example.com/photo1.jpg"],
+    "tags": [
+      {
+        "id": 1,
+        "name": "dog"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer valid-token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Cats"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer valid-token",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "category": {
+          "id": 102,
+          "name": "Cats"
+        },
+        "photoUrls": [],
+        "status": "sold"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Birds"
+    },
+    "name": "Eagle",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 2,
+        "name": "bird"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer invalid-token",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "category": {
+          "id": 103,
+          "name": "Birds"
+        },
+        "photoUrls": ["invalid-url"],
+        "status": "pending"
+      }
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Reptiles"
+    },
+    "name": "",
+    "photoUrls": ["https://example.com/photo2.jpg"],
+    "tags": [
+      {
+        "id": 3,
+        "name": "snake"
+      }
+    ],
+    "status": "invalid_status",
+    "RequestBody": {
+      "method": "PUT",
+      "url": "/pets/4",
+      "headers": {
+        "Authorization": "Bearer valid-token",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "",
+        "status": "invalid_status"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Fish"
+    },
+    "name": "Goldfish",
+    "photoUrls": ["https://example.com/photo3.jpg", ""],
+    "tags": [
+      {
+        "id": 4,
+        "name": ""
+      }
+    ],
+    "status": null,
+    "RequestBody": {
+      "method": "DELETE",
+      "url": "/pets/5",
+      "headers": {
+        "Authorization": "Bearer valid-token"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Exotic Pets"
+    },
+    "name": null,
+    "photoUrls": ["https://example.com/exotic.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/106",
+      "headers": {
+        "Authorization": "Bearer valid-token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Rodents"
+    },
+    "name": "Hamster",
+    "photoUrls": ["https://example.com/rodents.jpg"],
+    "tags": [
+      {
+        "id": 5,
+        "name": "small pet"
+      },
+      {
+        "id": 6,
+        "name": "rodent"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "PATCH",
+      "url": "/pets/107",
+      "headers": {
+        "Authorization": null,
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "status": "sold"
+      }
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Amphibians"
+    },
+    "name": "Frog",
+    "photoUrls": [],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets?limit=50",
+      "headers": {
+        "Authorization": "Bearer valid-token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Insects"
+    },
+    "name": "Spider",
+    "photoUrls": ["https://example.com/spider.jpg"],
+    "tags": [],
+    "status": "invalid_enum_value",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer valid-token",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "category": {
+          "id": 109,
+          "name": "Insects"
+        },
+        "photoUrls": ["https://example.com/spider.jpg"],
+        "status": "invalid_enum_value"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Unrecognized"
+    },
+    "name": "Unknown",
+    "photoUrls": ["https://example.com/unknown.jpg"],
+    "tags": [],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets?randomKey=value",
+      "headers": {
+        "Authorization": "Bearer valid-token",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "Unknown",
+        "status": "available"
+      }
+    },
+    "statusCode": 400
+  }
+]

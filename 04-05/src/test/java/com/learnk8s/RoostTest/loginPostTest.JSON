@@ -1,0 +1,168 @@
+[
+  {
+    "id": 1,
+    "category": { "id": 1, "name": "Test Category A" },
+    "name": "Valid data test",
+    "photoUrls": ["https://example.com/photo1.jpg", "https://example.com/photo2.jpg"],
+    "tags": [
+      { "id": 101, "name": "Tag1" },
+      { "id": 102, "name": "Tag2" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json", "Authorization": "Bearer valid-token" },
+      "body": { "name": "TestItem", "description": "A valid item description" }
+    },
+    "statusCode": 201
+  },
+  {
+    "id": 2,
+    "category": null,
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": { "id": 2, "name": "" },
+    "name": "Invalid URL test",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      { "id": 103, "name": "Tag3" },
+      { "id": 104, "name": "Tag4" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 4,
+    "category": { "id": null, "name": "Missing Category Data" },
+    "name": "Test Server Error",
+    "photoUrls": ["https://example.com/photo3.jpg"],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json", "Authorization": "Bearer valid-token" },
+      "body": { "name": "ItemWithError", "status": "invalid" }
+    },
+    "statusCode": 500
+  },
+  {
+    "id": 5,
+    "category": { "id": 3, "name": "API Testing" },
+    "name": "",
+    "photoUrls": ["https://example.com/photo4.jpg"],
+    "tags": [
+      { "id": 105, "name": "" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": { "id": 4, "name": null },
+    "name": "Test Missing Auth",
+    "photoUrls": ["https://example.com/photo5.jpg"],
+    "tags": [
+      { "id": 106, "name": "Tag6" }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "name": "NoAuthItem", "description": "Unauthenticated" }
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 7,
+    "category": { "id": 5, "name": "Empty Name Test" },
+    "name": "",
+    "photoUrls": ["https://example.com/photo6.jpg"],
+    "tags": [
+      { "id": 107, "name": "EmptyTag" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json", "Authorization": "Bearer valid-token" },
+      "body": { "name": "" }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": { "id": 6, "name": "Unsupported Content-Type Test" },
+    "name": "Invalid Content-Type",
+    "photoUrls": ["https://example.com/photo7.jpg"],
+    "tags": [],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/xml" },
+      "body": "<item><name>InvalidItem</name></item>"
+    },
+    "statusCode": 415
+  },
+  {
+    "id": 9,
+    "category": { "id": 7, "name": "Extra Fields Test" },
+    "name": "Unexpected Fields",
+    "photoUrls": ["https://example.com/photo8.jpg"],
+    "tags": [
+      { "id": 108, "name": "TagExtra" }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json", "Authorization": "Bearer valid-token" },
+      "body": { "name": "ExtraFieldItem", "extra_field": "unexpected" }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": { "id": 8, "name": "Strict Schema Test" },
+    "name": "Unknown Field",
+    "photoUrls": ["https://example.com/photo9.jpg"],
+    "tags": [
+      { "id": 109, "name": "StrictTag" }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/api/v1/items",
+      "headers": { "Content-Type": "application/json", "Authorization": "Bearer valid-token" },
+      "body": { "name": "StrictSchemaItem", "unknown_field": "unexpected" }
+    },
+    "statusCode": 400
+  }
+]

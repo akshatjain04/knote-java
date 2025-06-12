@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Valid Filtering"
+    },
+    "name": "Valid CoC Number Filter",
+    "photoUrls": ["http://example.com/branch1.jpg", "http://example.com/branch2.jpg"],
+    "tags": [
+      {
+        "id": 1001,
+        "name": "Filter"
+      },
+      {
+        "id": 1002,
+        "name": "CoC"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?coc-number=12345678",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 102,
+      "name": "Invalid CoC Number"
+    },
+    "name": "Invalid CoC Number Format",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 1003,
+        "name": "Error"
+      }
+    ],
+    "status": "error",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?coc-number=abcd1234",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 103,
+      "name": "Branch Number Validation"
+    },
+    "name": "Valid Branch Number Filter",
+    "photoUrls": ["http://example.com/branch3.jpg"],
+    "tags": [
+      {
+        "id": 1004,
+        "name": "Filter"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?coc-branch-number=123456789012",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 104,
+      "name": "Invalid Format"
+    },
+    "name": "Invalid Branch Number Format",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 1005,
+        "name": "Error"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?coc-branch-number=1234abcd@!",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 105,
+      "name": "Trade Name"
+    },
+    "name": "Valid Trade Name Filter",
+    "photoUrls": ["http://example.com/branch4.jpg"],
+    "tags": [
+      {
+        "id": 1006,
+        "name": "Filter"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?trade-name=Example%20Trade%20Name",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 106,
+      "name": "Size Limitation"
+    },
+    "name": null,
+    "photoUrls": ["http://example.com/branch5.jpg"],
+    "tags": [],
+    "status": "sold",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?size=20",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 107,
+      "name": "Invalid Size Parameter"
+    },
+    "name": "Invalid Size Limit",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 1007,
+        "name": "Error"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?size=100",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 108,
+      "name": "Pagination"
+    },
+    "name": "Offset Pagination",
+    "photoUrls": ["http://example.com/branch6.jpg"],
+    "tags": [
+      {
+        "id": 1008,
+        "name": "Pagination"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?offset=20",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 109,
+      "name": "Invalid Offset"
+    },
+    "name": "",
+    "photoUrls": null,
+    "tags": [
+      {
+        "id": 1009,
+        "name": "Error"
+      }
+    ],
+    "status": "error",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches?offset=-5",
+      "headers": {
+        "Authorization": "Bearer valid_token"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 110,
+      "name": "Authentication"
+    },
+    "name": "Missing Authentication Token",
+    "photoUrls": ["http://example.com/branch7.jpg"],
+    "tags": [
+      {
+        "id": 1010,
+        "name": "Auth"
+      }
+    ],
+    "status": "unauthorized",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/recipients/branches",
+      "headers": {},
+      "body": null
+    },
+    "statusCode": 401
+  }
+]

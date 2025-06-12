@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 1,
+      "name": "Authentication"
+    },
+    "name": "ValidLogout",
+    "photoUrls": ["https://example.com/photo1.jpeg"],
+    "tags": [
+      {
+        "id": 100,
+        "name": "SuccessScenario"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 2,
+      "name": "Authentication"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 101,
+        "name": "ErrorScenario"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 3,
+      "name": "Authentication"
+    },
+    "name": "InvalidAPIKey",
+    "photoUrls": ["invalid-url"],
+    "tags": [
+      {
+        "id": 102,
+        "name": "ErrorScenario"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer INVALID_API_KEY",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 4,
+      "name": "Authentication"
+    },
+    "name": "",
+    "photoUrls": ["https://example.com/photo2.jpeg"],
+    "tags": [
+      {
+        "id": 103,
+        "name": "ErrorScenario"
+      }
+    ],
+    "status": null,
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": null,
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 5,
+      "name": "Content-Type"
+    },
+    "name": "UnexpectedContentType",
+    "photoUrls": ["https://example.com/photo3.jpeg"],
+    "tags": [
+      {
+        "id": 104,
+        "name": "EdgeCase"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/xml"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 6,
+      "name": "Headers"
+    },
+    "name": "CheckResponseHeaders",
+    "photoUrls": ["https://example.com/photo4.jpeg"],
+    "tags": [
+      {
+        "id": 105,
+        "name": "ValidationScenario"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 7,
+      "name": "RequestBody"
+    },
+    "name": "EmptyRequestBody",
+    "photoUrls": ["https://example.com/photo5.jpeg"],
+    "tags": [
+      {
+        "id": 106,
+        "name": "EdgeCase"
+      }
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 8,
+      "name": "Headers"
+    },
+    "name": "ExtraUnknownHeader",
+    "photoUrls": [],
+    "tags": [
+      {
+        "id": 107,
+        "name": "ValidationScenario"
+      }
+    ],
+    "status": "sold",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/json",
+        "X-Malformed-Header": "randomValue"
+      },
+      "body": {}
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 9,
+      "name": "MethodType"
+    },
+    "name": "UnsupportedMethodType",
+    "photoUrls": ["https://example.com/photo6.jpeg"],
+    "tags": [
+      {
+        "id": 108,
+        "name": "EdgeCase"
+      }
+    ],
+    "status": "pending",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer VALID_API_KEY",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 405
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 10,
+      "name": "APIKey"
+    },
+    "name": "MalformedAPIKeyFormat",
+    "photoUrls": ["https://example.com/photo7.jpeg"],
+    "tags": [
+      {
+        "id": 109,
+        "name": "ValidationScenario"
+      }
+    ],
+    "status": "invalid",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/logout",
+      "headers": {
+        "Authorization": "Bearer abc123@#",
+        "Content-Type": "application/json"
+      },
+      "body": {}
+    },
+    "statusCode": 400
+  }
+]

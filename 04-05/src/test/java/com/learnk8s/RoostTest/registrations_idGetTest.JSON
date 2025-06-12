@@ -1,0 +1,237 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 101,
+      "name": "Valid Data Scenario"
+    },
+    "name": "Valid Pet",
+    "photoUrls": ["https://example.com/photo1.jpg", "https://example.com/photo2.jpg"],
+    "tags": [
+      {"id": 201, "name": "Tag1"},
+      {"id": 202, "name": "Tag2"}
+    ],
+    "status": "available",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "Valid Pet",
+        "photoUrls": ["https://example.com/photo1.jpg", "https://example.com/photo2.jpg"],
+        "tags": [
+          {"id": 201, "name": "Tag1"},
+          {"id": 202, "name": "Tag2"}
+        ],
+        "status": "available"
+      }
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": null,
+      "name": null
+    },
+    "name": "",
+    "photoUrls": ["invalid-url"],
+    "tags": [],
+    "status": "invalidStatus",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer invalidToken",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "",
+        "photoUrls": ["invalid-url"],
+        "tags": [],
+        "status": "invalidStatus"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 102,
+      "name": "Authentication Failure"
+    },
+    "name": "Unauthorized Pet",
+    "photoUrls": ["https://example.com/photo3.jpg"],
+    "tags": [{"id": 203, "name": "Tag3"}],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174000",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 401
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 103,
+      "name": "Invalid Path Parameter"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 104,
+      "name": "Missing Path Parameter"
+    },
+    "name": null,
+    "photoUrls": [],
+    "tags": [],
+    "status": null,
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 404
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 105,
+      "name": "Suspended Status"
+    },
+    "name": "Suspended Pet",
+    "photoUrls": ["https://example.com/photo4.jpg"],
+    "tags": [{"id": 204, "name": "Tag4"}],
+    "status": "suspended",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174001",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 106,
+      "name": "Null Fields"
+    },
+    "name": "Nullable Fields Pet",
+    "photoUrls": ["https://example.com/photo5.jpg"],
+    "tags": [{"id": 205, "name": "Tag5"}],
+    "status": "available",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174002",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 107,
+      "name": "Invalid Date Format"
+    },
+    "name": "Expired Pet",
+    "photoUrls": [],
+    "tags": [{"id": 206, "name": "Tag6"}],
+    "status": "expired",
+    "RequestBody": {
+      "method": "GET",
+      "url": "/pets/123e4567-e89b-12d3-a456-426614174003",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": null
+    },
+    "statusCode": 200
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 108,
+      "name": "Max Length Violation"
+    },
+    "name": "ReferenceTooLong",
+    "photoUrls": ["https://example.com/photo6.jpg"],
+    "tags": [{"id": 207, "name": "Tag7"}],
+    "status": "pending",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "ReferenceTooLong",
+        "photoUrls": ["https://example.com/photo6.jpg"],
+        "tags": [{"id": 207, "name": "Tag7"}],
+        "status": "pending"
+      }
+    },
+    "statusCode": 400
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 109,
+      "name": "Invalid Enum Value"
+    },
+    "name": "PetWithInvalidEnum",
+    "photoUrls": ["https://example.com/photo7.jpg"],
+    "tags": [{"id": 208, "name": "Tag8"}],
+    "status": "invalidEnum",
+    "RequestBody": {
+      "method": "POST",
+      "url": "/pets",
+      "headers": {
+        "Authorization": "Bearer validToken",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "PetWithInvalidEnum",
+        "photoUrls": ["https://example.com/photo7.jpg"],
+        "tags": [{"id": 208, "name": "Tag8"}],
+        "status": "invalidEnum"
+      }
+    },
+    "statusCode": 400
+  }
+]

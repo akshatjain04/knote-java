@@ -1,0 +1,11 @@
+kvkNummer^|^vestigingsnummer^|^handelsnaam^|^RequestBody^|^statusCode^|^Token
+12345678^|^98765432^|^Handelsonderneming ABC^|^{"requestType":"CREATE","payload":{"id":"123","name":"John Doe","email":"john.doe@example.com"}}^|^200^|^abc123token
+87654321^|^23456789^|^Technologiebedrijf XYZ^|^{"requestType":"UPDATE","payload":{"id":"456","name":"Jane Smith","email":"jane.smith@example.com"}}^|^200^|^xyz456token
+56789012^|^34567890^|^Retail Services DEF^|^{"requestType":"DELETE","payload":{"id":"789","name":"Michael Brown","email":"michael.brown@example.com"}}^|^200^|^def789token
+23456789^|^12345678^|^Consultancy Group LMN^|^{"requestType":"CREATE","payload":{"id":"321","name":"Emily White","email":"emily.white@example.com"}}^|^200^|^lmn321token
+89012345^|^56789012^|^Logistics Partner OPQ^|^{"requestType":"UPDATE","payload":{"id":"654","name":"Christopher Green","email":"christopher.green@example.com"}}^|^200^|^opq654token
+13579024^|^86420975^|^Healthcare Solutions UVW^|^{"requestType":"DELETE","payload":{"id":"987","name":"Sophia Grey","email":"sophia.grey@example.com"}}^|^200^|^uvw987token
+97531842^|^24681357^|^Education Experts RST^|^{"requestType":"CREATE","payload":{"id":"852","name":"Daniel Black","email":"daniel.black@example.com"}}^|^200^|^rst852token
+15975348^|^36925814^|^Entertainment Corp JKL^|^{"requestType":"UPDATE","payload":{"id":"963","name":"Laura Jones","email":"laura.jones@example.com"}}^|^200^|^jkl963token
+75395146^|^98732165^|^Finance Advisory GHI^|^{"requestType":"DELETE","payload":{"id":"741","name":"Thomas Clark","email":"thomas.clark@example.com"}}^|^200^|^ghi741token
+48269513^|^41685273^|^Marketing Solutions EVT^|^{"requestType":"CREATE","payload":{"id":"369","name":"Ashley Cooper","email":"ashley.cooper@example.com"}}^|^200^|^evt369token
