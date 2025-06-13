@@ -1,0 +1,42 @@
+[
+  {
+    "tags": [
+      "electronics",
+      "furniture"
+    ],
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "tags": [
+      "invalid_tag_123",
+      "wrong_format_tag"
+    ],
+    "statusCode": 400,
+    "scenario": "Invalid tag value"
+  },
+  {
+    "tags": [
+      "clothing",
+      "toys"
+    ],
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "tags": [
+      "badTag!",
+      "123"
+    ],
+    "statusCode": 400,
+    "scenario": "Invalid tag value"
+  },
+  {
+    "tags": [
+      "books",
+      "stationery"
+    ],
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]
