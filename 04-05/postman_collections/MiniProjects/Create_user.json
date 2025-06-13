@@ -1,0 +1,62 @@
+[
+  {
+    "id": 123456789012345,
+    "username": "john_doe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "phone": "555-1234",
+    "userStatus": 1,
+    "statusCode": 500,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 987654321012345,
+    "username": "jane_smith",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "password": "securePass!45",
+    "phone": "555-5678",
+    "userStatus": 0,
+    "statusCode": 500,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 568327984560123,
+    "username": "user_test3",
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alice.johnson@example.org",
+    "password": "mypasswordXYZ",
+    "phone": "555-9101",
+    "userStatus": 2,
+    "statusCode": 500,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 342697186540987,
+    "username": "random_user",
+    "firstName": "Chris",
+    "lastName": "Evans",
+    "email": "random.email@notreal.com",
+    "password": "complexPass!23",
+    "phone": "555-4321",
+    "userStatus": 3,
+    "statusCode": 500,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 764329120583746,
+    "username": "api_user",
+    "firstName": "Sam",
+    "lastName": "Taylor",
+    "email": "sam.taylor@domain.com",
+    "password": "secureKey#678",
+    "phone": "555-8765",
+    "userStatus": 4,
+    "statusCode": 500,
+    "scenario": "successful operation"
+  }
+]
