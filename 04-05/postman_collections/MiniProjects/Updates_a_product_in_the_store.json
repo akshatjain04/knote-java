@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "ABC123XYZ",
+    "id": 10,
+    "name": "2023-10-01",
+    "description": "2023-10-02",
+    "price": 25,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "DEF456UVW",
+    "id": 20,
+    "name": "2023-09-15",
+    "description": "2023-09-16",
+    "price": 30,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "INVALID_PRODUCT",
+    "id": -1,
+    "name": "random-string",
+    "description": "random-string",
+    "price": -100,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "XYZ789LMN",
+    "id": 35,
+    "name": "2023-08-20",
+    "description": "2023-08-21",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "WRONG_ID",
+    "id": 999999999,
+    "name": "0000-00-00",
+    "description": "unknown-date",
+    "price": 999999,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]

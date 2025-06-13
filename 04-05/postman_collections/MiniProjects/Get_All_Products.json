@@ -1,0 +1,27 @@
+[
+  {
+    "responseBody": "{\"id\":10,\"name\":\"Sample Product\",\"description\":\"A sample product description\",\"price\":20}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\"id\":-1,\"name\":\"\",\"description\":\"\",\"price\":-5}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "responseBody": "{\"id\":0,\"name\":\"Test\",\"description\":\"Invalid price test\",\"price\":0}",
+    "statusCode": 422,
+    "scenario": "Unprocessable Entity"
+  },
+  {
+    "responseBody": "{\"id\":null,\"name\":\"null\",\"description\":\"\",\"price\":null}",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "responseBody": "{\"id\":10,\"name\":\"Another Product\",\"description\":\"Testing successful operation\",\"price\":50}",
+    "statusCode": 201,
+    "scenario": "Successful operation"
+  }
+]
