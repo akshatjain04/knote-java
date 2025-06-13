@@ -1,37 +1,37 @@
 [
   {
-    "name": "Product A",
-    "description": "A high-quality product for everyday use.",
-    "price": 25,
+    "name": "Smartphone X",
+    "description": "Latest model with high-resolution camera",
+    "price": 799.99,
     "statusCode": 200,
     "scenario": "Successful operation"
   },
   {
-    "name": "Product B",
-    "description": "An affordable gadget with advanced features.",
-    "price": 50,
+    "name": "Laptop Pro 16",
+    "description": "Powerful laptop with advanced features",
+    "price": 1499.5,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "description": "Portable speaker with stereo sound",
+    "price": 50.75,
     "statusCode": 200,
     "scenario": "Successful operation"
   },
   {
     "name": "",
-    "description": "",
+    "description": "Missing product name",
     "price": -10,
     "statusCode": 405,
     "scenario": "Invalid input"
   },
   {
-    "name": "1234",
-    "description": "An invalid description format.",
-    "price": "abc",
+    "name": "Invalid Laptop",
+    "description": "",
+    "price": "not-a-price",
     "statusCode": 405,
     "scenario": "Invalid input"
-  },
-  {
-    "name": "Test Product C",
-    "description": "Premium quality item with exceptional durability.",
-    "price": 75,
-    "statusCode": 200,
-    "scenario": "Successful operation"
   }
 ]
