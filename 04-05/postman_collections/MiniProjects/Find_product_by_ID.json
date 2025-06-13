@@ -1,0 +1,27 @@
+[
+  {
+    "productId": "P12345",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": "P67890",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": "INVALID_ID",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": "UNKNOWN123",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": "EXPIRED_ITEM",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  }
+]
