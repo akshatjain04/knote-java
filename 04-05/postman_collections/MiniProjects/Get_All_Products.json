@@ -1,0 +1,27 @@
+[
+  {
+    "responseBody": "{\"id\":101,\"name\":\"Product A\",\"description\":\"A high-quality item\",\"price\":29.99}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\"id\":102,\"name\":\"Product B\",\"description\":\"Durable and reliable\",\"price\":49.99}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\"id\":\"invalid_id\",\"name\":123,\"description\":false,\"price\":\"ABC\"}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "responseBody": "{\"id\":null,\"name\":\"\",\"description\":\"\",\"price\":-20}",
+    "statusCode": 422,
+    "scenario": "Unprocessable Entity"
+  },
+  {
+    "responseBody": "{\"id\":999,\"name\":\"Special Product\",\"description\":\"Limited edition\",\"price\":\"XYZ\"}",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  }
+]
