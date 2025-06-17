@@ -1,27 +1,27 @@
 [
   {
-    "additionalMetadata": "Sample metadata for object 1",
+    "additionalMetadata": "Operation completed successfully.",
     "statusCode": 200,
     "scenario": "successful operation"
   },
   {
-    "additionalMetadata": "Relevant metadata content here",
+    "additionalMetadata": "Task executed without errors.",
     "statusCode": 200,
     "scenario": "successful operation"
   },
   {
-    "additionalMetadata": "{\"exercitation_5f\":-33434232,\"cupidatat_e__\":-15062437,\"dolor979\":68775854,\"Ut_d\":-66344610}",
+    "additionalMetadata": "Valid process description provided.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "{\"Duis_548\":-19473258,\"est51\":2857231}",
     "statusCode": 400,
     "scenario": "Bad Request"
   },
   {
-    "additionalMetadata": "{\"syntax_error_here\":-123&invalid_json_format}",
+    "additionalMetadata": "Invalid string for test.",
     "statusCode": 500,
     "scenario": "Internal Server Error"
-  },
-  {
-    "additionalMetadata": "{\"invalid_key\":true,\"missing_value\":}",
-    "statusCode": 401,
-    "scenario": "Unauthorized"
   }
 ]
