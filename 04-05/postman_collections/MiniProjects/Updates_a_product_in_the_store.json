@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "PDT12345",
+    "id": 101,
+    "name": "2023-10-01",
+    "description": "2023-10-01",
+    "price": 49.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "PDT54321",
+    "id": 102,
+    "name": "2023-09-30",
+    "description": "2023-09-30",
+    "price": 99.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "PDT00001",
+    "id": -999,
+    "name": "2023-15-01",
+    "description": "2023-15-01",
+    "price": -10,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "INVALID_ID",
+    "id": "NaN",
+    "name": "INVALID_DATE",
+    "description": "INVALID_DATE",
+    "price": "invalid",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "PDT88888",
+    "id": 55,
+    "name": "2023-11-01",
+    "description": "2023-10-25",
+    "price": 150.5,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  }
+]

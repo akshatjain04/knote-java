@@ -1,0 +1,27 @@
+[
+  {
+    "productId": "12345ABC",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": "67890XYZ",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": "INVALID_ID",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": "00000",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": "TEST12345!@#",
+    "statusCode": 404,
+    "scenario": "Product not found"
+  }
+]
