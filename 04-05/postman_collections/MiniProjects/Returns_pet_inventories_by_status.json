@@ -1,0 +1,27 @@
+[
+  {
+    "additionalMetadata": "Operation completed successfully.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "Task executed without errors.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "Valid process description provided.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "{\"Duis_548\":-19473258,\"est51\":2857231}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "additionalMetadata": "Invalid string for test.",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  }
+]
