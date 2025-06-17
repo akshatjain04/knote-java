@@ -1,0 +1,27 @@
+[
+  {
+    "productId": "12345",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "productId": "67890",
+    "statusCode": 200,
+    "scenario": "Product deleted"
+  },
+  {
+    "productId": "invalid_product_id",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "unknown123",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "non_existing_product",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
