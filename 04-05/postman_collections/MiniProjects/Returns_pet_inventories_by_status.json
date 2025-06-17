@@ -1,0 +1,27 @@
+[
+  {
+    "additionalMetadata": "Sample metadata for object 1",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "Relevant metadata content here",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "additionalMetadata": "{\"exercitation_5f\":-33434232,\"cupidatat_e__\":-15062437,\"dolor979\":68775854,\"Ut_d\":-66344610}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "additionalMetadata": "{\"syntax_error_here\":-123&invalid_json_format}",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "additionalMetadata": "{\"invalid_key\":true,\"missing_value\":}",
+    "statusCode": 401,
+    "scenario": "Unauthorized"
+  }
+]
