@@ -1,0 +1,501 @@
+{
+  "item": [
+    {
+      "name": "pet",
+      "item": [
+        null,
+        null,
+        {
+          "name": "{petId}",
+          "item": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        null
+      ],
+      "event": []
+    },
+    {
+      "name": "store",
+      "item": [
+        null,
+        {
+          "name": "order",
+          "item": [
+            {
+              "name": "Place an order for a pet",
+              "request": {
+                "name": "Place an order for a pet",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "store",
+                    "order"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"id\": {{id_*long}},\n    \"petId\": {{petId_*long}},\n    \"quantity\": {{quantity_*integer}},\n    \"shipDate\": {{shipDate_*dateTime}},\n    \"status\": {{status_*string}},\n    \"complete\": {{complete_*boolean}}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "response": [
+                {
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "store",
+                        "order"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"id\": {{id_*long}},\n    \"petId\": {{petId_*long}},\n    \"quantity\": {{quantity_*integer}},\n    \"shipDate\": {{shipDate_*dateTime}},\n    \"status\": {{status_*string}},\n    \"complete\": {{complete_*boolean}}\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"complete\": \"<boolean>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "name": "Invalid Order",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "store",
+                        "order"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"id\": {{id_*long}},\n    \"petId\": {{petId_*long}},\n    \"quantity\": {{quantity_*integer}},\n    \"shipDate\": {{shipDate_*dateTime}},\n    \"status\": {{status_*string}},\n    \"complete\": {{complete_*boolean}}\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test MiniProjects using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for store/order for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"successful operation\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test('Response has the `id` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`id`)){\n                if(pm.expect(ld.get(responseData, `id`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `id`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `petId` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`petId`)){\n                if(pm.expect(ld.get(responseData, `petId`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `petId`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `quantity` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`quantity`)){\n                if(pm.expect(ld.get(responseData, `quantity`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `quantity`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `shipDate` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`shipDate`)){\n                if(pm.expect(ld.get(pm.response.json(), `shipDate`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `shipDate`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n  \n        pm.test('shipDate format to be date-time',function(){\n            pm.expect(ld.get(responseData, \"shipDate\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n        })\n\n        pm.test('Response has the `status` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`status`)){\n                if(pm.expect(ld.get(pm.response.json(), `status`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `status`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('status to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"status\", \"\")).to.include.oneOf([\"placed\",\"approved\",\"delivered\"]);\n        })\n\n        pm.test('Response has the `complete` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`complete`)){\n                if(pm.expect(ld.get(pm.response.json(), `complete`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `complete`, null)).to.equal(\"boolean\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 400){\n    pm.test(\"Invalid Order\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n    });\n\n}\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "name": "{orderId}",
+              "item": [
+                {
+                  "name": "Find purchase order by ID",
+                  "request": {
+                    "name": "Find purchase order by ID",
+                    "description": {
+                      "content": "For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": [
+                        "store",
+                        "order",
+                        ":orderId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "<long>",
+                          "key": "orderId",
+                          "description": "(Required) ID of pet that needs to be fetched"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "name": "successful operation",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "<long>",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"complete\": \"<boolean>\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "name": "Invalid ID supplied",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "<long>",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    },
+                    {
+                      "name": "Order not found",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "<long>",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  }
+                },
+                {
+                  "name": "Delete purchase order by ID",
+                  "request": {
+                    "name": "Delete purchase order by ID",
+                    "description": {
+                      "content": "For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": [
+                        "store",
+                        "order",
+                        ":orderId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "<long>",
+                          "key": "orderId",
+                          "description": "(Required) ID of the order that needs to be deleted"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "name": "Invalid ID supplied",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "<long>",
+                              "key": "orderId",
+                              "description": "(Required) ID of the order that needs to be deleted"
+                            }
+                          ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    },
+                    {
+                      "name": "Order not found",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "<long>",
+                              "key": "orderId",
+                              "description": "(Required) ID of the order that needs to be deleted"
+                            }
+                          ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  }
+                }
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "user",
+      "item": [
+        null,
+        null,
+        {
+          "name": "{username}",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        null,
+        null
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://petstore.swagger.io/v2",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "9c907048-8089-4fd3-8142-455bdf2bf35f",
+    "name": "Swagger Petstore",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.\n\nContact Support:\n Email: apiteam@swagger.io",
+      "type": "text/plain"
+    }
+  }
+}
