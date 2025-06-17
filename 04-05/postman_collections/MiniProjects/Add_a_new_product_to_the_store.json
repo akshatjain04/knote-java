@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Product A",
+    "description": "High-quality electronic product",
+    "price": 299.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "Product B",
+    "description": "Durable and efficient kitchen appliance",
+    "price": 89.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "Invalid Name!",
+    "description": "Description with invalid characters @#$%",
+    "price": -100,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "123",
+    "description": "123",
+    "price": 0,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "Product C",
+    "description": "Ergonomic office chair",
+    "price": 149.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  }
+]
