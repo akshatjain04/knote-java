@@ -1,0 +1,27 @@
+[
+  {
+    "id": "a7b113e4-9f67-455f-8b8a-3f6211d9e0ab",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "INVALID_UUID_001",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": "703cc7e8-408e-4941-831c-abcde1234567",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "INVALID_UUID_002",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "id": "c215b569-38d5-4ab8-acf0-899dcef62248",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]

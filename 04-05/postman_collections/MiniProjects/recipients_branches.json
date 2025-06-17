@@ -1,0 +1,47 @@
+[
+  {
+    "coc-number": "53953031",
+    "coc-branch-number": "167672320782",
+    "trade-name": "consectetur commodo",
+    "size": "medium",
+    "offset": "100",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "coc-number": "07234987",
+    "coc-branch-number": "686752643760",
+    "trade-name": "ullamco Excepteur proident sunt",
+    "size": "large",
+    "offset": "25",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "coc-number": "invalid_coc",
+    "coc-branch-number": "invalid_branch_number",
+    "trade-name": "",
+    "size": "unknown",
+    "offset": "-50",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "coc-number": "99999999",
+    "coc-branch-number": "000000000000",
+    "trade-name": "unauthorized_trace",
+    "size": "small",
+    "offset": "zero",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "coc-number": "random_string",
+    "coc-branch-number": "random_value",
+    "trade-name": "test_value",
+    "size": "undefined",
+    "offset": "one_hundred",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  }
+]

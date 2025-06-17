@@ -1,0 +1,52 @@
+[
+  {
+    "cocNumber": "12345678",
+    "cocBranchNumber": "123456780001",
+    "city": "Amsterdam",
+    "tradeName": "Global Trading Inc",
+    "phone": "+31201234567",
+    "email": "info@globaltrading.com",
+    "statusCode": 200,
+    "scenario": "successful operation, existing branch returned"
+  },
+  {
+    "cocNumber": "87654321",
+    "cocBranchNumber": "876543210002",
+    "city": "Rotterdam",
+    "tradeName": "Universal Imports",
+    "phone": "+31123456789",
+    "email": "contact@universalimports.com",
+    "statusCode": 201,
+    "scenario": "successful operation, branch created"
+  },
+  {
+    "cocNumber": "XXXXXX",
+    "cocBranchNumber": "INVALIDBRANCH001",
+    "city": "12345",
+    "tradeName": "",
+    "phone": "phone123",
+    "email": "invalid-email",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "cocNumber": "99999999",
+    "cocBranchNumber": "999999990003",
+    "city": "The Hague",
+    "tradeName": "Dutch Supplies Ltd",
+    "phone": "+31708965432",
+    "email": "sales@dutchsupplies.nl",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "cocNumber": "12312312",
+    "cocBranchNumber": "123123120004",
+    "city": "Eindhoven",
+    "tradeName": "TechPro Solutions",
+    "phone": "+31498765432",
+    "email": "support@techprosolutions.com",
+    "statusCode": 200,
+    "scenario": "successful operation, existing branch returned"
+  }
+]

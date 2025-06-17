@@ -1,0 +1,42 @@
+[
+  {
+    "credential-url": "https://example.com/credential/abc123",
+    "size": "50",
+    "offset": "0",
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "credential-url": "",
+    "size": "abc",
+    "offset": "-1",
+    "id": "invalid-id-format",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "credential-url": "https://example.com/credential/xyz789",
+    "size": "100",
+    "offset": "10",
+    "id": "987e6543-e21b-12d3-a456-123456789000",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "credential-url": "invalid_url",
+    "size": "none",
+    "offset": "NaN",
+    "id": "invalid-uuid",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "credential-url": "https://example.com/credential/mno456",
+    "size": "25",
+    "offset": "5",
+    "id": "456e7890-a12b-12d3-a456-890123456000",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]

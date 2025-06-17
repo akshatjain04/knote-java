@@ -1,0 +1,32 @@
+[
+  {
+    "email": "testuser1@example.com",
+    "statusCode": 201,
+    "scenario": "successful operation"
+  },
+  {
+    "email": "testuser2@example.com",
+    "statusCode": 201,
+    "scenario": "successful operation"
+  },
+  {
+    "email": "invalid-email",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "email": "@missinglocalpart.com",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "email": "testuserwithoutdomain@",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "email": "malformedemail.com",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  }
+]

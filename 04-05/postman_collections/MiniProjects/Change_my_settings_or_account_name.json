@@ -1,0 +1,42 @@
+[
+  {
+    "name": "John Doe",
+    "image": "iVBORw0KGgoAAAANSUhEUgAAAAUA",
+    "settings.incididunt___": 123,
+    "settings.sunt_7": "Configuration A",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "name": "Invalid Name###",
+    "image": "invalid_base64_string",
+    "settings.incididunt___": -456,
+    "settings.sunt_7": "",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "name": "Jane Smith",
+    "image": "LCJlY2xzIgYHLCJmb3JtYWsIgYWo",
+    "settings.incididunt___": 789,
+    "settings.sunt_7": "Configuration B",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "name": "",
+    "image": "",
+    "settings.incididunt___": "NaN",
+    "settings.sunt_7": "XXXXX",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "name": "Alice Johnson",
+    "image": "abcd1234GHijk45678LMN",
+    "settings.incididunt___": 321,
+    "settings.sunt_7": "Configuration C",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]
