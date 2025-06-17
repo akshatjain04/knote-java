@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Premium Plan",
+    "description": "Access to all features for premium users",
+    "price": 49.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "Basic Plan",
+    "description": "Limited access to core features",
+    "price": 19.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "TEST_invalid_name_123",
+    "description": "TEST_invalid_description_456",
+    "price": "invalid_price",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "",
+    "description": null,
+    "price": -25,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "Enterprise Plan",
+    "description": "Advanced features for organizations",
+    "price": 99.99,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  }
+]
