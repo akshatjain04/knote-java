@@ -1,0 +1,42 @@
+[
+  {
+    "name": "apple",
+    "id": 10,
+    "description": "description of the product",
+    "price": 20,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "banana",
+    "id": 25,
+    "description": "fresh yellow banana",
+    "price": 15,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "orange",
+    "id": 45,
+    "description": "juicy orange fruit",
+    "price": 30,
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name": "",
+    "id": -1,
+    "description": "",
+    "price": -20,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name": "invalid_product",
+    "id": 0,
+    "description": "invalid description",
+    "price": 999999999999,
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
