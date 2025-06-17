@@ -1,0 +1,47 @@
+[
+  {
+    "id": "d4ee471f-7b42-4e70-815e-8424187134a5",
+    "credentialUrl": "https://example.com/credential/123",
+    "startDate": "2023-08-01",
+    "reference": "REF-20231001-A",
+    "endDate": "2023-12-31",
+    "statusCode": 201,
+    "scenario": "Successful"
+  },
+  {
+    "id": "invalid-id",
+    "credentialUrl": "example.invalid-url",
+    "startDate": "2023-25-01",
+    "reference": "REF_INVALID_TOO_LONG_ABCDEFGHIJKLMNOPQRSTUVWXYZ_ABCDEFGHIJKLMNOPQRSTUVWXYZ_12345",
+    "endDate": "12/31/2023",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": "unauthenticated-user-uuid",
+    "credentialUrl": "http//missing-schema.com",
+    "startDate": "01-2023-25",
+    "reference": "!SPECIALCHARSREF@#$^*",
+    "endDate": "31-12/2023",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "id": "f2a1338b-44e7-41c9-885d-5ddd5ea9d2aa",
+    "credentialUrl": "https://service.com/docs/abc",
+    "startDate": "2023-07-15",
+    "reference": "REF-20231002-B",
+    "endDate": "2023-11-15",
+    "statusCode": 201,
+    "scenario": "Successful"
+  },
+  {
+    "id": "testing-invalid-uuid",
+    "credentialUrl": "ftp://wrong.protocol.com",
+    "startDate": "2024-02-30",
+    "reference": "",
+    "endDate": "20230101",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  }
+]

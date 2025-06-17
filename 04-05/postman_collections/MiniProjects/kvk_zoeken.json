@@ -1,0 +1,37 @@
+[
+  {
+    "kvkNummer": "12345678",
+    "vestigingsnummer": "87654321",
+    "handelsnaam": "Tech Innovations Inc.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "kvkNummer": "23456789",
+    "vestigingsnummer": "98765432",
+    "handelsnaam": "Green Energy Solutions",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "kvkNummer": "invalid_kvkNummer",
+    "vestigingsnummer": "invalid_vestigingsnummer",
+    "handelsnaam": "",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "kvkNummer": "78654321",
+    "vestigingsnummer": "invalid_vestigingsnummer",
+    "handelsnaam": "Digital Ventures Corp.",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "kvkNummer": "string_too_long_invalid",
+    "vestigingsnummer": "number_only_invalid",
+    "handelsnaam": "Invalid Entry Test LLC",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]

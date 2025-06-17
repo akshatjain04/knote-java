@@ -1,0 +1,42 @@
+[
+  {
+    "id": "54b7c61a-e79a-42d6-9174-5d3669b536d8",
+    "tradeName": "RealTech Solutions",
+    "phone": "202-555-0152",
+    "email": "contact@realtech.com",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "213f04cc-b7a6-4aab-ba21-a6143b0939ef",
+    "tradeName": "MarketWorx LLC",
+    "phone": "202-555-0173",
+    "email": "info@marketworx.com",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "invalid_uuid",
+    "tradeName": "@InvalidTradeName!",
+    "phone": "123-not-a-phone",
+    "email": "wrong-email-format",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": "be936d85-eb2e-487a-aa8f-11f907abc345",
+    "tradeName": "DigitalCraft Inc",
+    "phone": "202-555-0190",
+    "email": "support@digitalcraft.com",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "-",
+    "tradeName": "Unknown123##",
+    "phone": "abcd1234",
+    "email": "missing.at.symbol.com",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  }
+]

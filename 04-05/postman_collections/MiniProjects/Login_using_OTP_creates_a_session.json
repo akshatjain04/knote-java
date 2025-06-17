@@ -1,0 +1,37 @@
+[
+  {
+    "client": "mobile",
+    "email": "john.doe@example.com",
+    "otp": "123456",
+    "statusCode": 201,
+    "scenario": "successful operation"
+  },
+  {
+    "client": "web",
+    "email": "jane.smith@example.com",
+    "otp": "654321",
+    "statusCode": 201,
+    "scenario": "successful operation"
+  },
+  {
+    "client": "desktop",
+    "email": "invalid-email",
+    "otp": "invalid_otp",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "client": "api",
+    "email": "test.email.com",
+    "otp": "789abc",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "client": "web",
+    "email": "missing@domain",
+    "otp": "!!!!!!!",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  }
+]

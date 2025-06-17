@@ -1,0 +1,42 @@
+[
+  {
+    "size": "Medium",
+    "offset": "5",
+    "recipient-id": "urn:uuid:177a4648-3fbd-ed0d-38d1-afca67ac65f9",
+    "credential-url": "https://example.com/credential/177a4648",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "size": "Large_invalid",
+    "offset": "abc_offset",
+    "recipient-id": "xyz123-invalid-id",
+    "credential-url": "invalid_url",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "size": "Small_invalid",
+    "offset": "-1",
+    "recipient-id": "urn:uuid:invalid-id-000",
+    "credential-url": "https://badurl.com/credential/1234",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "size": "Extra Large",
+    "offset": "10",
+    "recipient-id": "urn:uuid:d0527a3d-8729-97be-b207-a5bd4cec47b8",
+    "credential-url": "https://example.com/credential/d0527a3d",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "size": "XS_invalid",
+    "offset": "null_offset",
+    "recipient-id": "uuid-invalid-5678",
+    "credential-url": "bad_url_string",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  }
+]

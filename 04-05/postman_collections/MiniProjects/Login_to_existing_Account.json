@@ -1,0 +1,27 @@
+[
+  {
+    "email": "user1@example.com",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "email": "user2@example.com",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "email": "invalid-email",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "email": "user3example.com",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "email": "test@com",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  }
+]

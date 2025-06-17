@@ -1,0 +1,47 @@
+[
+  {
+    "id": "f5c3f86e-1e5d-4ae6-bf15-0d785a12db1c",
+    "reference": "REF123456789",
+    "revoked": false,
+    "suspendedUntil": "2024-01-15",
+    "endDate": "2024-12-15",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "invalid_id@@",
+    "reference": "INVALID_REFERENCE_TOO_LONG_MORE_THAN_100_CHARACTERS_ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ123456789",
+    "revoked": "notABoolean",
+    "suspendedUntil": "2023-13-01",
+    "endDate": "2023-02-30",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": "a3fd8e12-c35f-40e5-92db-a6c115ce7c8d",
+    "reference": "REF987654321",
+    "revoked": false,
+    "suspendedUntil": "2023-12-25",
+    "endDate": "2025-12-25",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "%%invalidUUID",
+    "reference": "",
+    "revoked": "false_string",
+    "suspendedUntil": "invalid_date",
+    "endDate": "0000-00-00",
+    "statusCode": 401,
+    "scenario": "Authentication Required"
+  },
+  {
+    "id": "c842d50f-8cea-45a0-9fae-2c119b7c10b8",
+    "reference": "REF567890123",
+    "revoked": true,
+    "suspendedUntil": "2023-08-01",
+    "endDate": "2024-08-01",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]
