@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "P001",
+    "id": 101,
+    "name": "2023-10-01",
+    "description": "2023-10-01",
+    "price": 25.99,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "P002",
+    "id": 102,
+    "name": "2023-10-02",
+    "description": "2023-10-02",
+    "price": 35.5,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "invalid_id",
+    "id": -1,
+    "name": "invalid_date",
+    "description": "invalid_date",
+    "price": -50,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "P004",
+    "id": 103,
+    "name": "2023-10-03",
+    "description": "2023-10-03",
+    "price": 45,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "",
+    "id": 0,
+    "name": "9999-99-99",
+    "description": "9999-99-99",
+    "price": -100,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]
