@@ -1,0 +1,47 @@
+[
+  {
+    "productId": "101",
+    "name": "Apple MacBook Pro",
+    "id": 100001,
+    "description": "A high-performance laptop for professionals.",
+    "price": 1200,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "102",
+    "name": "Samsung Galaxy S21",
+    "id": 100002,
+    "description": "A flagship Android phone with advanced features.",
+    "price": 799,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "INVALID",
+    "name": "Random Value",
+    "id": -1,
+    "description": "Invalid description",
+    "price": -999,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "productId": "103",
+    "name": "Sony WH-1000XM4",
+    "id": 100003,
+    "description": "Noise-cancelling wireless headphones.",
+    "price": 350,
+    "statusCode": 200,
+    "scenario": "Updated Product"
+  },
+  {
+    "productId": "INVALID_PRODUCT_ID",
+    "name": "",
+    "id": 0,
+    "description": "",
+    "price": 0,
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]

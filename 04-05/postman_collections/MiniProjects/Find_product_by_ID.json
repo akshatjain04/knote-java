@@ -1,0 +1,27 @@
+[
+  {
+    "productId": 101,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": 102,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "productId": 99999,
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": 0,
+    "statusCode": 404,
+    "scenario": "Product not found"
+  },
+  {
+    "productId": -12345,
+    "statusCode": 404,
+    "scenario": "Product not found"
+  }
+]
