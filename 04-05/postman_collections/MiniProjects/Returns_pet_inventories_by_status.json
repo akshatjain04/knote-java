@@ -1,0 +1,27 @@
+[
+  {
+    "responseBody": "{\"available\":12,\"pending\":5,\"sold\":3}",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "responseBody": "{\"available\":8,\"pending\":2,\"sold\":1}",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "responseBody": "{\"available\":\"invalid\",\"pending\":\"error\",\"sold\":\"failure\"}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "responseBody": "{\"available\":\"NaN\",\"pending\":\"None\",\"sold\":\"null\"}",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "responseBody": "{\"available\":-1,\"pending\":-5,\"sold\":1000}",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]

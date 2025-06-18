@@ -1,0 +1,27 @@
+[
+  {
+    "responseBody": "{\"code\":200,\"type\":\"operation\",\"message\":\"successful operation\"}",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "responseBody": "{\"code\":404,\"type\":\"error\",\"message\":\"resource not found\"}",
+    "statusCode": 404,
+    "scenario": "Resource not found"
+  },
+  {
+    "responseBody": "{\"code\":400,\"type\":\"error\",\"message\":\"bad request\"}",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "responseBody": "{\"code\":500,\"type\":\"error\",\"message\":\"internal server error\"}",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "responseBody": "{\"code\":201,\"type\":\"operation\",\"message\":\"successful creation\"}",
+    "statusCode": 201,
+    "scenario": "Successful operation"
+  }
+]

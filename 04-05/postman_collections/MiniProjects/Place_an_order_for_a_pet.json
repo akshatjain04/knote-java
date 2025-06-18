@@ -1,0 +1,52 @@
+[
+  {
+    "id": 101,
+    "petId": 1,
+    "quantity": 5,
+    "shipDate": "2023-11-01",
+    "status": "placed",
+    "complete": true,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 102,
+    "petId": 2,
+    "quantity": 3,
+    "shipDate": "2023-10-30",
+    "status": "approved",
+    "complete": false,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 0,
+    "petId": "invalid_petId",
+    "quantity": -1,
+    "shipDate": "invalid_date",
+    "status": "",
+    "complete": null,
+    "statusCode": 400,
+    "scenario": "Invalid Order"
+  },
+  {
+    "id": 103,
+    "petId": 3,
+    "quantity": 8,
+    "shipDate": "2023-12-15",
+    "status": "delivered",
+    "complete": true,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": "abc",
+    "petId": null,
+    "quantity": "NaN",
+    "shipDate": "2023/13/32",
+    "status": "unknown",
+    "complete": "yes",
+    "statusCode": 400,
+    "scenario": "Invalid Order"
+  }
+]

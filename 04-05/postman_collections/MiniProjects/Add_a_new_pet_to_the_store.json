@@ -1,0 +1,62 @@
+[
+  {
+    "id": 101,
+    "category.id": 1,
+    "category.name": "Pets",
+    "name": "Rover",
+    "photoUrls_0": "https://example.com/dog_photo.jpg",
+    "tags_0.id": 11,
+    "tags_0.name": "Friendly",
+    "status": "available",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "id": 405,
+    "category.id": 99,
+    "category.name": "Invalid_Category",
+    "name": "!BadName",
+    "photoUrls_0": "invalid/url",
+    "tags_0.id": -5,
+    "tags_0.name": "null_tag",
+    "status": "unknown_status",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "id": 202,
+    "category.id": 3,
+    "category.name": "Wildlife",
+    "name": "Leo",
+    "photoUrls_0": "https://example.com/lion_photo.jpg",
+    "tags_0.id": 20,
+    "tags_0.name": "Majestic",
+    "status": "pending",
+    "statusCode": 201,
+    "scenario": "Success"
+  },
+  {
+    "id": 0,
+    "category.id": 0,
+    "category.name": "Misclassified",
+    "name": "",
+    "photoUrls_0": "",
+    "tags_0.id": 0,
+    "tags_0.name": "",
+    "status": "",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "id": 303,
+    "category.id": 4,
+    "category.name": "Farm",
+    "name": "Bessie",
+    "photoUrls_0": "https://example.com/cow_photo.jpg",
+    "tags_0.id": 15,
+    "tags_0.name": "Healthy",
+    "status": "sold",
+    "statusCode": 200,
+    "scenario": "Success"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "petId": "1",
+    "additionalMetadata": "Additional data to pass to server",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "petId": "invalid_petId",
+    "additionalMetadata": "",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "petId": "123",
+    "additionalMetadata": "Metadata content for testing",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "petId": "#$%&",
+    "additionalMetadata": "12345",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "petId": "111",
+    "additionalMetadata": "Sample additional metadata",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]

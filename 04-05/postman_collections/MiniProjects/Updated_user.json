@@ -1,0 +1,62 @@
+[
+  {
+    "username": "john_doe",
+    "id": 12345,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "SecurePass123!",
+    "phone": "555-123-4567",
+    "userStatus": 1,
+    "statusCode": 400,
+    "scenario": "Invalid user supplied"
+  },
+  {
+    "username": "invalid_user",
+    "id": -1,
+    "firstName": "",
+    "lastName": "",
+    "email": "invalid-email.com",
+    "password": "",
+    "phone": "12345",
+    "userStatus": -99,
+    "statusCode": 404,
+    "scenario": "User not found"
+  },
+  {
+    "username": "jane_smith",
+    "id": 67890,
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "password": "CorrectHorseBatteryStaple",
+    "phone": "555-987-6543",
+    "userStatus": 2,
+    "statusCode": 400,
+    "scenario": "Invalid user supplied"
+  },
+  {
+    "username": "fake_user",
+    "id": 0,
+    "firstName": "Fake",
+    "lastName": "User",
+    "email": "fakeuser@invalid",
+    "password": "password123",
+    "phone": "000-000-0000",
+    "userStatus": -1,
+    "statusCode": 404,
+    "scenario": "User not found"
+  },
+  {
+    "username": "emma_wilson",
+    "id": 54321,
+    "firstName": "Emma",
+    "lastName": "Wilson",
+    "email": "emma.wilson@example.com",
+    "password": "Wilson!2023",
+    "phone": "555-321-4568",
+    "userStatus": 0,
+    "statusCode": 400,
+    "scenario": "Invalid user supplied"
+  }
+]
