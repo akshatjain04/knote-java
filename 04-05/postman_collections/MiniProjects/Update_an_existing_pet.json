@@ -1,0 +1,82 @@
+[
+  {
+    "id": 123,
+    "category": {
+      "id": 10,
+      "name": "Dogs"
+    },
+    "name": "Bulldog",
+    "photoUrls_0": "https://example.com/dog1.jpg",
+    "tags_0": {
+      "id": 101,
+      "name": "Friendly"
+    },
+    "status": "available",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "id": -999,
+    "category": {
+      "id": -20,
+      "name": "!InvalidCategory"
+    },
+    "name": "%%InvalidName%%",
+    "photoUrls_0": "invalidURL",
+    "tags_0": {
+      "id": -201,
+      "name": "!InvalidTag"
+    },
+    "status": "invalidStatus",
+    "statusCode": 404,
+    "scenario": "Pet not found"
+  },
+  {
+    "id": "textInsteadOfNumber",
+    "category": {
+      "id": "wrongType",
+      "name": "123Cats"
+    },
+    "name": "NameWith@Symbols",
+    "photoUrls_0": "https://example.fail",
+    "tags_0": {
+      "id": "lettersInsteadOfNumber",
+      "name": "@Mixed$Characters"
+    },
+    "status": "unknown",
+    "statusCode": 405,
+    "scenario": "Validation exception"
+  },
+  {
+    "id": 777,
+    "category": {
+      "id": 35,
+      "name": "Birds"
+    },
+    "name": "Parrot",
+    "photoUrls_0": "https://example.com/bird1.jpg",
+    "tags_0": {
+      "id": 304,
+      "name": "Talkative"
+    },
+    "status": "pending",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "id": -333,
+    "category": {
+      "id": -55,
+      "name": "!!!InvalidCategory!!!"
+    },
+    "name": "123InvalidName",
+    "photoUrls_0": "brokenURL",
+    "tags_0": {
+      "id": -888,
+      "name": "!BrokenTag!"
+    },
+    "status": "wrongStatus",
+    "statusCode": 404,
+    "scenario": "Pet not found"
+  }
+]

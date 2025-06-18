@@ -1,0 +1,62 @@
+[
+  {
+    "id": 101,
+    "username": "johndoe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "password": "Password123!",
+    "phone": "123-456-7890",
+    "userStatus": 1,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 102,
+    "username": "janedoe",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe@example.com",
+    "password": "SecurePassword456@",
+    "phone": "987-654-3210",
+    "userStatus": 2,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "id": 103,
+    "username": "invalid_user123",
+    "firstName": "Invalid",
+    "lastName": "User",
+    "email": "invalidemail.com",
+    "password": "short",
+    "phone": "invalidPhoneNumber",
+    "userStatus": 9999,
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": 104,
+    "username": "nullvalue_user",
+    "firstName": "",
+    "lastName": "",
+    "email": "@example.com",
+    "password": "",
+    "phone": "",
+    "userStatus": -1,
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "id": 105,
+    "username": "intermediate_user",
+    "firstName": "Anna",
+    "lastName": "Smith",
+    "email": "annasmith@example.com",
+    "password": "Intermediate905@!",
+    "phone": "567-890-1234",
+    "userStatus": 0,
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]

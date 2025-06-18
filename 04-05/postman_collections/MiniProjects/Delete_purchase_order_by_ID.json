@@ -1,0 +1,27 @@
+[
+  {
+    "orderId": "1",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "orderId": "abc_invalid_id",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "orderId": "99999",
+    "statusCode": 404,
+    "scenario": "Order not found"
+  },
+  {
+    "orderId": "!@#unexpectedString",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "orderId": "12345",
+    "statusCode": 404,
+    "scenario": "Order not found"
+  }
+]
