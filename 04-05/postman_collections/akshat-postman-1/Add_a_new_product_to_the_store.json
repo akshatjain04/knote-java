@@ -1,0 +1,42 @@
+[
+  {
+    "name_*string": "Product A",
+    "id_*string": "12345",
+    "description_*string": "This is product A",
+    "price_*string": "19.99",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_*string": "Product B",
+    "id_*string": "67890",
+    "description_*string": "This is product B",
+    "price_*string": "29.99",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_*string": "Product C",
+    "id_*string": "13579",
+    "description_*string": "This is product C",
+    "price_*string": "39.99",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "name_*string": "Product D",
+    "id_*string": "24680",
+    "description_*string": "This is product D",
+    "price_*string": "49.99",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "name_*string": "Product E",
+    "id_*string": "12345",
+    "description_*string": "This is product E",
+    "price_*string": "59.99",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
