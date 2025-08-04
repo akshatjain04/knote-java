@@ -1,4 +1,3 @@
-//This test file is marked invalid as it contains compilation errors. Change the extension to of this file to .java, to manually edit its contents
 
 // ********RoostGPT********
 /*
@@ -103,10 +102,15 @@ Execution:
 Validation:
   The assertion aims to verify that the method correctly handles the scenario where the publish parameter is set to "Publish" and an empty description is provided, returning a success status without saving the note.
 
+
+roost_feedback [04/08/2025, 11:55:58 PM]:Remove all compilation errors
 */
 
 // ********RoostGPT********
-package com.learnk8s.knote.Controller;import static org.mockito.Mockito.*;
+
+package com.learnk8s.knote.Controller;
+
+import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
@@ -125,16 +129,6 @@ import com.learnk8s.knote.Repository.NotesRepository;
 import com.learnk8s.knote.UploadConfig.KnoteProperties;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.client.HttpClientErrorException.BadRequest;
-import io.micrometer.core.ipc.http.HttpSender.Response;
-import java.io.File;
 import java.util.Collections;
 import java.util.UUID;
 import org.commonmark.parser.Parser;
@@ -163,51 +157,51 @@ public class KnoteControllerSaveNotesTest {
     @Tag("invalid")
     public void testMethodSaveNotesWithBothUploadAndPublishNull() {
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(nullFile, "description", null, null, model);
-        assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
     @Test
     @Tag("invalid")
     public void testMethodSaveNotesWithUploadButNullFile() {
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(nullFile, "description", "Upload", null, model);
-        assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
     @Test
     @Tag("invalid")
     public void testMethodSaveNotesWithUploadButEmptyFilename() {
         MultipartFile fileWithNoName = new MockMultipartFile("file", "", "image/png", "test data".getBytes());
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(fileWithNoName, "description", "Upload", null, model);
-        assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
     @Test
     @Tag("valid")
     public void testMethodSaveNotesWithValidUpload() throws Exception {
         when(properties.getUploadDir()).thenReturn("uploads/");
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(validFile, "description", "Upload", null, model);
-        assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
     }
     @Test
     @Tag("valid")
     public void testMethodSaveNotesWithValidPublish() {
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(nullFile, "description", null, "Publish", model);
-        assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
     }
     @Test
     @Tag("valid")
     public void testMethodSaveNotesWithBothUploadAndPublishProvided() throws Exception {
         when(properties.getUploadDir()).thenReturn("uploads/");
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(validFile, "description", "Upload", "Publish", model);
-        assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
     }
     @Test
     @Tag("invalid")
     public void testMethodSaveNotesWithUploadAndEmptyFile() {
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(emptyFile, "description", "Upload", null, model);
-        assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
     @Test
     @Tag("valid")
     public void testMethodSaveNotesWithPublishAndEmptyDescription() {
         ResponseEntity<HttpStatus> response = knoteController.saveNotes(nullFile, "", null, "Publish", model);
-        assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
     }
 }
