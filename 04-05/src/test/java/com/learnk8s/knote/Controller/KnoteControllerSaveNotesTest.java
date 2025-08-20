@@ -152,6 +152,8 @@ Validation:
 
 
 roost_feedback [04/08/2025, 10:49:40 AM]:Modify\sCode\sto\sfix\sthis\serror\n[188,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[195,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[204,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[221,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[242,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[249,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[259,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[266,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown\n[285,76]\sunreported\sexception\sjava.lang.Exception;\smust\sbe\scaught\sor\sdeclared\sto\sbe\sthrown
+
+roost_feedback [20/08/2025, 11:55:07 AM]:Modify\sCode\sto\sfix\sthis\serror\n\"\swere\sexecuted!\s(Set\s-Dsurefire.failIfNoSpecifiedTests=false\sto\signore\sthis\serror.)\s->\s[Help\s1]
 */
 
 // ********RoostGPT********
