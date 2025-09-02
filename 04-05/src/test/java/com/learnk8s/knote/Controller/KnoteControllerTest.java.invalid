@@ -1,0 +1,271 @@
+//This single test file is marked invalid as it contains compilation errors.
+package com.learnk8s.knote.Controller;
+import org.mockito.Mockito;
+import org.junit.jupiter.api.Assertions;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
+import com.learnk8s.knote.Note.Note;
+import com.learnk8s.knote.Repository.NotesRepository;
+import org.junit.jupiter.api;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.HttpClientErrorException.BadRequest;
+import org.springframework.web.multipart.MultipartFile;
+import com.learnk8s.knote.UploadConfig.KnoteProperties;
+import io.micrometer.core.ipc.http.HttpSender.Response;
+import java.io.File;
+import java.util.UUID;
+import org.commonmark.parser.Parser;
+import org.commonmark.renderer.html.HtmlRenderer;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.mock.web.MockMultipartFile;
+
+@ExtendWith(MockitoExtension.class)
+public class KnoteControllerTest {
+
+  // Merged class fields
+  private NotesRepository notesRepository;
+  private KnoteController knoteController;
+  private KnoteProperties properties;
+  private Model model;
+  private MultipartFile validFile;
+  private MultipartFile invalidFile;
+
+  // Merged test methods
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@BeforeEach
+public void setUp() {
+    MockitoAnnotations.openMocks(this);
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("valid")
+public void testIndexReturnsListOfNotes() {
+    List<Note> mockNotes = Arrays.asList(new Note(), new Note());
+    when(notesRepository.findAll()).thenReturn(mockNotes);
+    ResponseEntity<List<Note>> response = knoteController.index(mock(Model.class));
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+    assertEquals(mockNotes, response.getBody());
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("valid")
+public void testIndexHandlesEmptyListOfNotes() {
+    when(notesRepository.findAll()).thenReturn(Collections.emptyList());
+    ResponseEntity<List<Note>> response = knoteController.index(mock(Model.class));
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+    assertTrue(response.getBody().isEmpty());
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("valid")
+public void testIndexReturnsNotesInReverseOrder() {
+    
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("valid")
+public void testIndexAddsNotesToModel() {
+    List<Note> mockNotes = Arrays.asList(new Note(), new Note());
+    when(notesRepository.findAll()).thenReturn(mockNotes);
+    Model model = mock(Model.class);
+    ResponseEntity<List<Note>> response = knoteController.index(model);
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+    verify(model).addAttribute("notes", mockNotes);
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("valid")
+public void testIndexReturnsOkStatus() {
+    List<Note> mockNotes = Arrays.asList(new Note(), new Note());
+    when(notesRepository.findAll()).thenReturn(mockNotes);
+    ResponseEntity<List<Note>> response = knoteController.index(mock(Model.class));
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("invalid")
+public void testIndexHandlesNullModel() {
+    List<Note> mockNotes = Arrays.asList(new Note(), new Note());
+    when(notesRepository.findAll()).thenReturn(mockNotes);
+    ResponseEntity<List<Note>> response = knoteController.index(null);
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+    assertEquals(mockNotes, response.getBody());
+}
+
+/*ROOST_METHOD_HASH=index_99956d9b51
+ROOST_METHOD_SIG_HASH=index_97608f2907
+
+*/
+@Test
+@Tag("invalid")
+public void testIndexHandlesRepositoryExceptions() {
+    when(notesRepository.findAll()).thenThrow(new RuntimeException());
+    ResponseEntity<List<Note>> response = knoteController.index(mock(Model.class));
+    assertEquals(HttpStatus.OK, response.getStatusCode());
+    assertTrue(response.getBody().isEmpty());
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@BeforeEach
+public void setUp() {
+    validFile = new MockMultipartFile("file", "test.png", "image/png", "test data".getBytes());
+    invalidFile = new MockMultipartFile("file", "", "image/png", "test data".getBytes());
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("invalid")
+public void saveNotesWithBothUploadAndPublishNull() throws Exception {
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(null, "description", null, null, model);
+    assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("valid")
+public void saveNotesWithValidUploadAndNoPublish() throws Exception {
+    when(properties.getUploadDir()).thenReturn("uploads/");
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(validFile, "description", null, "Upload", model);
+    assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+    verify(model).addAttribute(eq("description"), contains("![](/uploads/"));
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("invalid")
+public void saveNotesWithInvalidUploadAndNoPublish() throws Exception {
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(invalidFile, "description", null, "Upload", model);
+    assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("valid")
+public void saveNotesWithValidPublishAndNoUpload() throws Exception {
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(null, "description", "Publish", null, model);
+    assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+    verify(notesRepository).save(any(Note.class));
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("valid")
+public void saveNotesWithValidUploadAndPublish() throws Exception {
+    when(properties.getUploadDir()).thenReturn("uploads/");
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(validFile, "description", "Publish", "Upload", model);
+    assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+    verify(model).addAttribute(eq("description"), contains("![](/uploads/"));
+    verify(notesRepository).save(any(Note.class));
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("invalid")
+public void saveNotesWithInvalidUploadAndPublish() throws Exception {
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(invalidFile, "description", "Publish", "Upload", model);
+    assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("valid")
+public void saveNotesWithEmptyDescriptionAndValidUploadPublish() throws Exception {
+    when(properties.getUploadDir()).thenReturn("uploads/");
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(validFile, "", "Publish", "Upload", model);
+    assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+    verify(model).addAttribute(eq("description"), contains("![](/uploads/"));
+    verify(notesRepository).save(any(Note.class));
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("valid")
+public void saveNotesWithNullDescriptionAndValidUploadPublish() throws Exception {
+    when(properties.getUploadDir()).thenReturn("uploads/");
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(validFile, null, "Publish", "Upload", model);
+    assertEquals(HttpStatus.CREATED, (HttpStatus) response.getStatusCode());
+    verify(model).addAttribute(eq("description"), contains("![](/uploads/"));
+    verify(notesRepository).save(any(Note.class));
+}
+
+/*ROOST_METHOD_HASH=saveNotes_a5ff26c0ca
+ROOST_METHOD_SIG_HASH=saveNotes_02f4bb3ede
+
+*/
+@Test
+@Tag("invalid")
+public void saveNotesWithEmptyFilenameAndValidUpload() throws Exception {
+    ResponseEntity<HttpStatusCode> response = knoteController.saveNotes(invalidFile, "description", null, "Upload", model);
+    assertEquals(HttpStatus.BAD_REQUEST, (HttpStatus) response.getStatusCode());
+}
+}
